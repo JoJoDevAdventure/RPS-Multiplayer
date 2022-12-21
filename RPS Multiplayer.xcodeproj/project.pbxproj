@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DD29534CFD009936D6 /* AppDelegate.swift */; };
+		A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DF29534CFD009936D6 /* SceneDelegate.swift */; };
+		A33081E229534CFD009936D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081E129534CFD009936D6 /* ViewController.swift */; };
+		A33081E529534CFD009936D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33081E329534CFD009936D6 /* Main.storyboard */; };
+		A33081E829534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A33081E629534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld */; };
+		A33081EA29534CFF009936D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33081E929534CFF009936D6 /* Assets.xcassets */; };
+		A33081ED29534CFF009936D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */; };
+		A33081F829534D00009936D6 /* RPS_MultiplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081F729534D00009936D6 /* RPS_MultiplayerTests.swift */; };
+		A330820229534D00009936D6 /* RPS_MultiplayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330820129534D00009936D6 /* RPS_MultiplayerUITests.swift */; };
+		A330820429534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330820329534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A33081F429534D00009936D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33081D229534CFD009936D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A33081D929534CFD009936D6;
+			remoteInfo = "RPS Multiplayer";
+		};
+		A33081FE29534D00009936D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A33081D229534CFD009936D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A33081D929534CFD009936D6;
+			remoteInfo = "RPS Multiplayer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A33081DA29534CFD009936D6 /* RPS Multiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPS Multiplayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33081DD29534CFD009936D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A33081DF29534CFD009936D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A33081E129534CFD009936D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A33081E429534CFD009936D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A33081E729534CFD009936D6 /* RPS_Multiplayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPS_Multiplayer.xcdatamodel; sourceTree = "<group>"; };
+		A33081E929534CFF009936D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A33081EC29534CFF009936D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A33081EE29534CFF009936D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A33081F329534D00009936D6 /* RPS MultiplayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPS MultiplayerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33081F729534D00009936D6 /* RPS_MultiplayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS_MultiplayerTests.swift; sourceTree = "<group>"; };
+		A33081FD29534D00009936D6 /* RPS MultiplayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPS MultiplayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A330820129534D00009936D6 /* RPS_MultiplayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS_MultiplayerUITests.swift; sourceTree = "<group>"; };
+		A330820329534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS_MultiplayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A33081D729534CFD009936D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33081F029534D00009936D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33081FA29534D00009936D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A33081D129534CFD009936D6 = {
+			isa = PBXGroup;
+			children = (
+				A33081DC29534CFD009936D6 /* RPS Multiplayer */,
+				A33081F629534D00009936D6 /* RPS MultiplayerTests */,
+				A330820029534D00009936D6 /* RPS MultiplayerUITests */,
+				A33081DB29534CFD009936D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A33081DB29534CFD009936D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A33081DA29534CFD009936D6 /* RPS Multiplayer.app */,
+				A33081F329534D00009936D6 /* RPS MultiplayerTests.xctest */,
+				A33081FD29534D00009936D6 /* RPS MultiplayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A33081DC29534CFD009936D6 /* RPS Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				A33081DD29534CFD009936D6 /* AppDelegate.swift */,
+				A33081DF29534CFD009936D6 /* SceneDelegate.swift */,
+				A33081E129534CFD009936D6 /* ViewController.swift */,
+				A33081E329534CFD009936D6 /* Main.storyboard */,
+				A33081E929534CFF009936D6 /* Assets.xcassets */,
+				A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */,
+				A33081EE29534CFF009936D6 /* Info.plist */,
+				A33081E629534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld */,
+			);
+			path = "RPS Multiplayer";
+			sourceTree = "<group>";
+		};
+		A33081F629534D00009936D6 /* RPS MultiplayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A33081F729534D00009936D6 /* RPS_MultiplayerTests.swift */,
+			);
+			path = "RPS MultiplayerTests";
+			sourceTree = "<group>";
+		};
+		A330820029534D00009936D6 /* RPS MultiplayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A330820129534D00009936D6 /* RPS_MultiplayerUITests.swift */,
+				A330820329534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift */,
+			);
+			path = "RPS MultiplayerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A33081D929534CFD009936D6 /* RPS Multiplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A330820729534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS Multiplayer" */;
+			buildPhases = (
+				A33081D629534CFD009936D6 /* Sources */,
+				A33081D729534CFD009936D6 /* Frameworks */,
+				A33081D829534CFD009936D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RPS Multiplayer";
+			productName = "RPS Multiplayer";
+			productReference = A33081DA29534CFD009936D6 /* RPS Multiplayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A33081F229534D00009936D6 /* RPS MultiplayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A330820A29534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS MultiplayerTests" */;
+			buildPhases = (
+				A33081EF29534D00009936D6 /* Sources */,
+				A33081F029534D00009936D6 /* Frameworks */,
+				A33081F129534D00009936D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33081F529534D00009936D6 /* PBXTargetDependency */,
+			);
+			name = "RPS MultiplayerTests";
+			productName = "RPS MultiplayerTests";
+			productReference = A33081F329534D00009936D6 /* RPS MultiplayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A33081FC29534D00009936D6 /* RPS MultiplayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A330820D29534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS MultiplayerUITests" */;
+			buildPhases = (
+				A33081F929534D00009936D6 /* Sources */,
+				A33081FA29534D00009936D6 /* Frameworks */,
+				A33081FB29534D00009936D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A33081FF29534D00009936D6 /* PBXTargetDependency */,
+			);
+			name = "RPS MultiplayerUITests";
+			productName = "RPS MultiplayerUITests";
+			productReference = A33081FD29534D00009936D6 /* RPS MultiplayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A33081D229534CFD009936D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A33081D929534CFD009936D6 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					A33081F229534D00009936D6 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A33081D929534CFD009936D6;
+					};
+					A33081FC29534D00009936D6 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = A33081D929534CFD009936D6;
+					};
+				};
+			};
+			buildConfigurationList = A33081D529534CFD009936D6 /* Build configuration list for PBXProject "RPS Multiplayer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A33081D129534CFD009936D6;
+			productRefGroup = A33081DB29534CFD009936D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A33081D929534CFD009936D6 /* RPS Multiplayer */,
+				A33081F229534D00009936D6 /* RPS MultiplayerTests */,
+				A33081FC29534D00009936D6 /* RPS MultiplayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A33081D829534CFD009936D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33081ED29534CFF009936D6 /* LaunchScreen.storyboard in Resources */,
+				A33081EA29534CFF009936D6 /* Assets.xcassets in Resources */,
+				A33081E529534CFD009936D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33081F129534D00009936D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33081FB29534D00009936D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A33081D629534CFD009936D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33081E829534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld in Sources */,
+				A33081E229534CFD009936D6 /* ViewController.swift in Sources */,
+				A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */,
+				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33081EF29534D00009936D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33081F829534D00009936D6 /* RPS_MultiplayerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A33081F929534D00009936D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A330820229534D00009936D6 /* RPS_MultiplayerUITests.swift in Sources */,
+				A330820429534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A33081F529534D00009936D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A33081D929534CFD009936D6 /* RPS Multiplayer */;
+			targetProxy = A33081F429534D00009936D6 /* PBXContainerItemProxy */;
+		};
+		A33081FF29534D00009936D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A33081D929534CFD009936D6 /* RPS Multiplayer */;
+			targetProxy = A33081FE29534D00009936D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A33081E329534CFD009936D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A33081E429534CFD009936D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A33081EC29534CFF009936D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A330820529534D00009936D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A330820629534D00009936D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A330820829534D00009936D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7FBND7W68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RPS Multiplayer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joseph.RPS-Multiplayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A330820929534D00009936D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7FBND7W68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RPS Multiplayer/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joseph.RPS-Multiplayer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A330820B29534D00009936D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7FBND7W68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joseph.RPS-MultiplayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPS Multiplayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RPS Multiplayer";
+			};
+			name = Debug;
+		};
+		A330820C29534D00009936D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7FBND7W68;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joseph.RPS-MultiplayerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RPS Multiplayer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RPS Multiplayer";
+			};
+			name = Release;
+		};
+		A330820E29534D00009936D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7FBND7W68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joseph.RPS-MultiplayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RPS Multiplayer";
+			};
+			name = Debug;
+		};
+		A330820F29534D00009936D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X7FBND7W68;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Joseph.RPS-MultiplayerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RPS Multiplayer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A33081D529534CFD009936D6 /* Build configuration list for PBXProject "RPS Multiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A330820529534D00009936D6 /* Debug */,
+				A330820629534D00009936D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A330820729534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS Multiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A330820829534D00009936D6 /* Debug */,
+				A330820929534D00009936D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A330820A29534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS MultiplayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A330820B29534D00009936D6 /* Debug */,
+				A330820C29534D00009936D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A330820D29534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS MultiplayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A330820E29534D00009936D6 /* Debug */,
+				A330820F29534D00009936D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A33081E629534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A33081E729534CFD009936D6 /* RPS_Multiplayer.xcdatamodel */,
+			);
+			currentVersion = A33081E729534CFD009936D6 /* RPS_Multiplayer.xcdatamodel */;
+			path = RPS_Multiplayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A33081D229534CFD009936D6 /* Project object */;
+}
