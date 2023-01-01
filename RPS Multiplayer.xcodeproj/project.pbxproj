@@ -9,14 +9,18 @@
 /* Begin PBXBuildFile section */
 		A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DD29534CFD009936D6 /* AppDelegate.swift */; };
 		A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DF29534CFD009936D6 /* SceneDelegate.swift */; };
-		A33081E229534CFD009936D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081E129534CFD009936D6 /* ViewController.swift */; };
-		A33081E529534CFD009936D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33081E329534CFD009936D6 /* Main.storyboard */; };
+		A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081E129534CFD009936D6 /* HomeScreen.swift */; };
 		A33081E829534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A33081E629534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld */; };
 		A33081EA29534CFF009936D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A33081E929534CFF009936D6 /* Assets.xcassets */; };
 		A33081ED29534CFF009936D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */; };
 		A33081F829534D00009936D6 /* RPS_MultiplayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081F729534D00009936D6 /* RPS_MultiplayerTests.swift */; };
 		A330820229534D00009936D6 /* RPS_MultiplayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330820129534D00009936D6 /* RPS_MultiplayerUITests.swift */; };
 		A330820429534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330820329534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift */; };
+		A330821229535112009936D6 /* UITextfield+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A330821129535112009936D6 /* UITextfield+.swift */; };
+		A33082142953513D009936D6 /* NSLayout+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33082132953513D009936D6 /* NSLayout+.swift */; };
+		A33082162953515E009936D6 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33082152953515E009936D6 /* UITableView+.swift */; };
+		A3308218295351AD009936D6 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308217295351AD009936D6 /* UIView+.swift */; };
+		A330821B29535207009936D6 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A330821A29535207009936D6 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +44,7 @@
 		A33081DA29534CFD009936D6 /* RPS Multiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPS Multiplayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33081DD29534CFD009936D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33081DF29534CFD009936D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A33081E129534CFD009936D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A33081E429534CFD009936D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A33081E129534CFD009936D6 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		A33081E729534CFD009936D6 /* RPS_Multiplayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPS_Multiplayer.xcdatamodel; sourceTree = "<group>"; };
 		A33081E929534CFF009936D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A33081EC29534CFF009936D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,10 @@
 		A33081FD29534D00009936D6 /* RPS MultiplayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RPS MultiplayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A330820129534D00009936D6 /* RPS_MultiplayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS_MultiplayerUITests.swift; sourceTree = "<group>"; };
 		A330820329534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS_MultiplayerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A330821129535112009936D6 /* UITextfield+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextfield+.swift"; sourceTree = "<group>"; };
+		A33082132953513D009936D6 /* NSLayout+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayout+.swift"; sourceTree = "<group>"; };
+		A33082152953515E009936D6 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		A3308217295351AD009936D6 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A330821B29535207009936D6 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,10 +109,10 @@
 		A33081DC29534CFD009936D6 /* RPS Multiplayer */ = {
 			isa = PBXGroup;
 			children = (
-				A33081DD29534CFD009936D6 /* AppDelegate.swift */,
-				A33081DF29534CFD009936D6 /* SceneDelegate.swift */,
-				A33081E129534CFD009936D6 /* ViewController.swift */,
-				A33081E329534CFD009936D6 /* Main.storyboard */,
+				A330821F2953565A009936D6 /* Ressources */,
+				A330821C2953536D009936D6 /* Coordinator */,
+				A3308210295350D4009936D6 /* Extensions */,
+				A330821D295355B8009936D6 /* ViewController */,
 				A33081E929534CFF009936D6 /* Assets.xcassets */,
 				A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */,
 				A33081EE29534CFF009936D6 /* Info.plist */,
@@ -130,6 +138,49 @@
 			path = "RPS MultiplayerUITests";
 			sourceTree = "<group>";
 		};
+		A3308210295350D4009936D6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A330821129535112009936D6 /* UITextfield+.swift */,
+				A33082132953513D009936D6 /* NSLayout+.swift */,
+				A33082152953515E009936D6 /* UITableView+.swift */,
+				A3308217295351AD009936D6 /* UIView+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A330821C2953536D009936D6 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		A330821D295355B8009936D6 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A330821E2953563D009936D6 /* Core */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A330821E2953563D009936D6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A33081E129534CFD009936D6 /* HomeScreen.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A330821F2953565A009936D6 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				A33081DD29534CFD009936D6 /* AppDelegate.swift */,
+				A33081DF29534CFD009936D6 /* SceneDelegate.swift */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +197,9 @@
 			dependencies = (
 			);
 			name = "RPS Multiplayer";
+			packageProductDependencies = (
+				A330821A29535207009936D6 /* Lottie */,
+			);
 			productName = "RPS Multiplayer";
 			productReference = A33081DA29534CFD009936D6 /* RPS Multiplayer.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +272,9 @@
 				Base,
 			);
 			mainGroup = A33081D129534CFD009936D6;
+			packageReferences = (
+				A330821929535206009936D6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = A33081DB29534CFD009936D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -236,7 +293,6 @@
 			files = (
 				A33081ED29534CFF009936D6 /* LaunchScreen.storyboard in Resources */,
 				A33081EA29534CFF009936D6 /* Assets.xcassets in Resources */,
-				A33081E529534CFD009936D6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33081E829534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld in Sources */,
-				A33081E229534CFD009936D6 /* ViewController.swift in Sources */,
+				A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */,
 				A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */,
+				A330821229535112009936D6 /* UITextfield+.swift in Sources */,
+				A3308218295351AD009936D6 /* UIView+.swift in Sources */,
+				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
 				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
+				A33082162953515E009936D6 /* UITableView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +361,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A33081E329534CFD009936D6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A33081E429534CFD009936D6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -446,7 +498,6 @@
 				INFOPLIST_FILE = "RPS Multiplayer/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -474,7 +525,6 @@
 				INFOPLIST_FILE = "RPS Multiplayer/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,6 +656,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A330821929535206009936D6 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A330821A29535207009936D6 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A330821929535206009936D6 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A33081E629534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld */ = {
