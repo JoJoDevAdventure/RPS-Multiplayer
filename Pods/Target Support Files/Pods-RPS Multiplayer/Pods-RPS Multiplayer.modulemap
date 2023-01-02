@@ -1,0 +1,6 @@
+framework module Pods_RPS_Multiplayer {
+  umbrella header "Pods-RPS Multiplayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

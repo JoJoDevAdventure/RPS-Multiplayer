@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FB296D1C543ACA89207838196BB823E7 /* Build configuration list for PBXAggregateTarget "SwiftGen" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftGen;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		062C7FF8F7A93C73910B86E30536FE6B /* Pods-RPS Multiplayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8922837F5DF1300A809154FF716BD /* Pods-RPS Multiplayer-dummy.m */; };
+		1358EE9EC5149BC6E479653EE4A13797 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5058352A0E244767C62DE9C229F30865 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32BD5418BF4BDD0FAC22A13748C8661A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		515B2093DA3498931C66AFDFE0993F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5E2192AAE37349919E8659057FD6835B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7CA254240E998BD6D4316A50862316BA /* Pods-RPS MultiplayerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9D5D289D1C4A25B3F41C40F5238287 /* Pods-RPS MultiplayerTests-dummy.m */; };
+		9ADEFF26218DFCA33E978F6C3A6FBAE0 /* Pods-RPS Multiplayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CC23DA88EB6108E1FB2FCEFDFC91264 /* Pods-RPS Multiplayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DF7A357329E4732E2DC672E9E8E81F1 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37185958FE5E48CEB0F9190ECC6094B6 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-dummy.m */; };
+		A932DA7BF3D0E8E7057AB423951AB94C /* Pods-RPS MultiplayerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56F9857B917A0B9C733A9EB7956A9E9E /* Pods-RPS MultiplayerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C931AAE4B67C164E2C6E6B9092FB2B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
+		};
+		60D4A0313ECC440EDB782AAD3EEFA439 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E798429DCFA7906F6625CCFC1088744;
+			remoteInfo = SwiftGen;
+		};
+		F7F0B5ED5146DFA46CB16B1A89E09199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A673EAA97204E2EF9BFF9002C77562C;
+			remoteInfo = "Pods-RPS Multiplayer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BF8922837F5DF1300A809154FF716BD /* Pods-RPS Multiplayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RPS Multiplayer-dummy.m"; sourceTree = "<group>"; };
+		0DCBBCE13ECCC47407544FA5B1916917 /* Pods-RPS Multiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPS Multiplayer.debug.xcconfig"; sourceTree = "<group>"; };
+		16E18BC580F8AA4B82034DADB388AFA8 /* Pods-RPS MultiplayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPS MultiplayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CC23DA88EB6108E1FB2FCEFDFC91264 /* Pods-RPS Multiplayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RPS Multiplayer-umbrella.h"; sourceTree = "<group>"; };
+		1CD3F0045FD569434E95029B35BBA649 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2115BC363996DF5D915591FE4F4C6DEE /* Pods-RPS MultiplayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPS MultiplayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37185958FE5E48CEB0F9190ECC6094B6 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests-dummy.m"; sourceTree = "<group>"; };
+		42500962E033B17F010C0E859CEF0019 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4B9D5D289D1C4A25B3F41C40F5238287 /* Pods-RPS MultiplayerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RPS MultiplayerTests-dummy.m"; sourceTree = "<group>"; };
+		5058352A0E244767C62DE9C229F30865 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests-umbrella.h"; sourceTree = "<group>"; };
+		541C33B38A2C3B4DB6FA0CF115E7A1A4 /* Pods-RPS MultiplayerTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RPS MultiplayerTests"; path = Pods_RPS_MultiplayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		56F9857B917A0B9C733A9EB7956A9E9E /* Pods-RPS MultiplayerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RPS MultiplayerTests-umbrella.h"; sourceTree = "<group>"; };
+		5D6A1527B3C1329D1BFFAEAB27720607 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests.modulemap"; sourceTree = "<group>"; };
+		6055A97ACDCE9F6E8E499E82410F3E75 /* Pods-RPS Multiplayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RPS Multiplayer.modulemap"; sourceTree = "<group>"; };
+		6707CDFEC15042E2A79F4C12FB96351B /* Pods-RPS Multiplayer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPS Multiplayer-Info.plist"; sourceTree = "<group>"; };
+		6E90C30BF969BDC03167A21B6799DBD5 /* Pods-RPS Multiplayer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RPS Multiplayer-acknowledgements.markdown"; sourceTree = "<group>"; };
+		72246B8512EBCAA7DE9753347EF382BA /* Pods-RPS Multiplayer-RPS MultiplayerUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RPS Multiplayer-RPS MultiplayerUITests"; path = Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73788D60BEBC2F31291B0F617A31CD7F /* Pods-RPS Multiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPS Multiplayer.release.xcconfig"; sourceTree = "<group>"; };
+		7432481B343EF0A33FAAE42CF037979C /* Pods-RPS Multiplayer */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RPS Multiplayer"; path = Pods_RPS_Multiplayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DE619F89A0E93F413038E873F4534C /* Pods-RPS Multiplayer-RPS MultiplayerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests-Info.plist"; sourceTree = "<group>"; };
+		92EC30C62E87F707005F51444E8F2A5E /* Pods-RPS Multiplayer-RPS MultiplayerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A9A8CDBAE4E96B5AF89C90AB6A9FB15F /* Pods-RPS MultiplayerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPS MultiplayerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
+		CA85B6735A7A39EB694E72354E9F34F1 /* Pods-RPS MultiplayerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPS MultiplayerTests-Info.plist"; sourceTree = "<group>"; };
+		CF5778C0A299739BE8B88075EBDB1A09 /* Pods-RPS MultiplayerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RPS MultiplayerTests.modulemap"; sourceTree = "<group>"; };
+		D3E65E30E9F1512F9A6FBF65FEA780B3 /* Pods-RPS Multiplayer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RPS Multiplayer-acknowledgements.plist"; sourceTree = "<group>"; };
+		E9B06A803925AAC1EC2C5728AEF448DA /* Pods-RPS MultiplayerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RPS MultiplayerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F70EB7B52ADBEF86DEE765B7B8FA2B18 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FFFD22052FCE542717092691647FD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32BD5418BF4BDD0FAC22A13748C8661A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2BBC3258DD0FBBF445EF99A78BDE6AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E2192AAE37349919E8659057FD6835B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC18B3B8EA0375FEB983E9403E37ECDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515B2093DA3498931C66AFDFE0993F01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08DF4A29620F30ECCD85AE71F22FD52C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		100F332A33F7A73E2C43605B6DCFF9C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7432481B343EF0A33FAAE42CF037979C /* Pods-RPS Multiplayer */,
+				72246B8512EBCAA7DE9753347EF382BA /* Pods-RPS Multiplayer-RPS MultiplayerUITests */,
+				541C33B38A2C3B4DB6FA0CF115E7A1A4 /* Pods-RPS MultiplayerTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18A2B906A14AFDB13330C4DBB1A938AC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE9A94422F0A15B1DFB1AB6E0506A539 /* Pods-RPS Multiplayer */,
+				9C71229263189B59DA412F3E3029792D /* Pods-RPS Multiplayer-RPS MultiplayerUITests */,
+				CEFF9A3AE28A57561E986228E1B9A55A /* Pods-RPS MultiplayerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */,
+			);
+			name = SwiftGen;
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		9C71229263189B59DA412F3E3029792D /* Pods-RPS Multiplayer-RPS MultiplayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D6A1527B3C1329D1BFFAEAB27720607 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.modulemap */,
+				42500962E033B17F010C0E859CEF0019 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-acknowledgements.markdown */,
+				92EC30C62E87F707005F51444E8F2A5E /* Pods-RPS Multiplayer-RPS MultiplayerUITests-acknowledgements.plist */,
+				37185958FE5E48CEB0F9190ECC6094B6 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-dummy.m */,
+				84DE619F89A0E93F413038E873F4534C /* Pods-RPS Multiplayer-RPS MultiplayerUITests-Info.plist */,
+				5058352A0E244767C62DE9C229F30865 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-umbrella.h */,
+				1CD3F0045FD569434E95029B35BBA649 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig */,
+				F70EB7B52ADBEF86DEE765B7B8FA2B18 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig */,
+			);
+			name = "Pods-RPS Multiplayer-RPS MultiplayerUITests";
+			path = "Target Support Files/Pods-RPS Multiplayer-RPS MultiplayerUITests";
+			sourceTree = "<group>";
+		};
+		AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */,
+				B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftGen";
+			sourceTree = "<group>";
+		};
+		CEFF9A3AE28A57561E986228E1B9A55A /* Pods-RPS MultiplayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF5778C0A299739BE8B88075EBDB1A09 /* Pods-RPS MultiplayerTests.modulemap */,
+				E9B06A803925AAC1EC2C5728AEF448DA /* Pods-RPS MultiplayerTests-acknowledgements.markdown */,
+				A9A8CDBAE4E96B5AF89C90AB6A9FB15F /* Pods-RPS MultiplayerTests-acknowledgements.plist */,
+				4B9D5D289D1C4A25B3F41C40F5238287 /* Pods-RPS MultiplayerTests-dummy.m */,
+				CA85B6735A7A39EB694E72354E9F34F1 /* Pods-RPS MultiplayerTests-Info.plist */,
+				56F9857B917A0B9C733A9EB7956A9E9E /* Pods-RPS MultiplayerTests-umbrella.h */,
+				2115BC363996DF5D915591FE4F4C6DEE /* Pods-RPS MultiplayerTests.debug.xcconfig */,
+				16E18BC580F8AA4B82034DADB388AFA8 /* Pods-RPS MultiplayerTests.release.xcconfig */,
+			);
+			name = "Pods-RPS MultiplayerTests";
+			path = "Target Support Files/Pods-RPS MultiplayerTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				08DF4A29620F30ECCD85AE71F22FD52C /* Pods */,
+				100F332A33F7A73E2C43605B6DCFF9C6 /* Products */,
+				18A2B906A14AFDB13330C4DBB1A938AC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE9A94422F0A15B1DFB1AB6E0506A539 /* Pods-RPS Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				6055A97ACDCE9F6E8E499E82410F3E75 /* Pods-RPS Multiplayer.modulemap */,
+				6E90C30BF969BDC03167A21B6799DBD5 /* Pods-RPS Multiplayer-acknowledgements.markdown */,
+				D3E65E30E9F1512F9A6FBF65FEA780B3 /* Pods-RPS Multiplayer-acknowledgements.plist */,
+				0BF8922837F5DF1300A809154FF716BD /* Pods-RPS Multiplayer-dummy.m */,
+				6707CDFEC15042E2A79F4C12FB96351B /* Pods-RPS Multiplayer-Info.plist */,
+				1CC23DA88EB6108E1FB2FCEFDFC91264 /* Pods-RPS Multiplayer-umbrella.h */,
+				0DCBBCE13ECCC47407544FA5B1916917 /* Pods-RPS Multiplayer.debug.xcconfig */,
+				73788D60BEBC2F31291B0F617A31CD7F /* Pods-RPS Multiplayer.release.xcconfig */,
+			);
+			name = "Pods-RPS Multiplayer";
+			path = "Target Support Files/Pods-RPS Multiplayer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A03EFFCECF6E1300EC7A6DCED9918E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ADEFF26218DFCA33E978F6C3A6FBAE0 /* Pods-RPS Multiplayer-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C89FFED73761B04AD9160EF9776D33C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1358EE9EC5149BC6E479653EE4A13797 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1A515C9E2B13018C9F45E7A47CF427A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A932DA7BF3D0E8E7057AB423951AB94C /* Pods-RPS MultiplayerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		13D7B7B2C3320E510FF1CCC1B125FA62 /* Pods-RPS Multiplayer-RPS MultiplayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3297CA9053ADF3E00D46271958C0576B /* Build configuration list for PBXNativeTarget "Pods-RPS Multiplayer-RPS MultiplayerUITests" */;
+			buildPhases = (
+				7C89FFED73761B04AD9160EF9776D33C /* Headers */,
+				77F3F8DD86C4510C56669EC47FAF4F47 /* Sources */,
+				A2BBC3258DD0FBBF445EF99A78BDE6AC /* Frameworks */,
+				254F46119505E6BB264FF95E6A7691CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E92BACF65CC15D1320FBF85DEB9805 /* PBXTargetDependency */,
+			);
+			name = "Pods-RPS Multiplayer-RPS MultiplayerUITests";
+			productName = Pods_RPS_Multiplayer_RPS_MultiplayerUITests;
+			productReference = 72246B8512EBCAA7DE9753347EF382BA /* Pods-RPS Multiplayer-RPS MultiplayerUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		8A673EAA97204E2EF9BFF9002C77562C /* Pods-RPS Multiplayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A96BB2D4D8818BB58F8B32D1501D11 /* Build configuration list for PBXNativeTarget "Pods-RPS Multiplayer" */;
+			buildPhases = (
+				0A03EFFCECF6E1300EC7A6DCED9918E3 /* Headers */,
+				FCB5948E5675753AF07D1482EC9D4681 /* Sources */,
+				24FFFD22052FCE542717092691647FD9 /* Frameworks */,
+				EC84FB920C03F7F6BA527510B479B37D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F90252972B9068EF2D6361AB13A78B23 /* PBXTargetDependency */,
+			);
+			name = "Pods-RPS Multiplayer";
+			productName = Pods_RPS_Multiplayer;
+			productReference = 7432481B343EF0A33FAAE42CF037979C /* Pods-RPS Multiplayer */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF00CB145E79E288F5617146D1DAF67C /* Pods-RPS MultiplayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D4313D0F623C100A58938401885D5F2 /* Build configuration list for PBXNativeTarget "Pods-RPS MultiplayerTests" */;
+			buildPhases = (
+				D1A515C9E2B13018C9F45E7A47CF427A /* Headers */,
+				5C7DCAC2F38300BF6C10B59F3A1621E4 /* Sources */,
+				CC18B3B8EA0375FEB983E9403E37ECDC /* Frameworks */,
+				FC28D8D91288080B7B03D5C74C60A03F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC2CE76607715431745AC4EECF6BD58 /* PBXTargetDependency */,
+			);
+			name = "Pods-RPS MultiplayerTests";
+			productName = Pods_RPS_MultiplayerTests;
+			productReference = 541C33B38A2C3B4DB6FA0CF115E7A1A4 /* Pods-RPS MultiplayerTests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 100F332A33F7A73E2C43605B6DCFF9C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A673EAA97204E2EF9BFF9002C77562C /* Pods-RPS Multiplayer */,
+				13D7B7B2C3320E510FF1CCC1B125FA62 /* Pods-RPS Multiplayer-RPS MultiplayerUITests */,
+				CF00CB145E79E288F5617146D1DAF67C /* Pods-RPS MultiplayerTests */,
+				1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		254F46119505E6BB264FF95E6A7691CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC84FB920C03F7F6BA527510B479B37D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC28D8D91288080B7B03D5C74C60A03F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5C7DCAC2F38300BF6C10B59F3A1621E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CA254240E998BD6D4316A50862316BA /* Pods-RPS MultiplayerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77F3F8DD86C4510C56669EC47FAF4F47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DF7A357329E4732E2DC672E9E8E81F1 /* Pods-RPS Multiplayer-RPS MultiplayerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB5948E5675753AF07D1482EC9D4681 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				062C7FF8F7A93C73910B86E30536FE6B /* Pods-RPS Multiplayer-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87E92BACF65CC15D1320FBF85DEB9805 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = 60D4A0313ECC440EDB782AAD3EEFA439 /* PBXContainerItemProxy */;
+		};
+		8CC2CE76607715431745AC4EECF6BD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RPS Multiplayer";
+			target = 8A673EAA97204E2EF9BFF9002C77562C /* Pods-RPS Multiplayer */;
+			targetProxy = F7F0B5ED5146DFA46CB16B1A89E09199 /* PBXContainerItemProxy */;
+		};
+		F90252972B9068EF2D6361AB13A78B23 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftGen;
+			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
+			targetProxy = 3C931AAE4B67C164E2C6E6B9092FB2B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		146F36A20F2F65A102A75CBA0536D003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73788D60BEBC2F31291B0F617A31CD7F /* Pods-RPS Multiplayer.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2202230BF25CAB2FDC609A71D79055BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		29E113DA64BA7DAE9807B4D2593345F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F70EB7B52ADBEF86DEE765B7B8FA2B18 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPS Multiplayer-RPS MultiplayerUITests/Pods-RPS Multiplayer-RPS MultiplayerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPS Multiplayer-RPS MultiplayerUITests/Pods-RPS Multiplayer-RPS MultiplayerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CAB9C56EC315C479EE324079288111A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2115BC363996DF5D915591FE4F4C6DEE /* Pods-RPS MultiplayerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPS MultiplayerTests/Pods-RPS MultiplayerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPS MultiplayerTests/Pods-RPS MultiplayerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CE46AF05FBCF7D13811EC46328B8DAC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD3F0045FD569434E95029B35BBA649 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPS Multiplayer-RPS MultiplayerUITests/Pods-RPS Multiplayer-RPS MultiplayerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPS Multiplayer-RPS MultiplayerUITests/Pods-RPS Multiplayer-RPS MultiplayerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF3B4AB84D0F77E437676BAFB9C2086C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8F44089AAE3414C162B294F5324D512 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16E18BC580F8AA4B82034DADB388AFA8 /* Pods-RPS MultiplayerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPS MultiplayerTests/Pods-RPS MultiplayerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPS MultiplayerTests/Pods-RPS MultiplayerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F173315D24042B15C9B131F48BED6B82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DCBBCE13ECCC47407544FA5B1916917 /* Pods-RPS Multiplayer.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3297CA9053ADF3E00D46271958C0576B /* Build configuration list for PBXNativeTarget "Pods-RPS Multiplayer-RPS MultiplayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE46AF05FBCF7D13811EC46328B8DAC0 /* Debug */,
+				29E113DA64BA7DAE9807B4D2593345F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */,
+				5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D4313D0F623C100A58938401885D5F2 /* Build configuration list for PBXNativeTarget "Pods-RPS MultiplayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB9C56EC315C479EE324079288111A3 /* Debug */,
+				D8F44089AAE3414C162B294F5324D512 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A96BB2D4D8818BB58F8B32D1501D11 /* Build configuration list for PBXNativeTarget "Pods-RPS Multiplayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F173315D24042B15C9B131F48BED6B82 /* Debug */,
+				146F36A20F2F65A102A75CBA0536D003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB296D1C543ACA89207838196BB823E7 /* Build configuration list for PBXAggregateTarget "SwiftGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2202230BF25CAB2FDC609A71D79055BB /* Debug */,
+				CF3B4AB84D0F77E437676BAFB9C2086C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

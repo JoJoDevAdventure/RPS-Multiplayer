@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2679E30493F30FCD94CF9B00 /* Pods_RPS_MultiplayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E59F7C084B0F596175ED905 /* Pods_RPS_MultiplayerTests.framework */; };
+		8F8419987EEC32EA86832B4A /* Pods_RPS_Multiplayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */; };
 		A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DD29534CFD009936D6 /* AppDelegate.swift */; };
 		A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DF29534CFD009936D6 /* SceneDelegate.swift */; };
 		A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081E129534CFD009936D6 /* HomeScreen.swift */; };
@@ -21,6 +23,13 @@
 		A33082162953515E009936D6 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33082152953515E009936D6 /* UITableView+.swift */; };
 		A3308218295351AD009936D6 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3308217295351AD009936D6 /* UIView+.swift */; };
 		A330821B29535207009936D6 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A330821A29535207009936D6 /* Lottie */; };
+		A3448D942962C97C00F988E8 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = A3448D932962C97C00F988E8 /* swiftgen.yml */; };
+		A3448D962962CA5A00F988E8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3448D952962CA5A00F988E8 /* Colors.xcassets */; };
+		A3448D9A2962CAF300F988E8 /* colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3448D972962CAF300F988E8 /* colors.swift */; };
+		A3448D9B2962CAF300F988E8 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3448D982962CAF300F988E8 /* L10n.swift */; };
+		A3448D9C2962CAF300F988E8 /* assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3448D992962CAF300F988E8 /* assets.swift */; };
+		A3448DA32962CC0E00F988E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3448DA12962CC0E00F988E8 /* Localizable.strings */; };
+		CF66C5757E2F8BB5C90B3544 /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCB42DCAC20E63271D8820C /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		080B6FE601CA705A17FA18C9 /* Pods-RPS MultiplayerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS MultiplayerTests.release.xcconfig"; path = "Target Support Files/Pods-RPS MultiplayerTests/Pods-RPS MultiplayerTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F59A3E621C16FC5B662F68D /* Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer-RPS MultiplayerUITests/Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		524DBE3BB9666E2CDB9023D8 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer-RPS MultiplayerUITests/Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5CCB42DCAC20E63271D8820C /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		985CC9083D543376014EBCA9 /* Pods-RPS MultiplayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS MultiplayerTests.debug.xcconfig"; path = "Target Support Files/Pods-RPS MultiplayerTests/Pods-RPS MultiplayerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E59F7C084B0F596175ED905 /* Pods_RPS_MultiplayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_MultiplayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33081DA29534CFD009936D6 /* RPS Multiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPS Multiplayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33081DD29534CFD009936D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33081DF29534CFD009936D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +73,15 @@
 		A33082132953513D009936D6 /* NSLayout+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayout+.swift"; sourceTree = "<group>"; };
 		A33082152953515E009936D6 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		A3308217295351AD009936D6 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		A3448D932962C97C00F988E8 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		A3448D952962CA5A00F988E8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A3448D972962CAF300F988E8 /* colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = colors.swift; sourceTree = "<group>"; };
+		A3448D982962CAF300F988E8 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		A3448D992962CAF300F988E8 /* assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.swift; sourceTree = "<group>"; };
+		A3448DA22962CC0E00F988E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B7B3260F2C880026EAB96CED /* Pods-RPS Multiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.release.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.release.xcconfig"; sourceTree = "<group>"; };
+		E36C3175F60AECA85ADCEC76 /* Pods-RPS Multiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.debug.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.debug.xcconfig"; sourceTree = "<group>"; };
+		FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_Multiplayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +90,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A330821B29535207009936D6 /* Lottie in Frameworks */,
+				8F8419987EEC32EA86832B4A /* Pods_RPS_Multiplayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2679E30493F30FCD94CF9B00 /* Pods_RPS_MultiplayerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,19 +106,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF66C5757E2F8BB5C90B3544 /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB8050AD979CF98754B45B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */,
+				5CCB42DCAC20E63271D8820C /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework */,
+				9E59F7C084B0F596175ED905 /* Pods_RPS_MultiplayerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A33081D129534CFD009936D6 = {
 			isa = PBXGroup;
 			children = (
+				A3448D932962C97C00F988E8 /* swiftgen.yml */,
 				A33081DC29534CFD009936D6 /* RPS Multiplayer */,
 				A33081F629534D00009936D6 /* RPS MultiplayerTests */,
 				A330820029534D00009936D6 /* RPS MultiplayerUITests */,
 				A33081DB29534CFD009936D6 /* Products */,
+				EAFA62E56B2B5F7BD9D45388 /* Pods */,
+				1AB8050AD979CF98754B45B3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,12 +149,15 @@
 		A33081DC29534CFD009936D6 /* RPS Multiplayer */ = {
 			isa = PBXGroup;
 			children = (
+				A3448D922962C4EF00F988E8 /* SwiftGen */,
 				A330821F2953565A009936D6 /* Ressources */,
 				A330821C2953536D009936D6 /* Coordinator */,
 				A3308210295350D4009936D6 /* Extensions */,
 				A330821D295355B8009936D6 /* ViewController */,
 				A33081E929534CFF009936D6 /* Assets.xcassets */,
+				A3448D952962CA5A00F988E8 /* Colors.xcassets */,
 				A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */,
+				A3448DA12962CC0E00F988E8 /* Localizable.strings */,
 				A33081EE29534CFF009936D6 /* Info.plist */,
 				A33081E629534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld */,
 			);
@@ -181,6 +224,29 @@
 			path = Ressources;
 			sourceTree = "<group>";
 		};
+		A3448D922962C4EF00F988E8 /* SwiftGen */ = {
+			isa = PBXGroup;
+			children = (
+				A3448D992962CAF300F988E8 /* assets.swift */,
+				A3448D972962CAF300F988E8 /* colors.swift */,
+				A3448D982962CAF300F988E8 /* L10n.swift */,
+			);
+			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		EAFA62E56B2B5F7BD9D45388 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E36C3175F60AECA85ADCEC76 /* Pods-RPS Multiplayer.debug.xcconfig */,
+				B7B3260F2C880026EAB96CED /* Pods-RPS Multiplayer.release.xcconfig */,
+				1F59A3E621C16FC5B662F68D /* Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig */,
+				524DBE3BB9666E2CDB9023D8 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig */,
+				985CC9083D543376014EBCA9 /* Pods-RPS MultiplayerTests.debug.xcconfig */,
+				080B6FE601CA705A17FA18C9 /* Pods-RPS MultiplayerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -188,6 +254,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A330820729534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS Multiplayer" */;
 			buildPhases = (
+				48AAAABD9AD54A111357E31F /* [CP] Check Pods Manifest.lock */,
+				A3448DA42962CC4300F988E8 /* SwiftGen */,
 				A33081D629534CFD009936D6 /* Sources */,
 				A33081D729534CFD009936D6 /* Frameworks */,
 				A33081D829534CFD009936D6 /* Resources */,
@@ -208,6 +276,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A330820A29534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS MultiplayerTests" */;
 			buildPhases = (
+				4CA1B050F54ABFEFF8805F82 /* [CP] Check Pods Manifest.lock */,
 				A33081EF29534D00009936D6 /* Sources */,
 				A33081F029534D00009936D6 /* Frameworks */,
 				A33081F129534D00009936D6 /* Resources */,
@@ -226,6 +295,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A330820D29534D00009936D6 /* Build configuration list for PBXNativeTarget "RPS MultiplayerUITests" */;
 			buildPhases = (
+				30DD97BEE56F4DDC073F06B0 /* [CP] Check Pods Manifest.lock */,
 				A33081F929534D00009936D6 /* Sources */,
 				A33081FA29534D00009936D6 /* Frameworks */,
 				A33081FB29534D00009936D6 /* Resources */,
@@ -291,8 +361,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3448DA32962CC0E00F988E8 /* Localizable.strings in Resources */,
 				A33081ED29534CFF009936D6 /* LaunchScreen.storyboard in Resources */,
+				A3448D962962CA5A00F988E8 /* Colors.xcassets in Resources */,
 				A33081EA29534CFF009936D6 /* Assets.xcassets in Resources */,
+				A3448D942962C97C00F988E8 /* swiftgen.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,18 +385,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30DD97BEE56F4DDC073F06B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPS Multiplayer-RPS MultiplayerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48AAAABD9AD54A111357E31F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPS Multiplayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CA1B050F54ABFEFF8805F82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RPS MultiplayerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3448DA42962CC4300F988E8 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nPods/SwiftGen/bin/swiftgen\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A33081D629534CFD009936D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3448D9C2962CAF300F988E8 /* assets.swift in Sources */,
 				A33081E829534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld in Sources */,
 				A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */,
 				A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */,
 				A330821229535112009936D6 /* UITextfield+.swift in Sources */,
+				A3448D9B2962CAF300F988E8 /* L10n.swift in Sources */,
 				A3308218295351AD009936D6 /* UIView+.swift in Sources */,
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
 				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
+				A3448D9A2962CAF300F988E8 /* colors.swift in Sources */,
 				A33082162953515E009936D6 /* UITableView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +530,14 @@
 				A33081EC29534CFF009936D6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3448DA12962CC0E00F988E8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3448DA22962CC0E00F988E8 /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -488,6 +659,7 @@
 		};
 		A330820829534D00009936D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E36C3175F60AECA85ADCEC76 /* Pods-RPS Multiplayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -515,6 +687,7 @@
 		};
 		A330820929534D00009936D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7B3260F2C880026EAB96CED /* Pods-RPS Multiplayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -542,6 +715,7 @@
 		};
 		A330820B29534D00009936D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985CC9083D543376014EBCA9 /* Pods-RPS MultiplayerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +736,7 @@
 		};
 		A330820C29534D00009936D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 080B6FE601CA705A17FA18C9 /* Pods-RPS MultiplayerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -582,6 +757,7 @@
 		};
 		A330820E29534D00009936D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F59A3E621C16FC5B662F68D /* Pods-RPS Multiplayer-RPS MultiplayerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -600,6 +776,7 @@
 		};
 		A330820F29534D00009936D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 524DBE3BB9666E2CDB9023D8 /* Pods-RPS Multiplayer-RPS MultiplayerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
