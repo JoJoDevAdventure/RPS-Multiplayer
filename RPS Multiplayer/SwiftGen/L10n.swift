@@ -10,11 +10,15 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
-  /// Localizable.strings
-  ///   RPS Multiplayer
-  /// 
-  ///   Created by Youssef Bhl on 02/01/2023.
-  internal static let welcomeTitle = L10n.tr("Localizable", "welcomeTitle", fallback: "Hello")
+  internal enum Home {
+    /// Multiplayer
+    internal static let multiplayer = L10n.tr("Localizable", "Home.Multiplayer", fallback: "Multiplayer")
+    /// Localizable.strings
+    ///   RPS Multiplayer
+    /// 
+    ///   Created by Youssef Bhl on 02/01/2023.
+    internal static let singlePlayer = L10n.tr("Localizable", "Home.SinglePlayer", fallback: "Single Player")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

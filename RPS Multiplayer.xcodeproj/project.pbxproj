@@ -27,6 +27,14 @@
 		A3448D9B2962CAF300F988E8 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3448D982962CAF300F988E8 /* L10n.swift */; };
 		A3448DA32962CC0E00F988E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3448DA12962CC0E00F988E8 /* Localizable.strings */; };
 		A3448DAA2962D44200F988E8 /* assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3448DA92962D44200F988E8 /* assets.swift */; };
+		A3448DAD2962E54B00F988E8 /* CustomRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3448DAC2962E54B00F988E8 /* CustomRoundedButton.swift */; };
+		A3448DAF2962E76400F988E8 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3448DAE2962E76400F988E8 /* UIButton+.swift */; };
+		A37505EB29646A290050E08B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37505EA29646A290050E08B /* HomeViewModel.swift */; };
+		A38F1E012965963000F98621 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E002965963000F98621 /* SettingsViewController.swift */; };
+		A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E032965964600F98621 /* SettingsViewModel.swift */; };
+		A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E062965965E00F98621 /* ShopViewController.swift */; };
+		A38F1E092965966800F98621 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E082965966800F98621 /* ShopViewController.swift */; };
+		A38F1E0B296596EB00F98621 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E0A296596EB00F98621 /* Coordinator.swift */; };
 		CF66C5757E2F8BB5C90B3544 /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCB42DCAC20E63271D8820C /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +83,14 @@
 		A3448D982962CAF300F988E8 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		A3448DA22962CC0E00F988E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3448DA92962D44200F988E8 /* assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assets.swift; sourceTree = "<group>"; };
+		A3448DAC2962E54B00F988E8 /* CustomRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedButton.swift; sourceTree = "<group>"; };
+		A3448DAE2962E76400F988E8 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		A37505EA29646A290050E08B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		A38F1E002965963000F98621 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A38F1E032965964600F98621 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		A38F1E062965965E00F98621 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		A38F1E082965966800F98621 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
+		A38F1E0A296596EB00F98621 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		B7B3260F2C880026EAB96CED /* Pods-RPS Multiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.release.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.release.xcconfig"; sourceTree = "<group>"; };
 		E36C3175F60AECA85ADCEC76 /* Pods-RPS Multiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.debug.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_Multiplayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,7 +165,8 @@
 				A330821F2953565A009936D6 /* Ressources */,
 				A330821C2953536D009936D6 /* Coordinator */,
 				A3308210295350D4009936D6 /* Extensions */,
-				A330821D295355B8009936D6 /* ViewControllers */,
+				A3448DAB2962E52900F988E8 /* Views */,
+				A330821E2953563D009936D6 /* Core */,
 				A33081E929534CFF009936D6 /* Assets.xcassets */,
 				A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */,
 				A3448DA12962CC0E00F988E8 /* Localizable.strings */,
@@ -183,6 +200,7 @@
 				A33082132953513D009936D6 /* NSLayout+.swift */,
 				A33082152953515E009936D6 /* UITableView+.swift */,
 				A3308217295351AD009936D6 /* UIView+.swift */,
+				A3448DAE2962E76400F988E8 /* UIButton+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +208,7 @@
 		A330821C2953536D009936D6 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				A38F1E0A296596EB00F98621 /* Coordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -197,7 +216,7 @@
 		A330821D295355B8009936D6 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A330821E2953563D009936D6 /* Core */,
+				A33081E129534CFD009936D6 /* HomeScreen.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,7 +224,11 @@
 		A330821E2953563D009936D6 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A33081E129534CFD009936D6 /* HomeScreen.swift */,
+				A37505EF29646A6F0050E08B /* Multiplayer */,
+				A37505EE29646A690050E08B /* SinglePlayer */,
+				A37505ED29646A5C0050E08B /* Shop */,
+				A37505EC29646A540050E08B /* Settings */,
+				A37505E7296469D10050E08B /* Home */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -226,6 +249,127 @@
 				A3448D982962CAF300F988E8 /* L10n.swift */,
 			);
 			path = SwiftGen;
+			sourceTree = "<group>";
+		};
+		A3448DAB2962E52900F988E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3448DAC2962E54B00F988E8 /* CustomRoundedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A37505E7296469D10050E08B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A37505E929646A1A0050E08B /* ViewModel */,
+				A330821D295355B8009936D6 /* ViewControllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A37505E929646A1A0050E08B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A37505EA29646A290050E08B /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A37505EC29646A540050E08B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1DF9296595D400F98621 /* ViewModel */,
+				A38F1DF8296595C700F98621 /* ViewControllers */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A37505ED29646A5C0050E08B /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1DFA296595E000F98621 /* ViewModel */,
+				A38F1DFB296595E700F98621 /* ViewControllers */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		A37505EE29646A690050E08B /* SinglePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1DFD296595F700F98621 /* ViewModel */,
+				A38F1DFC296595EF00F98621 /* ViewControllers */,
+			);
+			path = SinglePlayer;
+			sourceTree = "<group>";
+		};
+		A37505EF29646A6F0050E08B /* Multiplayer */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1DFF2965960400F98621 /* ViewModel */,
+				A38F1DFE296595FD00F98621 /* ViewControllers */,
+			);
+			path = Multiplayer;
+			sourceTree = "<group>";
+		};
+		A38F1DF8296595C700F98621 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1E002965963000F98621 /* SettingsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A38F1DF9296595D400F98621 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1E032965964600F98621 /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A38F1DFA296595E000F98621 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1E082965966800F98621 /* ShopViewController.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A38F1DFB296595E700F98621 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A38F1E062965965E00F98621 /* ShopViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A38F1DFC296595EF00F98621 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A38F1DFD296595F700F98621 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A38F1DFE296595FD00F98621 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A38F1DFF2965960400F98621 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EAFA62E56B2B5F7BD9D45388 /* Pods */ = {
@@ -475,9 +619,17 @@
 				A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */,
 				A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */,
 				A330821229535112009936D6 /* UITextfield+.swift in Sources */,
+				A38F1E092965966800F98621 /* ShopViewController.swift in Sources */,
+				A3448DAD2962E54B00F988E8 /* CustomRoundedButton.swift in Sources */,
+				A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */,
 				A3448DAA2962D44200F988E8 /* assets.swift in Sources */,
+				A38F1E0B296596EB00F98621 /* Coordinator.swift in Sources */,
 				A3448D9B2962CAF300F988E8 /* L10n.swift in Sources */,
+				A3448DAF2962E76400F988E8 /* UIButton+.swift in Sources */,
+				A37505EB29646A290050E08B /* HomeViewModel.swift in Sources */,
+				A38F1E012965963000F98621 /* SettingsViewController.swift in Sources */,
 				A3308218295351AD009936D6 /* UIView+.swift in Sources */,
+				A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */,
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
 				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
 				A33082162953515E009936D6 /* UITableView+.swift in Sources */,

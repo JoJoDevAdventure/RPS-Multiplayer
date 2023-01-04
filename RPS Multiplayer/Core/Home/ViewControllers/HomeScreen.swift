@@ -26,7 +26,7 @@ class HomeScreen: UIViewController {
         
         init() {
             if UIDevice.current.userInterfaceIdiom == .phone {
-                top = 10
+                top = 20
                 right = -30
                 left = 30
                 bottom = 20
@@ -73,19 +73,36 @@ class HomeScreen: UIViewController {
     private lazy var purchaseButton: UIBarButtonItem = {
         let btn = UIBarButtonItem()
         btn.tintColor = UIColor(asset: Asset.Colors.label)
-        let img = UIImage(systemName: "cart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 24))
+        let img = UIImage(systemName: "cart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20))
         btn.image = img
-        btn.action = #selector(didTapSettings)
+        btn.action = #selector(didTapPurchase)
         return btn
     }()
     
-    // MARK: - Life cycle
+    private lazy var singlePlayerBtn = CustomRoundedButton(title: L10n.Home.singlePlayer)
+    
+    private lazy var multiplayerBtn = CustomRoundedButton(title: L10n.Home.multiplayer)
+    
+    // MARK: - ViewModel
+    
+    private var viewModel: HomeViewModel
+    
+    init(viewModel: HomeViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Life cycles
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(asset: Asset.Colors.background)
         setupUI()
-        setupConstraints()
+        setupFunc()
     }
     
     // MARK: - UI Setup
@@ -100,10 +117,8 @@ class HomeScreen: UIViewController {
         navigationController?.navigationBar.tintColor = UIColor(asset: Asset.Colors.label)
         navigationItem.rightBarButtonItem = settingsButton
         navigationItem.leftBarButtonItem = purchaseButton
-    }
-    
-    @objc private func didTapSettings() {
-        
+        view.addSubview(singlePlayerBtn)
+        view.addSubview(multiplayerBtn)
     }
     
     private func setupConstraints() {
@@ -113,15 +128,49 @@ class HomeScreen: UIViewController {
             logo.heightAnchor.constraint(equalToConstant: margins.logoHeight),
             logo.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             logo.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: margins.top * 2.5),
+            
+            // single player button
+            singlePlayerBtn.widthAnchor.constraint(equalTo: logo.widthAnchor, multiplier: 0.95),
+            singlePlayerBtn.heightAnchor.constraint(equalToConstant: 65),
+            singlePlayerBtn.topAnchor.constraint(equalTo: logo.bottomAnchor, constant: margins.top*5),
+            singlePlayerBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            
+            // Multiplayer button
+            multiplayerBtn.widthAnchor.constraint(equalTo: singlePlayerBtn.widthAnchor),
+            multiplayerBtn.heightAnchor.constraint(equalToConstant: 65),
+            multiplayerBtn.topAnchor.constraint(equalTo: singlePlayerBtn.bottomAnchor, constant: margins.top*3),
+            multiplayerBtn.centerXAnchor.constraint(equalTo: singlePlayerBtn.centerXAnchor),
         ]
         NSLayoutConstraint.activate(constraints)
+        singlePlayerBtn.layer.cornerRadius = 65/2
+        multiplayerBtn.layer.cornerRadius = 65/2
     }
     
-    // MARK: - Func Setup
+    // MARK: - Func
     
     private func setupFunc() {
-        
+        setupButtonsActions()
     }
+    
+    private func setupButtonsActions() {
+        singlePlayerBtn.addAction(UIAction(handler: { _ in
+            // TODO: - implement single player action
+        }), for: .touchUpInside)
+        
+        multiplayerBtn.addAction(UIAction(handler: { _ in
+            // TODO: - implement multiplayer action
+        }), for: .touchUpInside)
+    }
+    
+    @objc private func didTapSettings() {
+        viewModel.didPressSettings(vc: self)
+    }
+    
+    @objc private func didTapPurchase() {
+        viewModel.didPressShop(vc: self)
+    }
+    
+    
 
 }
 

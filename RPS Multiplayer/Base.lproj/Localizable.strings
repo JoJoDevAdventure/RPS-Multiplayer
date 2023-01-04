@@ -5,4 +5,5 @@
   Created by Youssef Bhl on 02/01/2023.
   
 */
-"welcomeTitle" = "Hello" ;
+"Home.SinglePlayer" = "Single Player" ;
+"Home.Multiplayer" = "Multiplayer" ;
