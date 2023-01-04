@@ -19,6 +19,10 @@ internal enum L10n {
     ///   Created by Youssef Bhl on 02/01/2023.
     internal static let singlePlayer = L10n.tr("Localizable", "Home.SinglePlayer", fallback: "Single Player")
   }
+  internal enum Settings {
+    /// Settings
+    internal static let title = L10n.tr("Localizable", "Settings.title", fallback: "Settings")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

@@ -62,7 +62,7 @@ class HomeScreen: UIViewController {
     }()
     
     private lazy var settingsButton: UIBarButtonItem = {
-        let btn = UIBarButtonItem()
+        let btn = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(didTapSettings))
         btn.tintColor = UIColor(asset: Asset.Colors.label)
         let img = UIImage(systemName: "gearshape", withConfiguration: UIImage.SymbolConfiguration(pointSize: 24))
         btn.image = img
@@ -71,7 +71,7 @@ class HomeScreen: UIViewController {
     }()
     
     private lazy var purchaseButton: UIBarButtonItem = {
-        let btn = UIBarButtonItem()
+        let btn = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(didTapPurchase))
         btn.tintColor = UIColor(asset: Asset.Colors.label)
         let img = UIImage(systemName: "cart", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20))
         btn.image = img

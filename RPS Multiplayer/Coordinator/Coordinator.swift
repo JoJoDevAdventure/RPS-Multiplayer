@@ -14,11 +14,11 @@ final class Coordinator {
     
     public func goToSettingsScreen(from viewController: UIViewController) {
         let settings = SettingsViewController()
-        viewController.navigationController?.present(settings, animated: true)
+        viewController.navigationController?.pushViewController(settings, animated: true)
     }
     
     public func goToShopScreen(from viewController: UIViewController) {
         let shop = ShopViewController()
-        viewController.navigationController?.present(shop, animated: true)
+        viewController.navigationController?.pushViewController(shop, animated: true)
     }
 }
