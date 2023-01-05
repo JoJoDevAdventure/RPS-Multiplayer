@@ -44,15 +44,14 @@ class SoundTableViewCell: UITableViewCell {
         return img
     }()
     
-    lazy var soundSlider : UISlider = {
-        let slider = UISlider()
+    lazy var soundSlider : CustomSlider = {
+        let slider = CustomSlider()
         slider.translatesAutoresizingMaskIntoConstraints = false
         slider.maximumValue = 10
         slider.isContinuous = false
         slider.minimumValue = 0
         slider.value = 10
-        slider.isUserInteractionEnabled = true
-        slider.tintColor = .magenta
+        slider.tintColor = UIColor(asset: Asset.Colors.label)
         slider.addTarget(self, action: #selector(sliderValueDidChange(_:)), for: .valueChanged)
         return slider
     }()

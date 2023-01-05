@@ -33,6 +33,7 @@
 		A37845732965F1FB00AF68C0 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37845722965F1FB00AF68C0 /* MusicTableViewCell.swift */; };
 		A37845762965F20E00AF68C0 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37845752965F20E00AF68C0 /* SoundTableViewCell.swift */; };
 		A37845782965F2FE00AF68C0 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37845772965F2FE00AF68C0 /* LanguageTableViewCell.swift */; };
+		A378457A2966039E00AF68C0 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37845792966039E00AF68C0 /* CustomSlider.swift */; };
 		A38F1E012965963000F98621 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E002965963000F98621 /* SettingsViewController.swift */; };
 		A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E032965964600F98621 /* SettingsViewModel.swift */; };
 		A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E062965965E00F98621 /* ShopViewController.swift */; };
@@ -92,6 +93,7 @@
 		A37845722965F1FB00AF68C0 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		A37845752965F20E00AF68C0 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
 		A37845772965F2FE00AF68C0 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
+		A37845792966039E00AF68C0 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		A38F1E002965963000F98621 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A38F1E032965964600F98621 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		A38F1E062965965E00F98621 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				A3448DAC2962E54B00F988E8 /* CustomRoundedButton.swift */,
+				A37845792966039E00AF68C0 /* CustomSlider.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -645,6 +648,7 @@
 				A3448D9B2962CAF300F988E8 /* L10n.swift in Sources */,
 				A3448DAF2962E76400F988E8 /* UIButton+.swift in Sources */,
 				A37505EB29646A290050E08B /* HomeViewModel.swift in Sources */,
+				A378457A2966039E00AF68C0 /* CustomSlider.swift in Sources */,
 				A37845732965F1FB00AF68C0 /* MusicTableViewCell.swift in Sources */,
 				A38F1E012965963000F98621 /* SettingsViewController.swift in Sources */,
 				A3308218295351AD009936D6 /* UIView+.swift in Sources */,
