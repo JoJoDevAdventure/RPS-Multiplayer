@@ -13,9 +13,8 @@ class CustomSlider: UISlider {
     @IBInspectable var trackHeight: CGFloat = 10
     
     @IBInspectable var thumbRadius: CGFloat = 5
+
     
-    // Custom thumb view which will be converted to UIImage
-    // and set as thumb. You can customize it's colors, border, etc.
     private lazy var thumbView: UIView = {
         let thumb = UIView()
         thumb.backgroundColor = .yellow//thumbTintColor

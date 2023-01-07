@@ -83,6 +83,13 @@ class HomeScreen: UIViewController {
     
     private lazy var multiplayerBtn = CustomRoundedButton(title: L10n.Home.multiplayer)
     
+    private lazy var termsButton : UIButton = {
+        let btn = UIButton()
+        btn.translatesAutoresizingMaskIntoConstraints = false
+        btn.setTitle("", for: <#T##UIControl.State#>)
+        return btn
+    }()
+    
     // MARK: - ViewModel
     
     private var viewModel: HomeViewModel
