@@ -25,4 +25,12 @@ final class HomeViewModel {
         coordinator.goToShopScreen(from: vc)
     }
     
+    public func didPressSinglePlayer(vc: UIViewController) {
+        coordinator.goToSinglePlayerScreen(from: vc)
+    }
+    
+    public func didPressMultiplayer(vc: UIViewController) {
+        coordinator.goToShopScreen(from: vc)
+    }
+    
 }

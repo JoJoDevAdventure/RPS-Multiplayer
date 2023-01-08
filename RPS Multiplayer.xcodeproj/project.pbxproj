@@ -39,6 +39,14 @@
 		A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E062965965E00F98621 /* ShopViewController.swift */; };
 		A38F1E092965966800F98621 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E082965966800F98621 /* ShopViewModel.swift */; };
 		A38F1E0B296596EB00F98621 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E0A296596EB00F98621 /* Coordinator.swift */; };
+		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
+		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
+		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
+		A3FA6296296AC60500D6192C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6295296AC60500D6192C /* Data.swift */; };
+		A3FA6298296AC7A300D6192C /* AvatarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6297296AC7A300D6192C /* AvatarSelectionView.swift */; };
+		A3FA629B296AC8C000D6192C /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA629A296AC8C000D6192C /* AvatarCollectionViewCell.swift */; };
+		A3FA629D296AC91E00D6192C /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA629C296AC91E00D6192C /* UICollectionView+.swift */; };
+		A3FA629F296ADF8100D6192C /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA629E296ADF8100D6192C /* CustomTextfield.swift */; };
 		CF66C5757E2F8BB5C90B3544 /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCB42DCAC20E63271D8820C /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +107,14 @@
 		A38F1E062965965E00F98621 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		A38F1E082965966800F98621 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		A38F1E0A296596EB00F98621 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
+		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
+		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
+		A3FA6295296AC60500D6192C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		A3FA6297296AC7A300D6192C /* AvatarSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSelectionView.swift; sourceTree = "<group>"; };
+		A3FA629A296AC8C000D6192C /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
+		A3FA629C296AC91E00D6192C /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UICollectionView+.swift"; path = "../../../../../Documents/UICollectionView+.swift"; sourceTree = "<group>"; };
+		A3FA629E296ADF8100D6192C /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
 		B7B3260F2C880026EAB96CED /* Pods-RPS Multiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.release.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.release.xcconfig"; sourceTree = "<group>"; };
 		E36C3175F60AECA85ADCEC76 /* Pods-RPS Multiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.debug.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_Multiplayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -171,6 +187,8 @@
 			children = (
 				A3448D922962C4EF00F988E8 /* SwiftGen */,
 				A330821F2953565A009936D6 /* Ressources */,
+				A3FA6294296AC5E200D6192C /* Data */,
+				A3FA6290296AB99C00D6192C /* Model */,
 				A330821C2953536D009936D6 /* Coordinator */,
 				A3308210295350D4009936D6 /* Extensions */,
 				A3448DAB2962E52900F988E8 /* Views */,
@@ -209,6 +227,7 @@
 				A33082152953515E009936D6 /* UITableView+.swift */,
 				A3308217295351AD009936D6 /* UIView+.swift */,
 				A3448DAE2962E76400F988E8 /* UIButton+.swift */,
+				A3FA629C296AC91E00D6192C /* UICollectionView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -262,8 +281,11 @@
 		A3448DAB2962E52900F988E8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3FA6299296AC86D00D6192C /* Avatars */,
 				A3448DAC2962E54B00F988E8 /* CustomRoundedButton.swift */,
 				A37845792966039E00AF68C0 /* CustomSlider.swift */,
+				A3FA628E296AB83400D6192C /* AvatarImageView.swift */,
+				A3FA629E296ADF8100D6192C /* CustomTextfield.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -367,6 +389,7 @@
 		A38F1DFC296595EF00F98621 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -390,6 +413,31 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A3FA6290296AB99C00D6192C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA6291296AB9AC00D6192C /* Avatar.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3FA6294296AC5E200D6192C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA6295296AC60500D6192C /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A3FA6299296AC86D00D6192C /* Avatars */ = {
+			isa = PBXGroup;
+			children = (
+				A3FA6297296AC7A300D6192C /* AvatarSelectionView.swift */,
+				A3FA629A296AC8C000D6192C /* AvatarCollectionViewCell.swift */,
+			);
+			path = Avatars;
 			sourceTree = "<group>";
 		};
 		EAFA62E56B2B5F7BD9D45388 /* Pods */ = {
@@ -641,20 +689,28 @@
 				A330821229535112009936D6 /* UITextfield+.swift in Sources */,
 				A38F1E092965966800F98621 /* ShopViewModel.swift in Sources */,
 				A3448DAD2962E54B00F988E8 /* CustomRoundedButton.swift in Sources */,
+				A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */,
 				A37845782965F2FE00AF68C0 /* LanguageTableViewCell.swift in Sources */,
 				A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */,
 				A3448DAA2962D44200F988E8 /* assets.swift in Sources */,
 				A38F1E0B296596EB00F98621 /* Coordinator.swift in Sources */,
+				A3FA629D296AC91E00D6192C /* UICollectionView+.swift in Sources */,
 				A3448D9B2962CAF300F988E8 /* L10n.swift in Sources */,
 				A3448DAF2962E76400F988E8 /* UIButton+.swift in Sources */,
+				A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */,
 				A37505EB29646A290050E08B /* HomeViewModel.swift in Sources */,
 				A378457A2966039E00AF68C0 /* CustomSlider.swift in Sources */,
 				A37845732965F1FB00AF68C0 /* MusicTableViewCell.swift in Sources */,
 				A38F1E012965963000F98621 /* SettingsViewController.swift in Sources */,
 				A3308218295351AD009936D6 /* UIView+.swift in Sources */,
+				A3FA629F296ADF8100D6192C /* CustomTextfield.swift in Sources */,
+				A3FA629B296AC8C000D6192C /* AvatarCollectionViewCell.swift in Sources */,
 				A37845762965F20E00AF68C0 /* SoundTableViewCell.swift in Sources */,
 				A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */,
+				A3FA6296296AC60500D6192C /* Data.swift in Sources */,
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
+				A3FA6298296AC7A300D6192C /* AvatarSelectionView.swift in Sources */,
+				A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */,
 				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
 				A33082162953515E009936D6 /* UITableView+.swift in Sources */,
 			);

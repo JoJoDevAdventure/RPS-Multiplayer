@@ -21,4 +21,15 @@ final class Coordinator {
         let shop = ShopViewController()
         viewController.navigationController?.pushViewController(shop, animated: true)
     }
+    
+    public func goToSinglePlayerScreen(from viewController: UIViewController) {
+        let singlePlayer = SinglePlayerInfoViewController()
+        viewController.navigationController?.pushViewController(singlePlayer, animated: true)
+    }
+    
+    public func showAvatarsSelection(from viewController: UIViewController) {
+        let avatars = AvatarSelectionView()
+        avatars.modalPresentationStyle = .popover
+        viewController.present(avatars, animated: true)
+    }
 }

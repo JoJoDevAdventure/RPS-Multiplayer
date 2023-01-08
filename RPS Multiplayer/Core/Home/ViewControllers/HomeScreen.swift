@@ -83,12 +83,6 @@ class HomeScreen: UIViewController {
     
     private lazy var multiplayerBtn = CustomRoundedButton(title: L10n.Home.multiplayer)
     
-    private lazy var termsButton : UIButton = {
-        let btn = UIButton()
-        btn.translatesAutoresizingMaskIntoConstraints = false
-        btn.setTitle("", for: <#T##UIControl.State#>)
-        return btn
-    }()
     
     // MARK: - ViewModel
     
@@ -161,7 +155,7 @@ class HomeScreen: UIViewController {
     
     private func setupButtonsActions() {
         singlePlayerBtn.addAction(UIAction(handler: { _ in
-            // TODO: - implement single player action
+            self.viewModel.didPressSinglePlayer(vc: self)
         }), for: .touchUpInside)
         
         multiplayerBtn.addAction(UIAction(handler: { _ in

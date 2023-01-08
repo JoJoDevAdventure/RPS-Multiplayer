@@ -23,6 +23,20 @@ internal enum L10n {
     /// Settings
     internal static let title = L10n.tr("Localizable", "Settings.title", fallback: "Settings")
   }
+  internal enum PlayerInfo {
+    internal enum SinglePlayer {
+      /// Avatar
+      internal static let avatar = L10n.tr("Localizable", "playerInfo.singlePlayer.avatar", fallback: "Avatar")
+      /// Nickname
+      internal static let nickname = L10n.tr("Localizable", "playerInfo.singlePlayer.nickname", fallback: "Nickname")
+      /// Swimming potato
+      internal static let nicknameExample = L10n.tr("Localizable", "playerInfo.singlePlayer.nicknameExample", fallback: "Swimming potato")
+      /// Play
+      internal static let play = L10n.tr("Localizable", "playerInfo.singlePlayer.play", fallback: "Play")
+      /// Player info
+      internal static let title = L10n.tr("Localizable", "playerInfo.singlePlayer.title", fallback: "Player info")
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

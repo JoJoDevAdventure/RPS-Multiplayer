@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "diversity_avatar_man_people_person_black_muslim_boy_icon_159082.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
