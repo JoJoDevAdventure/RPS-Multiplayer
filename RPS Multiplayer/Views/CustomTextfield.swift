@@ -13,7 +13,7 @@ class CustomTextfield: UITextField {
         super.init(frame: .zero)
         attributedPlaceholder = NSAttributedString(
             string: title,
-            attributes : [NSAttributedString.Key.foregroundColor: UIColor.white]
+            attributes : [NSAttributedString.Key.foregroundColor: UIColor.lightGray]
         )
         setupUI()
     }

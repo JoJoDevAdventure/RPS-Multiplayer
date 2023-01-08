@@ -14,3 +14,6 @@
 "playerInfo.singlePlayer.nickname" = "Nickname" ;
 "playerInfo.singlePlayer.nicknameExample" = "Swimming potato" ;
 "playerInfo.singlePlayer.play" = "Play" ;
+
+"pregame.vs" = "VS" ;
+"pregame.getReady" = "Get ready..." ;

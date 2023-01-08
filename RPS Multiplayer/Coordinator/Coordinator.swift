@@ -32,4 +32,10 @@ final class Coordinator {
         avatars.modalPresentationStyle = .popover
         viewController.present(avatars, animated: true)
     }
+    
+    public func goToPregameScreen(from viewController: UIViewController) {
+        let avatars = SinglePlayerPregameViewController()
+        avatars.modalPresentationStyle = .fullScreen
+        viewController.present(avatars, animated: true)
+    }
 }

@@ -47,6 +47,8 @@
 		A3FA629B296AC8C000D6192C /* AvatarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA629A296AC8C000D6192C /* AvatarCollectionViewCell.swift */; };
 		A3FA629D296AC91E00D6192C /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA629C296AC91E00D6192C /* UICollectionView+.swift */; };
 		A3FA629F296ADF8100D6192C /* CustomTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA629E296ADF8100D6192C /* CustomTextfield.swift */; };
+		A3FA62A1296AE6B100D6192C /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA62A0296AE6B100D6192C /* PlayButton.swift */; };
+		A3FA62A3296AF19900D6192C /* SinglePlayerPregameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA62A2296AF19900D6192C /* SinglePlayerPregameViewController.swift */; };
 		CF66C5757E2F8BB5C90B3544 /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CCB42DCAC20E63271D8820C /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +117,8 @@
 		A3FA629A296AC8C000D6192C /* AvatarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCollectionViewCell.swift; sourceTree = "<group>"; };
 		A3FA629C296AC91E00D6192C /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UICollectionView+.swift"; path = "../../../../../Documents/UICollectionView+.swift"; sourceTree = "<group>"; };
 		A3FA629E296ADF8100D6192C /* CustomTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextfield.swift; sourceTree = "<group>"; };
+		A3FA62A0296AE6B100D6192C /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		A3FA62A2296AF19900D6192C /* SinglePlayerPregameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerPregameViewController.swift; sourceTree = "<group>"; };
 		B7B3260F2C880026EAB96CED /* Pods-RPS Multiplayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.release.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.release.xcconfig"; sourceTree = "<group>"; };
 		E36C3175F60AECA85ADCEC76 /* Pods-RPS Multiplayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS Multiplayer.debug.xcconfig"; path = "Target Support Files/Pods-RPS Multiplayer/Pods-RPS Multiplayer.debug.xcconfig"; sourceTree = "<group>"; };
 		FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_Multiplayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,6 +290,7 @@
 				A37845792966039E00AF68C0 /* CustomSlider.swift */,
 				A3FA628E296AB83400D6192C /* AvatarImageView.swift */,
 				A3FA629E296ADF8100D6192C /* CustomTextfield.swift */,
+				A3FA62A0296AE6B100D6192C /* PlayButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +395,7 @@
 			isa = PBXGroup;
 			children = (
 				A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */,
+				A3FA62A2296AF19900D6192C /* SinglePlayerPregameViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -686,6 +692,7 @@
 				A33081E829534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld in Sources */,
 				A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */,
 				A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */,
+				A3FA62A1296AE6B100D6192C /* PlayButton.swift in Sources */,
 				A330821229535112009936D6 /* UITextfield+.swift in Sources */,
 				A38F1E092965966800F98621 /* ShopViewModel.swift in Sources */,
 				A3448DAD2962E54B00F988E8 /* CustomRoundedButton.swift in Sources */,
@@ -699,6 +706,7 @@
 				A3448DAF2962E76400F988E8 /* UIButton+.swift in Sources */,
 				A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */,
 				A37505EB29646A290050E08B /* HomeViewModel.swift in Sources */,
+				A3FA62A3296AF19900D6192C /* SinglePlayerPregameViewController.swift in Sources */,
 				A378457A2966039E00AF68C0 /* CustomSlider.swift in Sources */,
 				A37845732965F1FB00AF68C0 /* MusicTableViewCell.swift in Sources */,
 				A38F1E012965963000F98621 /* SettingsViewController.swift in Sources */,

@@ -37,6 +37,12 @@ internal enum L10n {
       internal static let title = L10n.tr("Localizable", "playerInfo.singlePlayer.title", fallback: "Player info")
     }
   }
+  internal enum Pregame {
+    /// Get ready...
+    internal static let getReady = L10n.tr("Localizable", "pregame.getReady", fallback: "Get ready...")
+    /// VS
+    internal static let vs = L10n.tr("Localizable", "pregame.vs", fallback: "VS")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

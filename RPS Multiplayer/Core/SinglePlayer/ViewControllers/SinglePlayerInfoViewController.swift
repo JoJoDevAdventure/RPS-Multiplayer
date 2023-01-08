@@ -70,12 +70,14 @@ class SinglePlayerInfoViewController: UIViewController {
     private lazy var avatarImage = AvatarImageView(frame: .zero)
     
     private lazy var nameTextfield = CustomTextfield(title: L10n.PlayerInfo.SinglePlayer.nicknameExample)
+    
+    private lazy var playButton = PlayButton(frame: .zero)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(asset: Asset.Colors.background)
         setupUI()
-        avatarImage.delegate = self
+        setupFunc()
     }
     
     private func setupUI() {
@@ -89,6 +91,10 @@ class SinglePlayerInfoViewController: UIViewController {
         view.addSubview(avatarLabel)
         view.addSubview(nicknameLabel)
         view.addSubview(avatarImage)
+        avatarImage.delegate = self
+        view.addSubview(nameTextfield)
+        nameTextfield.delegate = self
+        view.addSubview(playButton)
     }
     
     private func setupConstraints() {
@@ -102,14 +108,37 @@ class SinglePlayerInfoViewController: UIViewController {
             nicknameLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: margins.left),
             nicknameLabel.topAnchor.constraint(equalTo: avatarImage.bottomAnchor, constant: margins.top * 2),
             
-            nameTextfield.leftAnchor.constraint(equalTo: view.leftAnchor),
+            nameTextfield.leftAnchor.constraint(equalTo: view.leftAnchor, constant: margins.left),
             nameTextfield.topAnchor.constraint(equalTo: nicknameLabel.bottomAnchor, constant: margins.top),
             nameTextfield.rightAnchor.constraint(equalTo: view.rightAnchor, constant: margins.right),
-            nameTextfield.heightAnchor.constraint(equalToConstant: 75)
+            nameTextfield.heightAnchor.constraint(equalToConstant: 75),
+            
+            playButton.topAnchor.constraint(equalTo: nameTextfield.bottomAnchor, constant: margins.top * 1.5),
+            playButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            playButton.widthAnchor.constraint(equalTo: nameTextfield.widthAnchor),
+            playButton.heightAnchor.constraint(equalTo: nameTextfield.heightAnchor)
         ]
         NSLayoutConstraint.activate(constraints)
     }
     
+    private func setupFunc() {
+        setupGesture()
+        setupButtonActions()
+    }
+    
+    private func setupGesture() {
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(resignKeyboard)))
+    }
+    
+    @objc private func resignKeyboard() {
+        nameTextfield.resignFirstResponder()
+    }
+    
+    private func setupButtonActions() {
+        playButton.addAction(UIAction(handler: { _ in
+            Coordinator.shared.goToPregameScreen(from: self)
+        }), for: .touchUpInside)
+    }
 
 }
 
@@ -119,4 +148,11 @@ extension SinglePlayerInfoViewController: AvatarImageViewDelegate {
         Coordinator.shared.showAvatarsSelection(from: self)
     }
     
+}
+
+extension SinglePlayerInfoViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTextfield.resignFirstResponder()
+        return true
+    }
 }
