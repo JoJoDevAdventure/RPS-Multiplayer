@@ -38,4 +38,10 @@ final class Coordinator {
         avatars.modalPresentationStyle = .fullScreen
         viewController.present(avatars, animated: true)
     }
+    
+    public func goToSingleGameScreen(from viewController: UIViewController) {
+        let gameScreen = SinglePlayerGameViewController()
+        gameScreen.modalPresentationStyle = .fullScreen
+        viewController.present(gameScreen, animated: true)
+    }
 }

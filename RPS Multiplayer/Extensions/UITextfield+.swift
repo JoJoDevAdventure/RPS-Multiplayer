@@ -27,4 +27,36 @@ extension UITextField {
         self.rightViewMode = .always
     }
     
+    func errorAnimation() {
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+            self.transform = CGAffineTransform(translationX: 0, y: -2)
+        } completion: { _ in
+            UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+                self.transform = CGAffineTransform(translationX: 0, y: 4)
+            } completion: { _ in
+                UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+                    self.transform = CGAffineTransform(translationX: 0, y: -4)
+                } completion: { _ in
+                    UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+                        self.transform = CGAffineTransform(translationX: 0, y: 4)
+                    } completion: { _ in
+                        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+                            self.transform = CGAffineTransform(translationX: 0, y: 2)
+                        } completion: { _ in
+                            
+                        }
+                    }
+                }
+            }
+        }
+        
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+            self.layer.borderColor = UIColor.red.cgColor
+        } completion: { _ in
+            UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseInOut) {
+                self.layer.borderColor = UIColor.white.cgColor
+            }
+        }
+    }
+    
 }
