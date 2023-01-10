@@ -149,7 +149,7 @@ class SinglePlayerPregameViewController: UIViewController {
             
             self.VSLabel.alpha = 0
         } completion: { _ in
-            print("out")
+            Coordinator.shared.goToSingleGameScreen(from: self)
         }
     }
     

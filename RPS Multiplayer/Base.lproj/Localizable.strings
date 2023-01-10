@@ -12,7 +12,7 @@
 "playerInfo.singlePlayer.title" = "Player info" ;
 "playerInfo.singlePlayer.avatar" = "Avatar" ;
 "playerInfo.singlePlayer.nickname" = "Nickname" ;
-"playerInfo.singlePlayer.nicknameExample" = "Swimming potato" ;
+"playerInfo.singlePlayer.nicknameExample" = "Swimming potato.." ;
 "playerInfo.singlePlayer.play" = "Play" ;
 
 "pregame.vs" = "VS" ;

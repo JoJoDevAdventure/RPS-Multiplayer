@@ -29,8 +29,8 @@ internal enum L10n {
       internal static let avatar = L10n.tr("Localizable", "playerInfo.singlePlayer.avatar", fallback: "Avatar")
       /// Nickname
       internal static let nickname = L10n.tr("Localizable", "playerInfo.singlePlayer.nickname", fallback: "Nickname")
-      /// Swimming potato
-      internal static let nicknameExample = L10n.tr("Localizable", "playerInfo.singlePlayer.nicknameExample", fallback: "Swimming potato")
+      /// Swimming potato..
+      internal static let nicknameExample = L10n.tr("Localizable", "playerInfo.singlePlayer.nicknameExample", fallback: "Swimming potato..")
       /// Play
       internal static let play = L10n.tr("Localizable", "playerInfo.singlePlayer.play", fallback: "Play")
       /// Player info

@@ -44,4 +44,11 @@ final class Coordinator {
         gameScreen.modalPresentationStyle = .fullScreen
         viewController.present(gameScreen, animated: true)
     }
+    
+    public func goToHomeScreen(from viewController: UIViewController) {
+        let vm = HomeViewModel()
+        let home = HomeScreen(viewModel: vm)
+        home.modalPresentationStyle = .fullScreen
+        viewController.present(home, animated: true)
+    }
 }

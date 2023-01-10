@@ -29,4 +29,11 @@ class CustomTextfield: UITextField {
         setLeftPaddingPoints(15)
     }
     
+    public func getInputString() -> String? {
+        guard let input = text, text != "", text != nil else  {
+            return nil
+        }
+        return input
+    }
+    
 }

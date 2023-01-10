@@ -135,11 +135,16 @@ class SinglePlayerInfoViewController: UIViewController {
     }
     
     private func setupButtonActions() {
-        playButton.addAction(UIAction(handler: { _ in
+        playButton.addAction(UIAction(handler: { _  in
+            guard let _ = self.nameTextfield.getInputString() else {
+                self.nameTextfield.errorAnimation()
+                return
+            }
             Coordinator.shared.goToPregameScreen(from: self)
         }), for: .touchUpInside)
     }
 
+    
 }
 
 extension SinglePlayerInfoViewController: AvatarImageViewDelegate {
@@ -154,5 +159,19 @@ extension SinglePlayerInfoViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         nameTextfield.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        guard let text = textField.text else {
+            return
+        }
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let maxLength = 15
+        let currentString = (textField.text ?? "") as NSString
+        let newString = currentString.replacingCharacters(in: range, with: string)
+
+        return newString.count <= maxLength
     }
 }

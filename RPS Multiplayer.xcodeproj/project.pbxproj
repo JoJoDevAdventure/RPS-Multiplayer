@@ -32,6 +32,9 @@
 		A36B7919296BF88E004F5E9F /* SinglePlayerGameViewControllerSinglPlayereGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B7918296BF88E004F5E9F /* SinglePlayerGameViewControllerSinglPlayereGameViewController.swift */; };
 		A36B791C296BFB17004F5E9F /* GameScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B791B296BFB17004F5E9F /* GameScoreView.swift */; };
 		A36B791E296BFED1004F5E9F /* HandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B791D296BFED1004F5E9F /* HandView.swift */; };
+		A36B7921296DA793004F5E9F /* RockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B7920296DA793004F5E9F /* RockButton.swift */; };
+		A36B7923296DA7E1004F5E9F /* PaperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B7922296DA7E1004F5E9F /* PaperButton.swift */; };
+		A36B7925296DA80C004F5E9F /* ScissorsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36B7924296DA80C004F5E9F /* ScissorsButton.swift */; };
 		A37505EB29646A290050E08B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37505EA29646A290050E08B /* HomeViewModel.swift */; };
 		A37845732965F1FB00AF68C0 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37845722965F1FB00AF68C0 /* MusicTableViewCell.swift */; };
 		A37845762965F20E00AF68C0 /* SoundTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37845752965F20E00AF68C0 /* SoundTableViewCell.swift */; };
@@ -105,6 +108,9 @@
 		A36B7918296BF88E004F5E9F /* SinglePlayerGameViewControllerSinglPlayereGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerGameViewControllerSinglPlayereGameViewController.swift; sourceTree = "<group>"; };
 		A36B791B296BFB17004F5E9F /* GameScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreView.swift; sourceTree = "<group>"; };
 		A36B791D296BFED1004F5E9F /* HandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandView.swift; sourceTree = "<group>"; };
+		A36B7920296DA793004F5E9F /* RockButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockButton.swift; sourceTree = "<group>"; };
+		A36B7922296DA7E1004F5E9F /* PaperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperButton.swift; sourceTree = "<group>"; };
+		A36B7924296DA80C004F5E9F /* ScissorsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScissorsButton.swift; sourceTree = "<group>"; };
 		A37505EA29646A290050E08B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A37845722965F1FB00AF68C0 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		A37845752965F20E00AF68C0 /* SoundTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundTableViewCell.swift; sourceTree = "<group>"; };
@@ -305,10 +311,21 @@
 		A36B791A296BFAEF004F5E9F /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				A36B791F296DA76A004F5E9F /* Buttons */,
 				A36B791B296BFB17004F5E9F /* GameScoreView.swift */,
 				A36B791D296BFED1004F5E9F /* HandView.swift */,
 			);
 			path = Game;
+			sourceTree = "<group>";
+		};
+		A36B791F296DA76A004F5E9F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				A36B7920296DA793004F5E9F /* RockButton.swift */,
+				A36B7922296DA7E1004F5E9F /* PaperButton.swift */,
+				A36B7924296DA80C004F5E9F /* ScissorsButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		A37505E7296469D10050E08B /* Home */ = {
@@ -716,6 +733,7 @@
 				A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */,
 				A37845782965F2FE00AF68C0 /* LanguageTableViewCell.swift in Sources */,
 				A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */,
+				A36B7923296DA7E1004F5E9F /* PaperButton.swift in Sources */,
 				A3448DAA2962D44200F988E8 /* assets.swift in Sources */,
 				A38F1E0B296596EB00F98621 /* Coordinator.swift in Sources */,
 				A3FA629D296AC91E00D6192C /* UICollectionView+.swift in Sources */,
@@ -737,9 +755,11 @@
 				A36B791E296BFED1004F5E9F /* HandView.swift in Sources */,
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
 				A3FA6298296AC7A300D6192C /* AvatarSelectionView.swift in Sources */,
+				A36B7925296DA80C004F5E9F /* ScissorsButton.swift in Sources */,
 				A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */,
 				A36B7919296BF88E004F5E9F /* SinglePlayerGameViewControllerSinglPlayereGameViewController.swift in Sources */,
 				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
+				A36B7921296DA793004F5E9F /* RockButton.swift in Sources */,
 				A33082162953515E009936D6 /* UITableView+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
