@@ -17,6 +17,20 @@ class GameScoreView: UIView {
         return view
     }()
     
+    private lazy var player1Score: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .red
+        return view
+    }()
+    
+    private lazy var player2Score: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = .green
+        return view
+    }()
+    
     private lazy var centerMark: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -25,8 +39,25 @@ class GameScoreView: UIView {
         return view
     }()
     
-    private lazy var avatar1Image: UIImage = {
-        let image = UIImage()
+    private lazy var avatar1Image: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(asset: Asset.Images.Avatars.avatar1)
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        image.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        image.layer.cornerRadius = 30
+        image.clipsToBounds = true
+        return image
+    }()
+    
+    private lazy var avatar2Image: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage(asset: Asset.Images.Avatars.avatar1)
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.widthAnchor.constraint(equalToConstant: 60).isActive = true
+        image.heightAnchor.constraint(equalToConstant: 60).isActive = true
+        image.layer.cornerRadius = 30
+        image.clipsToBounds = true
         return image
     }()
 
@@ -34,6 +65,8 @@ class GameScoreView: UIView {
         super.init(frame: frame)
         setupUI()
         setupFunc()
+        setupPlayer1Score(Score: 3)
+        setupPlayer2Score(Score: 2)
     }
     
     required init?(coder: NSCoder) {
@@ -48,6 +81,10 @@ class GameScoreView: UIView {
     
     private func setupSubviews() {
         addSubview(progressionBar)
+        addSubview(player1Score)
+        addSubview(player2Score)
+        addSubview(avatar1Image)
+        addSubview(avatar2Image)
         addSubview(centerMark)
     }
     
@@ -61,7 +98,51 @@ class GameScoreView: UIView {
             centerMark.centerYAnchor.constraint(equalTo: progressionBar.centerYAnchor),
             centerMark.heightAnchor.constraint(equalToConstant: 5),
             centerMark.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
-            centerMark.widthAnchor.constraint(equalTo: progressionBar.widthAnchor, constant: 10)
+            centerMark.widthAnchor.constraint(equalTo: progressionBar.widthAnchor, constant: 10),
+            
+            avatar1Image.topAnchor.constraint(equalTo: progressionBar.topAnchor, constant: -10),
+            avatar1Image.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
+            
+            player1Score.widthAnchor.constraint(equalTo: progressionBar.widthAnchor),
+            player1Score.topAnchor.constraint(equalTo: progressionBar.topAnchor),
+            player1Score.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
+            
+            avatar2Image.bottomAnchor.constraint(equalTo: progressionBar.bottomAnchor, constant: 10),
+            avatar2Image.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
+            
+            player2Score.widthAnchor.constraint(equalTo: progressionBar.widthAnchor),
+            player2Score.bottomAnchor.constraint(equalTo: progressionBar.bottomAnchor),
+            player2Score.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
+        ]
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func setupPlayer1Score(Score: Int) {
+        var height = 0.0
+        switch Score {
+        case 0 : height = 0
+        case 1 : height = 0.333
+        case 2 : height = 0.666
+        case 3 : height = 1
+        default : break
+        }
+        let constraints = [
+            player1Score.heightAnchor.constraint(equalTo: progressionBar.heightAnchor, multiplier: CGFloat(height/2))
+        ]
+        NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func setupPlayer2Score(Score: Int) {
+        var height = 0.0
+        switch Score {
+        case 0 : height = 0
+        case 1 : height = 0.333
+        case 2 : height = 0.666
+        case 3 : height = 1
+        default : break
+        }
+        let constraints = [
+            player2Score.heightAnchor.constraint(equalTo: progressionBar.heightAnchor, multiplier: CGFloat(height/2))
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -91,7 +172,8 @@ extension GameScoreView {
     }
     
     public func setScore(player1 score1: Int, player2 score2: Int) {
-        
+        setupPlayer1Score(Score: score1)
+        setupPlayer2Score(Score: score2)
     }
     
     public func resetScore() {
