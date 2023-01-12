@@ -19,7 +19,7 @@ class RockButton: UIButton {
     private lazy var iconPressed: UIImage? = {
         let image = UIImage(asset: Asset.Images.Icons.rockIcon)
         image?.withConfiguration(UIImage.SymbolConfiguration(pointSize: 32))
-        image?.withTintColor(.white)
+        image?.withTintColor(UIColor(asset: Asset.Colors.darkPurple)!, renderingMode: .automatic)
         return image
     }()
 

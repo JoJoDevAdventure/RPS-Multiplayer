@@ -34,14 +34,20 @@ class SinglePlayerGameViewController: UIViewController {
     private func setupSubviews() {
         scoreBar.addViewOn(view)
         view.addSubview(rockButton)
+        view.addSubview(paperButton)
+        view.addSubview(scissorsButton)
     }
     
     private func setupConstraints() {
         let constraints = [
-            rockButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            rockButton.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            rockButton.rightAnchor.constraint(equalTo: paperButton.leftAnchor, constant: -30),
+            rockButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             
+            paperButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            paperButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
             
+            scissorsButton.leftAnchor.constraint(equalTo: paperButton.rightAnchor, constant: 30),
+            scissorsButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
         ]
         NSLayoutConstraint.activate(constraints)
     }
