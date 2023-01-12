@@ -65,8 +65,6 @@ class GameScoreView: UIView {
         super.init(frame: frame)
         setupUI()
         setupFunc()
-        setupPlayer1Score(Score: 3)
-        setupPlayer2Score(Score: 2)
     }
     
     required init?(coder: NSCoder) {
@@ -103,21 +101,21 @@ class GameScoreView: UIView {
             avatar1Image.topAnchor.constraint(equalTo: progressionBar.topAnchor, constant: -10),
             avatar1Image.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
             
-            player1Score.widthAnchor.constraint(equalTo: progressionBar.widthAnchor),
-            player1Score.topAnchor.constraint(equalTo: progressionBar.topAnchor),
-            player1Score.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
+
             
             avatar2Image.bottomAnchor.constraint(equalTo: progressionBar.bottomAnchor, constant: 10),
             avatar2Image.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
             
-            player2Score.widthAnchor.constraint(equalTo: progressionBar.widthAnchor),
-            player2Score.bottomAnchor.constraint(equalTo: progressionBar.bottomAnchor),
-            player2Score.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
+
         ]
         NSLayoutConstraint.activate(constraints)
     }
     
     private func setupPlayer1Score(Score: Int) {
+        player1Score.removeFromSuperview()
+        addSubview(player1Score)
+        bringSubviewToFront(avatar1Image)
+        bringSubviewToFront(centerMark)
         var height = 0.0
         switch Score {
         case 0 : height = 0
@@ -127,12 +125,19 @@ class GameScoreView: UIView {
         default : break
         }
         let constraints = [
-            player1Score.heightAnchor.constraint(equalTo: progressionBar.heightAnchor, multiplier: CGFloat(height/2))
+            player1Score.heightAnchor.constraint(equalTo: progressionBar.heightAnchor, multiplier: CGFloat(height/2)),
+            player1Score.widthAnchor.constraint(equalTo: progressionBar.widthAnchor),
+            player1Score.topAnchor.constraint(equalTo: progressionBar.topAnchor),
+            player1Score.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
         ]
         NSLayoutConstraint.activate(constraints)
     }
     
     private func setupPlayer2Score(Score: Int) {
+        player2Score.removeFromSuperview()
+        addSubview(player2Score)
+        bringSubviewToFront(avatar2Image)
+        bringSubviewToFront(centerMark)
         var height = 0.0
         switch Score {
         case 0 : height = 0
@@ -142,7 +147,10 @@ class GameScoreView: UIView {
         default : break
         }
         let constraints = [
-            player2Score.heightAnchor.constraint(equalTo: progressionBar.heightAnchor, multiplier: CGFloat(height/2))
+            player2Score.heightAnchor.constraint(equalTo: progressionBar.heightAnchor, multiplier: CGFloat(height/2)),
+            player2Score.widthAnchor.constraint(equalTo: progressionBar.widthAnchor),
+            player2Score.bottomAnchor.constraint(equalTo: progressionBar.bottomAnchor),
+            player2Score.centerXAnchor.constraint(equalTo: progressionBar.centerXAnchor),
         ]
         NSLayoutConstraint.activate(constraints)
     }

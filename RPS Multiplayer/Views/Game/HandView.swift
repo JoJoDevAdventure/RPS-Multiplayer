@@ -58,8 +58,8 @@ class HandView: UIImageView {
     }
     
     private func handMovingAnimation() {
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: [.autoreverse, .repeat]) {
-            self.transform = self.transform.translatedBy(x: 0, y: -40)
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: [.autoreverse, .repeat]) {
+            self.transform = self.transform.translatedBy(x: 0, y: -50)
         }
     }
 
@@ -70,16 +70,13 @@ extension HandView {
     public func userDidChose(choice: RPS) {
         stopAnimation()
         handRevealAnimation(choice: choice)
-        goBackToRest()
     }
     
     public func goBackToRest() {
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
-            self.layer.removeAllAnimations()
-            self.stopAnimation()
-            self.image = self.avatar.hand.restImage
-            self.startAnimation()
-        }))
+        self.layer.removeAllAnimations()
+        self.stopAnimation()
+        self.image = self.avatar.hand.restImage
+        self.startAnimation()
     }
     
     public func startAnimation() {
@@ -126,7 +123,7 @@ extension HandView {
         self.removeFromSuperview()
     }
     
-    public func showLosingAnimation() {
+    public func losingAnimation() {
         
         let original = image
         

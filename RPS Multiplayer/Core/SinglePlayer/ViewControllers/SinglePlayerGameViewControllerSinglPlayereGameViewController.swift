@@ -18,11 +18,33 @@ class SinglePlayerGameViewController: UIViewController {
     private lazy var rockButton = RockButton()
     private lazy var paperButton = PaperButton()
     private lazy var scissorsButton = ScissorsButton()
-
+    
+    let viewModel : SinglePlayerGameViewModel
+    
+    init(viewModel : SinglePlayerGameViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+        viewModel.output = self
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         setupFunc()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        botHandView.startAnimation()
+        playerHandView.startAnimation()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        botHandView.stopAnimation()
+        playerHandView.stopAnimation()
     }
     
     private func setupUI() {
@@ -43,6 +65,14 @@ class SinglePlayerGameViewController: UIViewController {
         paperButton.delegate = self
         view.addSubview(scissorsButton)
         scissorsButton.delegate = self
+        
+        navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(didTapLeave))
+        navigationController?.navigationBar.isHidden = false
+        navigationController?.toolbar.isHidden = false
+    }
+    
+    @objc private func didTapLeave() {
+        Coordinator.shared.goToHomeScreen(from: self)
     }
     
     private func setupConstraints() {
@@ -59,6 +89,18 @@ class SinglePlayerGameViewController: UIViewController {
         NSLayoutConstraint.activate(constraints)
     }
     
+    private func hideButtons() {
+        rockButton.isHidden = true
+        paperButton.isHidden = true
+        scissorsButton.isHidden = true
+    }
+    
+    private func showButton() {
+        rockButton.isHidden = false
+        paperButton.isHidden = false
+        scissorsButton.isHidden = false
+    }
+    
     private func setupFunc() {
         
     }
@@ -68,18 +110,70 @@ class SinglePlayerGameViewController: UIViewController {
 extension SinglePlayerGameViewController: RockButtonDelegate, PaperButtonDelegate, ScissorsButtonDelegate {
     
     func didSelectRock() {
-        botHandView.userDidChose(choice: .scissors)
+        hideButtons()
+        let bot = viewModel.generateBotChoice()
+        
         playerHandView.userDidChose(choice: .rock)
+        botHandView.userDidChose(choice: bot)
+        
+        viewModel.playerDidChose(playerChoice: .rock)
     }
     
     func didSelectPaper() {
-        print("Paper")
-        playerHandView.userDidChose(choice: .rock)
+        hideButtons()
+        let bot = viewModel.generateBotChoice()
+        
+        playerHandView.userDidChose(choice: .paper)
+        botHandView.userDidChose(choice: bot)
+        
+        viewModel.playerDidChose(playerChoice: .paper)
     }
     
     func didSelectScissors() {
-        print("Scissorrs")
+        hideButtons()
+        let bot = viewModel.generateBotChoice()
+        
+        playerHandView.userDidChose(choice: .scissors)
+        botHandView.userDidChose(choice: bot)
+        
+        viewModel.playerDidChose(playerChoice: .scissors)
+    }
+    
+}
+
+extension SinglePlayerGameViewController: SinglePlayerGameViewModelOutPut {
+    
+    func draw() {
+        // TODO: DRAW animation
+    }
+    
+    func won(botScore: Int, playerScore: Int) {
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
+            self.botHandView.losingAnimation()
+            self.scoreBar.setScore(player1: botScore, player2: playerScore)
+        }))
+        
         
     }
+    
+    func lost(botScore: Int, playerScore: Int) {
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
+            self.playerHandView.losingAnimation()
+            self.scoreBar.setScore(player1: botScore, player2: playerScore)
+        }))
+    }
+    
+    func resetGame() {
+        DispatchQueue.main.async {
+            self.botHandView.goBackToRest()
+            self.playerHandView.goBackToRest()
+            self.showButton()
+        }
+    }
+    
+    
+    
     
 }

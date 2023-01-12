@@ -17,8 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.backgroundColor = UIColor(asset: Asset.Colors.background)
         let vm = HomeViewModel()
-//        let nav = UINavigationController(rootViewController: HomeScreen(viewModel: vm))
-        let nav = UINavigationController(rootViewController: SinglePlayerGameViewController())
+        let nav = UINavigationController(rootViewController: HomeScreen(viewModel: vm))
+//        let vm = SinglePlayerGameViewModel()
+//        let nav = UINavigationController(rootViewController: SinglePlayerGameViewController(viewModel: vm))
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
     }
