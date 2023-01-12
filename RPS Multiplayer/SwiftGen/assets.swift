@@ -27,12 +27,19 @@ internal enum Asset {
   internal static let accentColor = ColorAsset(name: "AccentColor")
   internal enum Colors {
     internal static let background = ColorAsset(name: "Colors/Background")
+    internal static let darkPurple = ColorAsset(name: "Colors/DarkPurple")
     internal static let label = ColorAsset(name: "Colors/Label")
+    internal static let lightPurple = ColorAsset(name: "Colors/LightPurple")
     internal static let orange = ColorAsset(name: "Colors/Orange")
   }
   internal enum Images {
     internal enum Avatars {
       internal static let avatar1 = ImageAsset(name: "Images/Avatars/avatar1")
+    }
+    internal enum Icons {
+      internal static let paperIcon = ImageAsset(name: "Images/Icons/PaperIcon")
+      internal static let rockIcon = ImageAsset(name: "Images/Icons/RockIcon")
+      internal static let scissorsIcon = ImageAsset(name: "Images/Icons/ScissorsIcon")
     }
     internal static let logo = ImageAsset(name: "Images/Logo")
   }
