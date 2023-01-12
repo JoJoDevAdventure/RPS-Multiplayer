@@ -48,6 +48,8 @@ class RockButton: UIButton {
             heightAnchor.constraint(equalToConstant: 80),
             widthAnchor.constraint(equalTo: heightAnchor),
         ]
+        layer.cornerRadius = 40
+        clipsToBounds = true
         NSLayoutConstraint.activate(constraints)
     }
     

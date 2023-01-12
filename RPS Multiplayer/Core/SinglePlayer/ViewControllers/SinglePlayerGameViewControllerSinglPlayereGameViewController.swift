@@ -39,7 +39,9 @@ class SinglePlayerGameViewController: UIViewController {
     private func setupConstraints() {
         let constraints = [
             rockButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            rockButton.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+            rockButton.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            
+            
         ]
         NSLayoutConstraint.activate(constraints)
     }
