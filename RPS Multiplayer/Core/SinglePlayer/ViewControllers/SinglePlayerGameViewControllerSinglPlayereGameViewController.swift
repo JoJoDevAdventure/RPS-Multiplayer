@@ -33,8 +33,10 @@ class SinglePlayerGameViewController: UIViewController {
     
     private func setupSubviews() {
         scoreBar.addViewOn(view)
-        playerHandView.showOnView(view: view, position: .bottom,withAnimation: true)
+        
         botHandView.showOnView(view: view, position: .top, withAnimation: true)
+        playerHandView.showOnView(view: view, position: .bottom,withAnimation: true)
+
         view.addSubview(rockButton)
         rockButton.delegate = self
         view.addSubview(paperButton)
@@ -66,16 +68,18 @@ class SinglePlayerGameViewController: UIViewController {
 extension SinglePlayerGameViewController: RockButtonDelegate, PaperButtonDelegate, ScissorsButtonDelegate {
     
     func didSelectRock() {
-        print("Rock")
-        botHandView.showOnView(view: view, position: .top, withAnimation: false)
+        botHandView.userDidChose(choice: .scissors)
+        playerHandView.userDidChose(choice: .rock)
     }
     
     func didSelectPaper() {
         print("Paper")
+        playerHandView.userDidChose(choice: .rock)
     }
     
     func didSelectScissors() {
         print("Scissorrs")
+        
     }
     
 }

@@ -44,8 +44,8 @@ class HandView: UIImageView {
     }
     
     private func handRevealAnimation(choice: RPS) {
-        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1) {
-            self.transform = self.transform.translatedBy(x: 0, y: 100)
+        UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 1, initialSpringVelocity: 1) {
+            self.transform = self.transform.translatedBy(x: 0, y: -80)
             switch choice {
             case .rock:
                 self.image = self.avatar.hand.rockImage
@@ -69,7 +69,6 @@ class HandView: UIImageView {
                 }
             }
         }
-        
         handMovingAnimator.startAnimation()
     }
 
@@ -77,33 +76,22 @@ class HandView: UIImageView {
 
 extension HandView {
     
-    public func userDidChoseRock() {
-        handMovingAnimator.stopAnimation(false)
-    }
-    
-    public func userDidChosePaper() {
-        self.layer.removeAllAnimations()
-    }
-    
-    public func userDidChoseScissors() {
-        self.layer.removeAllAnimations()
+    public func userDidChose(choice: RPS) {
+        stopAnimation()
     }
     
     public func goBackToRest() {
         
     }
     
-    public func startAnimation(position: HandPosition) {
-        switch position {
-        case .top:
-            handMovingAnimation()
-        case .bottom:
-            handMovingAnimation()
-        }
+    public func startAnimation() {
+        handMovingAnimation()
     }
     
     public func stopAnimation() {
-        handMovingAnimator.stopAnimation(false)
+        if handMovingAnimator.isRunning {
+            handMovingAnimator.stopAnimation(false)
+        }
     }
     
     public func showOnView(view: UIView, position: HandPosition, withAnimation: Bool) {
@@ -125,7 +113,7 @@ extension HandView {
         NSLayoutConstraint.activate(constraints)
         
         if withAnimation {
-            startAnimation(position: position)
+            startAnimation()
         }
     }
     
