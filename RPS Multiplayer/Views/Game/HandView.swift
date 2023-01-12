@@ -15,11 +15,11 @@ public enum HandPosition {
 class HandView: UIImageView {
     
     private var avatar: Avatar
-    
-    var handMovingAnimator = UIViewPropertyAnimator(duration: 2, curve: .easeInOut)
+    private var position: HandPosition
 
-    init(avatar: Avatar) {
+    init(avatar: Avatar, position: HandPosition) {
         self.avatar = avatar
+        self.position = position
         super.init(frame: .zero)
         setupUI()
     }
@@ -45,7 +45,7 @@ class HandView: UIImageView {
     
     private func handRevealAnimation(choice: RPS) {
         UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 1, initialSpringVelocity: 1) {
-            self.transform = self.transform.translatedBy(x: 0, y: -80)
+            self.transform = self.transform.translatedBy(x: 0, y: -70)
             switch choice {
             case .rock:
                 self.image = self.avatar.hand.rockImage
@@ -58,18 +58,9 @@ class HandView: UIImageView {
     }
     
     private func handMovingAnimation() {
-        handMovingAnimator = UIViewPropertyAnimator(duration: 2, curve: .easeInOut) {
-            UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1) {
-                self.transform = self.transform.translatedBy(x: 0, y: -40)
-            } completion: { _ in
-                UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1) {
-                    self.transform = self.transform.translatedBy(x: 0, y: 40)
-                } completion: { _ in
-                    self.handMovingAnimation()
-                }
-            }
+        UIView.animate(withDuration: 2, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: [.autoreverse, .repeat]) {
+            self.transform = self.transform.translatedBy(x: 0, y: -40)
         }
-        handMovingAnimator.startAnimation()
     }
 
 }
@@ -78,10 +69,18 @@ extension HandView {
     
     public func userDidChose(choice: RPS) {
         stopAnimation()
+        handRevealAnimation(choice: choice)
+        goBackToRest()
     }
     
     public func goBackToRest() {
-        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
+//            self.layer.removeAllAnimations()
+//            self.stopAnimation()
+//            self.image = self.avatar.hand.restImage
+//            self.startAnimation()
+            self.showLosingAnimation()
+        }))
     }
     
     public func startAnimation() {
@@ -89,12 +88,19 @@ extension HandView {
     }
     
     public func stopAnimation() {
-        if handMovingAnimator.isRunning {
-            handMovingAnimator.stopAnimation(false)
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1) { [weak self] in
+            self?.transform = CGAffineTransform.identity
+            switch self?.position {
+            case .top : self?.transform = CGAffineTransform(rotationAngle: 3.2)
+            case .bottom : return
+            case .none:
+                break
+            }
         }
+        layer.removeAllAnimations()
     }
     
-    public func showOnView(view: UIView, position: HandPosition, withAnimation: Bool) {
+    public func showOnView(view: UIView, withAnimation: Bool) {
         view.addSubview(self)
         var constraints: [NSLayoutConstraint] = []
         switch position {
@@ -119,5 +125,10 @@ extension HandView {
     
     public func hide() {
         self.removeFromSuperview()
+    }
+    
+    public func showLosingAnimation() {
+        tintColor = .red
+        
     }
 }
