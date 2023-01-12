@@ -75,11 +75,10 @@ extension HandView {
     
     public func goBackToRest() {
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
-//            self.layer.removeAllAnimations()
-//            self.stopAnimation()
-//            self.image = self.avatar.hand.restImage
-//            self.startAnimation()
-            self.showLosingAnimation()
+            self.layer.removeAllAnimations()
+            self.stopAnimation()
+            self.image = self.avatar.hand.restImage
+            self.startAnimation()
         }))
     }
     
@@ -128,7 +127,16 @@ extension HandView {
     }
     
     public func showLosingAnimation() {
-        tintColor = .red
         
+        let original = image
+        
+        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 1) { [weak self] in
+            self?.tintColor = .red
+            self?.image = self?.image?.withTintColor(.red, renderingMode: .alwaysTemplate)
+            self?.alpha = 0.7
+        } completion: { _ in
+            self.image = original
+            self.alpha = 1
+        }
     }
 }

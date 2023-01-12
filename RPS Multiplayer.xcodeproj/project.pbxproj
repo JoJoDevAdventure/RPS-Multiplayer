@@ -11,6 +11,7 @@
 		8F8419987EEC32EA86832B4A /* Pods_RPS_Multiplayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */; };
 		A30D0EF0296FF6ED00977974 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D0EEF296FF6ED00977974 /* Hand.swift */; };
 		A30D0EF3297006FE00977974 /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D0EF2297006FE00977974 /* RPS.swift */; };
+		A30D0EF529703F9100977974 /* SinglePlayerGameViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D0EF429703F9100977974 /* SinglePlayerGameViewControllerViewModel.swift */; };
 		A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DD29534CFD009936D6 /* AppDelegate.swift */; };
 		A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DF29534CFD009936D6 /* SceneDelegate.swift */; };
 		A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081E129534CFD009936D6 /* HomeScreen.swift */; };
@@ -86,6 +87,7 @@
 		9E59F7C084B0F596175ED905 /* Pods_RPS_MultiplayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_MultiplayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30D0EEF296FF6ED00977974 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		A30D0EF2297006FE00977974 /* RPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
+		A30D0EF429703F9100977974 /* SinglePlayerGameViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerGameViewControllerViewModel.swift; sourceTree = "<group>"; };
 		A33081DA29534CFD009936D6 /* RPS Multiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPS Multiplayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33081DD29534CFD009936D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33081DF29534CFD009936D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -441,6 +443,7 @@
 		A38F1DFD296595F700F98621 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A30D0EF429703F9100977974 /* SinglePlayerGameViewControllerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -765,6 +768,7 @@
 				A3FA6298296AC7A300D6192C /* AvatarSelectionView.swift in Sources */,
 				A36B7925296DA80C004F5E9F /* ScissorsButton.swift in Sources */,
 				A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */,
+				A30D0EF529703F9100977974 /* SinglePlayerGameViewControllerViewModel.swift in Sources */,
 				A36B7919296BF88E004F5E9F /* SinglePlayerGameViewControllerSinglPlayereGameViewController.swift in Sources */,
 				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
 				A36B7921296DA793004F5E9F /* RockButton.swift in Sources */,
