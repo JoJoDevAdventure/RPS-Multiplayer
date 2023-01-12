@@ -6,8 +6,13 @@
 //
 
 import UIKit
+protocol PaperButtonDelegate: AnyObject {
+    func didSelectPaper()
+}
 
 class PaperButton: UIButton {
+    
+    weak var delegate: PaperButtonDelegate?
         
         private lazy var icon: UIImage? = {
             let image = UIImage(asset: Asset.Images.Icons.paperIcon)
@@ -26,6 +31,7 @@ class PaperButton: UIButton {
         override init(frame: CGRect) {
             super.init(frame: frame)
             setupUI()
+            setupActions()
         }
         
         required init?(coder: NSCoder) {
@@ -52,5 +58,11 @@ class PaperButton: UIButton {
             clipsToBounds = true
             NSLayoutConstraint.activate(constraints)
         }
+    
+    private func setupActions() {
+        addAction(UIAction(handler: { _ in
+            self.delegate?.didSelectPaper()
+        }), for: .touchUpInside)
+    }
         
 }

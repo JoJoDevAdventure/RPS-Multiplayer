@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2679E30493F30FCD94CF9B00 /* Pods_RPS_MultiplayerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E59F7C084B0F596175ED905 /* Pods_RPS_MultiplayerTests.framework */; };
 		8F8419987EEC32EA86832B4A /* Pods_RPS_Multiplayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF7157DF673C2143052925D /* Pods_RPS_Multiplayer.framework */; };
+		A30D0EF0296FF6ED00977974 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D0EEF296FF6ED00977974 /* Hand.swift */; };
+		A30D0EF3297006FE00977974 /* RPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30D0EF2297006FE00977974 /* RPS.swift */; };
 		A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DD29534CFD009936D6 /* AppDelegate.swift */; };
 		A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081DF29534CFD009936D6 /* SceneDelegate.swift */; };
 		A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33081E129534CFD009936D6 /* HomeScreen.swift */; };
@@ -82,6 +84,8 @@
 		5CCB42DCAC20E63271D8820C /* Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_Multiplayer_RPS_MultiplayerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985CC9083D543376014EBCA9 /* Pods-RPS MultiplayerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RPS MultiplayerTests.debug.xcconfig"; path = "Target Support Files/Pods-RPS MultiplayerTests/Pods-RPS MultiplayerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E59F7C084B0F596175ED905 /* Pods_RPS_MultiplayerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RPS_MultiplayerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30D0EEF296FF6ED00977974 /* Hand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		A30D0EF2297006FE00977974 /* RPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPS.swift; sourceTree = "<group>"; };
 		A33081DA29534CFD009936D6 /* RPS Multiplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RPS Multiplayer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33081DD29534CFD009936D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A33081DF29534CFD009936D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -459,6 +463,8 @@
 			isa = PBXGroup;
 			children = (
 				A3FA6291296AB9AC00D6192C /* Avatar.swift */,
+				A30D0EEF296FF6ED00977974 /* Hand.swift */,
+				A30D0EF2297006FE00977974 /* RPS.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -732,6 +738,7 @@
 				A3448DAD2962E54B00F988E8 /* CustomRoundedButton.swift in Sources */,
 				A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */,
 				A37845782965F2FE00AF68C0 /* LanguageTableViewCell.swift in Sources */,
+				A30D0EF3297006FE00977974 /* RPS.swift in Sources */,
 				A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */,
 				A36B7923296DA7E1004F5E9F /* PaperButton.swift in Sources */,
 				A3448DAA2962D44200F988E8 /* assets.swift in Sources */,
@@ -740,6 +747,7 @@
 				A3448D9B2962CAF300F988E8 /* L10n.swift in Sources */,
 				A3448DAF2962E76400F988E8 /* UIButton+.swift in Sources */,
 				A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */,
+				A30D0EF0296FF6ED00977974 /* Hand.swift in Sources */,
 				A37505EB29646A290050E08B /* HomeViewModel.swift in Sources */,
 				A3FA62A3296AF19900D6192C /* SinglePlayerPregameViewController.swift in Sources */,
 				A378457A2966039E00AF68C0 /* CustomSlider.swift in Sources */,

@@ -7,7 +7,15 @@
 
 import UIKit
 
+
+protocol ScissorsButtonDelegate: AnyObject {
+    func didSelectScissors()
+}
+
+
 class ScissorsButton: UIButton {
+    
+    weak var delegate: ScissorsButtonDelegate?
         
         private lazy var icon: UIImage? = {
             let image = UIImage(asset: Asset.Images.Icons.scissorsIcon)
@@ -26,6 +34,7 @@ class ScissorsButton: UIButton {
         override init(frame: CGRect) {
             super.init(frame: frame)
             setupUI()
+            setupActions()
         }
         
         required init?(coder: NSCoder) {
@@ -52,5 +61,11 @@ class ScissorsButton: UIButton {
             clipsToBounds = true
             NSLayoutConstraint.activate(constraints)
         }
+    
+    private func setupActions() {
+        addAction(UIAction(handler: { _ in
+            self.delegate?.didSelectScissors()
+        }), for: .touchUpInside)
+    }
         
 }

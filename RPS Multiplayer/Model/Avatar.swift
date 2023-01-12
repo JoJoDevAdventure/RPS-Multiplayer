@@ -12,4 +12,5 @@ struct Avatar {
     var image: UIImage?
     var mainColor: UIColor
     var name: String
+    var hand: Hand
 }

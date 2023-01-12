@@ -11,9 +11,9 @@ class SinglePlayerGameViewController: UIViewController {
     
     private lazy var scoreBar = GameScoreView()
     
-    private lazy var botHandView = HandView()
+    private lazy var botHandView = HandView(avatar: Data.shared.avatars[0])
     
-    private lazy var playerHandView = HandView()
+    private lazy var playerHandView = HandView(avatar: Data.shared.avatars[0])
     
     private lazy var rockButton = RockButton()
     private lazy var paperButton = PaperButton()
@@ -33,9 +33,14 @@ class SinglePlayerGameViewController: UIViewController {
     
     private func setupSubviews() {
         scoreBar.addViewOn(view)
+        playerHandView.showOnView(view: view, position: .bottom,withAnimation: true)
+        botHandView.showOnView(view: view, position: .top, withAnimation: true)
         view.addSubview(rockButton)
+        rockButton.delegate = self
         view.addSubview(paperButton)
+        paperButton.delegate = self
         view.addSubview(scissorsButton)
+        scissorsButton.delegate = self
     }
     
     private func setupConstraints() {
@@ -56,4 +61,21 @@ class SinglePlayerGameViewController: UIViewController {
         
     }
 
+}
+
+extension SinglePlayerGameViewController: RockButtonDelegate, PaperButtonDelegate, ScissorsButtonDelegate {
+    
+    func didSelectRock() {
+        print("Rock")
+        botHandView.showOnView(view: view, position: .top, withAnimation: false)
+    }
+    
+    func didSelectPaper() {
+        print("Paper")
+    }
+    
+    func didSelectScissors() {
+        print("Scissorrs")
+    }
+    
 }

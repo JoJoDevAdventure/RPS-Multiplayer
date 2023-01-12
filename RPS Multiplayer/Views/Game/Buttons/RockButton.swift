@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol RockButtonDelegate: AnyObject {
+    func didSelectRock()
+}
+
 class RockButton: UIButton {
+
+    weak var delegate: RockButtonDelegate?
     
     private lazy var icon: UIImage? = {
         let image = UIImage(asset: Asset.Images.Icons.rockIcon)
@@ -26,6 +32,7 @@ class RockButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
+        setupActions()
     }
     
     required init?(coder: NSCoder) {
@@ -51,6 +58,12 @@ class RockButton: UIButton {
         layer.cornerRadius = 40
         clipsToBounds = true
         NSLayoutConstraint.activate(constraints)
+    }
+    
+    private func setupActions() {
+        addAction(UIAction(handler: { _ in
+            self.delegate?.didSelectRock()
+        }), for: .touchUpInside)
     }
     
 }
