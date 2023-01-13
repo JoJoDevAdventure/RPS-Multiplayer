@@ -49,6 +49,7 @@
 		A38F1E092965966800F98621 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E082965966800F98621 /* ShopViewModel.swift */; };
 		A38F1E0B296596EB00F98621 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E0A296596EB00F98621 /* Coordinator.swift */; };
 		A390B3C529713D6C00DA267B /* MultiplayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */; };
+		A390B3C829713DA700DA267B /* MultiplayerPregameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3C729713DA700DA267B /* MultiplayerPregameViewController.swift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -129,6 +130,7 @@
 		A38F1E082965966800F98621 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		A38F1E0A296596EB00F98621 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerInfoViewController.swift; sourceTree = "<group>"; };
+		A390B3C729713DA700DA267B /* MultiplayerPregameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerPregameViewController.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -454,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */,
+				A390B3C729713DA700DA267B /* MultiplayerPregameViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -762,6 +765,7 @@
 				A38F1E012965963000F98621 /* SettingsViewController.swift in Sources */,
 				A3308218295351AD009936D6 /* UIView+.swift in Sources */,
 				A3FA629F296ADF8100D6192C /* CustomTextfield.swift in Sources */,
+				A390B3C829713DA700DA267B /* MultiplayerPregameViewController.swift in Sources */,
 				A3FA629B296AC8C000D6192C /* AvatarCollectionViewCell.swift in Sources */,
 				A37845762965F20E00AF68C0 /* SoundTableViewCell.swift in Sources */,
 				A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */,
