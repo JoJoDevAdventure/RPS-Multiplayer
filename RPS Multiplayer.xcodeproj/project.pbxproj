@@ -48,6 +48,7 @@
 		A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E062965965E00F98621 /* ShopViewController.swift */; };
 		A38F1E092965966800F98621 /* ShopViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E082965966800F98621 /* ShopViewModel.swift */; };
 		A38F1E0B296596EB00F98621 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38F1E0A296596EB00F98621 /* Coordinator.swift */; };
+		A390B3C529713D6C00DA267B /* MultiplayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -127,6 +128,7 @@
 		A38F1E062965965E00F98621 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		A38F1E082965966800F98621 /* ShopViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewModel.swift; sourceTree = "<group>"; };
 		A38F1E0A296596EB00F98621 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 		A38F1DFE296595FD00F98621 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -765,6 +768,7 @@
 				A3FA6296296AC60500D6192C /* Data.swift in Sources */,
 				A36B791E296BFED1004F5E9F /* HandView.swift in Sources */,
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
+				A390B3C529713D6C00DA267B /* MultiplayerInfoViewController.swift in Sources */,
 				A3FA6298296AC7A300D6192C /* AvatarSelectionView.swift in Sources */,
 				A36B7925296DA80C004F5E9F /* ScissorsButton.swift in Sources */,
 				A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */,
