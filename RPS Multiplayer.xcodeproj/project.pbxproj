@@ -51,6 +51,7 @@
 		A390B3C529713D6C00DA267B /* MultiplayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */; };
 		A390B3C829713DA700DA267B /* MultiplayerPregameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3C729713DA700DA267B /* MultiplayerPregameViewController.swift */; };
 		A390B3CB29713DE000DA267B /* MultiplayerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3CA29713DE000DA267B /* MultiplayerGameViewController.swift */; };
+		A390B3CE2972974200DA267B /* LeaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3CD2972974200DA267B /* LeaveButton.swift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -133,6 +134,7 @@
 		A390B3C429713D6C00DA267B /* MultiplayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerInfoViewController.swift; sourceTree = "<group>"; };
 		A390B3C729713DA700DA267B /* MultiplayerPregameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerPregameViewController.swift; sourceTree = "<group>"; };
 		A390B3CA29713DE000DA267B /* MultiplayerGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerGameViewController.swift; sourceTree = "<group>"; };
+		A390B3CD2972974200DA267B /* LeaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveButton.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				A3FA628E296AB83400D6192C /* AvatarImageView.swift */,
 				A3FA629E296ADF8100D6192C /* CustomTextfield.swift */,
 				A3FA62A0296AE6B100D6192C /* PlayButton.swift */,
+				A390B3CD2972974200DA267B /* LeaveButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -785,6 +788,7 @@
 				A33081E029534CFD009936D6 /* SceneDelegate.swift in Sources */,
 				A36B7921296DA793004F5E9F /* RockButton.swift in Sources */,
 				A33082162953515E009936D6 /* UITableView+.swift in Sources */,
+				A390B3CE2972974200DA267B /* LeaveButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

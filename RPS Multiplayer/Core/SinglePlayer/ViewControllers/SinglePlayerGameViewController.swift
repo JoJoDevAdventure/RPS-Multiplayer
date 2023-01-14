@@ -19,6 +19,8 @@ class SinglePlayerGameViewController: UIViewController {
     private lazy var paperButton = PaperButton()
     private lazy var scissorsButton = ScissorsButton()
     
+    private lazy var leaveButton = LeaveButton()
+    
     let viewModel : SinglePlayerGameViewModel
     
     init(viewModel : SinglePlayerGameViewModel) {
@@ -66,9 +68,7 @@ class SinglePlayerGameViewController: UIViewController {
         view.addSubview(scissorsButton)
         scissorsButton.delegate = self
         
-        navigationController?.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .stop, target: self, action: #selector(didTapLeave))
-        navigationController?.navigationBar.isHidden = false
-        navigationController?.toolbar.isHidden = false
+        view.addSubview(leaveButton)
     }
     
     @objc private func didTapLeave() {
