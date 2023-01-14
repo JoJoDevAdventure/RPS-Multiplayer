@@ -71,7 +71,7 @@ class SinglePlayerGameViewController: UIViewController {
         view.addSubview(leaveButton)
     }
     
-    @objc private func didTapLeave() {
+    private func didTapLeave() {
         Coordinator.shared.goToHomeScreen(from: self)
     }
     
@@ -85,6 +85,9 @@ class SinglePlayerGameViewController: UIViewController {
             
             scissorsButton.leftAnchor.constraint(equalTo: paperButton.rightAnchor, constant: 30),
             scissorsButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            
+            leaveButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
+            leaveButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -102,7 +105,13 @@ class SinglePlayerGameViewController: UIViewController {
     }
     
     private func setupFunc() {
-        
+        setupButtonAction()
+    }
+    
+    private func setupButtonAction() {
+        leaveButton.addAction(UIAction(handler: { _ in
+            self.didTapLeave()
+        }), for: .touchUpInside)
     }
 
 }

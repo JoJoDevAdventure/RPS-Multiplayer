@@ -25,12 +25,14 @@ class LeaveButton: UIButton {
             heightAnchor.constraint(equalToConstant: 40),
         ]
         NSLayoutConstraint.activate(constraints)
-        layer.cornerRadius = 20
         layer.borderColor = UIColor.white.cgColor
         layer.borderWidth = 2
         setImage(UIImage(systemName: "xmark"), for: .normal)
         setBackgroundColor(.red, forState: .normal)
         setBackgroundColor(.clear, forState: .highlighted)
+        layer.cornerRadius = 20
+        clipsToBounds = true
+        tintColor = .white
     }
 
 }

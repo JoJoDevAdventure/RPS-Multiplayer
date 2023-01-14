@@ -49,7 +49,8 @@ final class Coordinator {
     public func goToHomeScreen(from viewController: UIViewController) {
         let vm = HomeViewModel()
         let home = HomeScreen(viewModel: vm)
-        home.modalPresentationStyle = .fullScreen
-        viewController.present(home, animated: true)
+        let nav = UINavigationController(rootViewController: home)
+        nav.modalPresentationStyle = .fullScreen
+        viewController.present(nav, animated: true)
     }
 }
