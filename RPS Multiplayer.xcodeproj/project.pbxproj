@@ -52,6 +52,7 @@
 		A390B3C829713DA700DA267B /* MultiplayerPregameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3C729713DA700DA267B /* MultiplayerPregameViewController.swift */; };
 		A390B3CB29713DE000DA267B /* MultiplayerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3CA29713DE000DA267B /* MultiplayerGameViewController.swift */; };
 		A390B3CE2972974200DA267B /* LeaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3CD2972974200DA267B /* LeaveButton.swift */; };
+		A390B3D22972A12700DA267B /* DrawLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D12972A12700DA267B /* DrawLabel.swift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -135,6 +136,7 @@
 		A390B3C729713DA700DA267B /* MultiplayerPregameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerPregameViewController.swift; sourceTree = "<group>"; };
 		A390B3CA29713DE000DA267B /* MultiplayerGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerGameViewController.swift; sourceTree = "<group>"; };
 		A390B3CD2972974200DA267B /* LeaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveButton.swift; sourceTree = "<group>"; };
+		A390B3D12972A12700DA267B /* DrawLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLabel.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -317,8 +319,6 @@
 				A37845792966039E00AF68C0 /* CustomSlider.swift */,
 				A3FA628E296AB83400D6192C /* AvatarImageView.swift */,
 				A3FA629E296ADF8100D6192C /* CustomTextfield.swift */,
-				A3FA62A0296AE6B100D6192C /* PlayButton.swift */,
-				A390B3CD2972974200DA267B /* LeaveButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -328,6 +328,7 @@
 			children = (
 				A36B791F296DA76A004F5E9F /* Buttons */,
 				A36B791B296BFB17004F5E9F /* GameScoreView.swift */,
+				A390B3D12972A12700DA267B /* DrawLabel.swift */,
 				A36B791D296BFED1004F5E9F /* HandView.swift */,
 			);
 			path = Game;
@@ -336,6 +337,7 @@
 		A36B791F296DA76A004F5E9F /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				A390B3CD2972974200DA267B /* LeaveButton.swift */,
 				A36B7920296DA793004F5E9F /* RockButton.swift */,
 				A36B7922296DA7E1004F5E9F /* PaperButton.swift */,
 				A36B7924296DA80C004F5E9F /* ScissorsButton.swift */,
@@ -495,6 +497,7 @@
 		A3FA6299296AC86D00D6192C /* Avatars */ = {
 			isa = PBXGroup;
 			children = (
+				A3FA62A0296AE6B100D6192C /* PlayButton.swift */,
 				A3FA6297296AC7A300D6192C /* AvatarSelectionView.swift */,
 				A3FA629A296AC8C000D6192C /* AvatarCollectionViewCell.swift */,
 			);
@@ -778,6 +781,7 @@
 				A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */,
 				A3FA6296296AC60500D6192C /* Data.swift in Sources */,
 				A36B791E296BFED1004F5E9F /* HandView.swift in Sources */,
+				A390B3D22972A12700DA267B /* DrawLabel.swift in Sources */,
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
 				A390B3C529713D6C00DA267B /* MultiplayerInfoViewController.swift in Sources */,
 				A3FA6298296AC7A300D6192C /* AvatarSelectionView.swift in Sources */,

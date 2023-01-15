@@ -21,6 +21,8 @@ class SinglePlayerGameViewController: UIViewController {
     
     private lazy var leaveButton = LeaveButton()
     
+    private lazy var drawLabel = DrawLabel()
+    
     let viewModel : SinglePlayerGameViewModel
     
     init(viewModel : SinglePlayerGameViewModel) {
@@ -153,7 +155,7 @@ extension SinglePlayerGameViewController: RockButtonDelegate, PaperButtonDelegat
 extension SinglePlayerGameViewController: SinglePlayerGameViewModelOutPut {
     
     func draw() {
-        // TODO: DRAW animation
+        drawLabel.show(on: view)
     }
     
     func won(botScore: Int, playerScore: Int) {
@@ -179,6 +181,7 @@ extension SinglePlayerGameViewController: SinglePlayerGameViewModelOutPut {
             self.botHandView.goBackToRest()
             self.playerHandView.goBackToRest()
             self.showButton()
+            self.drawLabel.hide()
         }
     }
     
