@@ -27,12 +27,16 @@ class CustomAlertController: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.textColor = UIColor(asset: Asset.Colors.background)
         return label
     }()
     
     private lazy var descriptionLabel : UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
+        label.textAlignment = .center
+        label.textColor = .black
         return label
     }()
     
@@ -71,6 +75,8 @@ class CustomAlertController: UIView {
         
         addSubview(retryButton)
         addSubview(leaveButton)
+        addSubview(wonLostLabel)
+        addSubview(descriptionLabel)
         
         let constraints = [
             retryButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
@@ -88,6 +94,8 @@ class CustomAlertController: UIView {
             
             descriptionLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             descriptionLabel.topAnchor.constraint(equalTo: wonLostLabel.bottomAnchor, constant: 10),
+            descriptionLabel.leftAnchor.constraint(equalTo: leftAnchor, constant: 20),
+            descriptionLabel.rightAnchor.constraint(equalTo: rightAnchor, constant: -20),
         ]
         NSLayoutConstraint.activate(constraints)
     }
@@ -113,7 +121,7 @@ class CustomAlertController: UIView {
             centerXAnchor.constraint(equalTo: view.centerXAnchor),
             centerYAnchor.constraint(equalTo: view.centerYAnchor),
             widthAnchor.constraint(equalToConstant: 250),
-            heightAnchor.constraint(equalToConstant: 180),
+            heightAnchor.constraint(equalToConstant: 200),
         ]
         transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
         UIView.animate(withDuration: 1, delay: 3, usingSpringWithDamping: 1, initialSpringVelocity: 1) {
