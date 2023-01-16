@@ -33,15 +33,15 @@ final class Coordinator {
         viewController.present(avatars, animated: true)
     }
     
-    public func goToPregameScreen(from viewController: UIViewController) {
-        let avatars = SinglePlayerPregameViewController()
+    public func goToPregameScreen(from viewController: UIViewController, player: Player) {
+        let avatars = SinglePlayerPregameViewController(player: player)
         avatars.modalPresentationStyle = .fullScreen
         viewController.present(avatars, animated: true)
     }
     
-    public func goToSingleGameScreen(from viewController: UIViewController) {
+    public func goToSingleGameScreen(from viewController: UIViewController, player: Player) {
         let vm = SinglePlayerGameViewModel()
-        let gameScreen = SinglePlayerGameViewController(viewModel: vm)
+        let gameScreen = SinglePlayerGameViewController(viewModel: vm, player: player)
         gameScreen.modalPresentationStyle = .fullScreen
         viewController.present(gameScreen, animated: true)
     }
