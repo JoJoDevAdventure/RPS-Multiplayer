@@ -49,7 +49,7 @@ class SinglePlayerInfoViewController: UIViewController {
         }
     }
     
-    private let avatar: Avatar = Data.shared.avatars[0]
+    private var avatar: Avatar = Data.shared.avatars[0]
     
     private let margins = Margins()
     
@@ -70,7 +70,7 @@ class SinglePlayerInfoViewController: UIViewController {
     }()
     
     
-    private lazy var avatarImage = AvatarImageView(frame: .zero)
+    private lazy var avatarImage = AvatarImageView(avatar: avatar)
     
     private lazy var nameTextfield = CustomTextfield(title: L10n.PlayerInfo.SinglePlayer.nicknameExample)
     
@@ -127,6 +127,7 @@ class SinglePlayerInfoViewController: UIViewController {
     private func setupFunc() {
         setupGesture()
         setupButtonActions()
+        setupObservers()
     }
     
     private func setupGesture() {
@@ -147,6 +148,16 @@ class SinglePlayerInfoViewController: UIViewController {
             Coordinator.shared.goToPregameScreen(from: self, player: player)
         }), for: .touchUpInside)
     }
+    
+    private func setupObservers() {
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("didChangeAvatar"), object: nil, queue: nil ) { object in
+            guard let avatar = object.object as? Avatar else {
+                return
+            }
+            self.avatar = avatar
+            self.avatarImage.image = avatar.image
+        }
+    }
 
     
 }
@@ -166,9 +177,7 @@ extension SinglePlayerInfoViewController: UITextFieldDelegate {
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        guard let text = textField.text else {
-            return
-        }
+        
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {

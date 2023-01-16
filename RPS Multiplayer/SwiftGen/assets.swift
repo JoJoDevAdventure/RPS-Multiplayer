@@ -35,6 +35,12 @@ internal enum Asset {
   internal enum Images {
     internal enum Avatars {
       internal static let avatar1 = ImageAsset(name: "Images/Avatars/avatar1")
+      internal static let avatar2 = ImageAsset(name: "Images/Avatars/avatar2")
+      internal static let avatar3 = ImageAsset(name: "Images/Avatars/avatar3")
+      internal static let avatar4 = ImageAsset(name: "Images/Avatars/avatar4")
+      internal static let avatar5 = ImageAsset(name: "Images/Avatars/avatar5")
+      internal static let avatar6 = ImageAsset(name: "Images/Avatars/avatar6")
+      internal static let avatar7 = ImageAsset(name: "Images/Avatars/avatar7")
     }
     internal enum Hands {
       internal enum H1 {

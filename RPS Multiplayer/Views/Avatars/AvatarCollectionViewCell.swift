@@ -9,7 +9,9 @@ import UIKit
 
 class AvatarCollectionViewCell: UICollectionViewCell {
     
-    private lazy var avatarImage = AvatarImageView(frame: .zero)
+    public let avatar: Avatar = Data.shared.avatars[0]
+    
+    private lazy var avatarImage = AvatarImageView(avatar: avatar)
     
     private lazy var avatarLabel: UILabel = {
        let label = UILabel()
@@ -55,5 +57,4 @@ class AvatarCollectionViewCell: UICollectionViewCell {
         avatarLabel.text = avatar.name
         avatarImage.backgroundColor = avatar.mainColor
     }
-    
 }

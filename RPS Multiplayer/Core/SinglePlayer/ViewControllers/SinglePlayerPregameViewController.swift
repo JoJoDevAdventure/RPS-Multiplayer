@@ -61,7 +61,7 @@ class SinglePlayerPregameViewController: UIViewController {
         return label
     }()
     
-    private lazy var botAvatarImage = AvatarImageView(frame: .zero)
+    private lazy var botAvatarImage = AvatarImageView(avatar: Data.shared.avatars[0])
     
     private lazy var VSLabel: UILabel = {
        let label = UILabel()
@@ -81,7 +81,7 @@ class SinglePlayerPregameViewController: UIViewController {
         return label
     }()
     
-    private lazy var playerAvatarImage = AvatarImageView(frame: .zero)
+    private lazy var playerAvatarImage = AvatarImageView(avatar: player.avatar)
 
     init(player: Player) {
         self.player = player

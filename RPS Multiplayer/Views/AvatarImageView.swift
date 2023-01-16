@@ -14,8 +14,11 @@ class AvatarImageView: UIImageView {
     
     weak var delegate: AvatarImageViewDelegate?
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    public var avatar: Avatar
+    
+    init(avatar: Avatar) {
+        self.avatar = avatar
+        super.init(frame: .zero)
         setupUI()
         setupActions()
     }
@@ -25,8 +28,8 @@ class AvatarImageView: UIImageView {
     }
     
     private func setupUI() {
-        image = UIImage(asset: Asset.Images.Avatars.avatar1)
-        backgroundColor = .magenta
+        image = avatar.image
+        backgroundColor = avatar.mainColor
         translatesAutoresizingMaskIntoConstraints = false
         widthAnchor.constraint(equalToConstant: 80).isActive = true
         heightAnchor.constraint(equalToConstant: 80).isActive = true
@@ -49,10 +52,6 @@ class AvatarImageView: UIImageView {
     
     @objc private func didTapSelectAvatar() {
         delegate?.didTapSelectAvatar()
-    }
-    
-    private func selectedAvatar(Avatar: Avatar) {
-        
     }
     
 }

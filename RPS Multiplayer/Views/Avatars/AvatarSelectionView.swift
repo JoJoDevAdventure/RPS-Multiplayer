@@ -57,6 +57,7 @@ extension AvatarSelectionView: UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         dismiss(animated: true)
-        print("dismiss view")
+        NotificationCenter.default.post(name: NSNotification.Name("didChangeAvatar"), object: Data.shared.avatars[indexPath.row])
     }
+    
 }
