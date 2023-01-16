@@ -20,14 +20,12 @@ class GameScoreView: UIView {
     private lazy var player1Score: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .red
         return view
     }()
     
     private lazy var player2Score: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .green
         return view
     }()
     
@@ -61,8 +59,12 @@ class GameScoreView: UIView {
         return image
     }()
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(player1: Player, player2: Player) {
+        super.init(frame: .zero)
+        avatar1Image.image = player1.avatar.image
+        avatar2Image.image = player2.avatar.image
+        player1Score.backgroundColor = player1.avatar.mainColor
+        player2Score.backgroundColor = player2.avatar.mainColor
         setupUI()
         setupFunc()
     }
