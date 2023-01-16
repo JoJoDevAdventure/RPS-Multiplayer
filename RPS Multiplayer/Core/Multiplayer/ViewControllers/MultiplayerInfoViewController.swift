@@ -6,12 +6,9 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class MultiplayerInfoViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     private struct Margins {
         
@@ -162,11 +159,10 @@ class MultiplayerInfoViewController: UIViewController {
             self.avatarImage.image = avatar.image
         }
     }
-
     
 }
 
-extension SinglePlayerInfoViewController: AvatarImageViewDelegate {
+extension MultiplayerInfoViewController: AvatarImageViewDelegate {
     
     func didTapSelectAvatar() {
         Coordinator.shared.showAvatarsSelection(from: self)
@@ -174,7 +170,7 @@ extension SinglePlayerInfoViewController: AvatarImageViewDelegate {
     
 }
 
-extension SinglePlayerInfoViewController: UITextFieldDelegate {
+extension MultiplayerInfoViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         nameTextfield.resignFirstResponder()
         return true
@@ -193,3 +189,5 @@ extension SinglePlayerInfoViewController: UITextFieldDelegate {
     }
 
 }
+
+

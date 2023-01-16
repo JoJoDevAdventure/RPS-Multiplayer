@@ -53,4 +53,9 @@ final class Coordinator {
         nav.modalPresentationStyle = .fullScreen
         viewController.present(nav, animated: true)
     }
+    
+    public func goToMultiplayerScreen(from viewController: UIViewController) {
+        let singlePlayer = MultiplayerInfoViewController()
+        viewController.navigationController?.pushViewController(singlePlayer, animated: true)
+    }
 }

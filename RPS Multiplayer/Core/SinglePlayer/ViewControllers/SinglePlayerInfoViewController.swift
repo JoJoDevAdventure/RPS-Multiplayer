@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
 class SinglePlayerInfoViewController: UIViewController {
     
@@ -50,6 +51,8 @@ class SinglePlayerInfoViewController: UIViewController {
     }
     
     private var avatar: Avatar = Data.shared.avatars[0]
+    private var interstitial: GADInterstitialAd?
+    private var player: Player? = nil
     
     private let margins = Margins()
     
@@ -128,6 +131,7 @@ class SinglePlayerInfoViewController: UIViewController {
         setupGesture()
         setupButtonActions()
         setupObservers()
+        getAdRequest()
     }
     
     private func setupGesture() {
@@ -145,7 +149,8 @@ class SinglePlayerInfoViewController: UIViewController {
                 return
             }
             let player = Player(name: name, avatar: self.avatar)
-            Coordinator.shared.goToPregameScreen(from: self, player: player)
+            self.player = player
+            self.interstitial?.present(fromRootViewController: self)
         }), for: .touchUpInside)
     }
     
@@ -159,6 +164,20 @@ class SinglePlayerInfoViewController: UIViewController {
         }
     }
 
+    private func getAdRequest() {
+        let request = GADRequest()
+        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-3940256099942544/4411468910",
+                                request: request,
+                              completionHandler: { [self] ad, error in
+                                if let error = error {
+                                  print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                                  return
+                                }
+                                interstitial = ad
+                                interstitial?.fullScreenContentDelegate = self
+                              }
+            )
+    }
     
 }
 
@@ -187,4 +206,24 @@ extension SinglePlayerInfoViewController: UITextFieldDelegate {
 
         return newString.count <= maxLength
     }
+}
+
+extension SinglePlayerInfoViewController: GADFullScreenContentDelegate {
+    
+    /// Tells the delegate that the ad failed to present full screen content.
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+      print("Ad did fail to present full screen content.")
+    }
+
+    /// Tells the delegate that the ad will present full screen content.
+    func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+      print("Ad will present full screen content.")
+    }
+
+    /// Tells the delegate that the ad dismissed full screen content.
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        guard let player = player else { return }
+        Coordinator.shared.goToPregameScreen(from: self, player: player)
+    }
+    
 }

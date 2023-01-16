@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import GoogleMobileAds
 
 protocol HomeViewModelOutput: AnyObject {
 
@@ -16,6 +17,7 @@ final class HomeViewModel {
     
     weak var output: HomeViewModelOutput?
     let coordinator = Coordinator.shared
+
 
     public func didPressSettings(vc: UIViewController) {
         coordinator.goToSettingsScreen(from: vc)
@@ -30,7 +32,7 @@ final class HomeViewModel {
     }
     
     public func didPressMultiplayer(vc: UIViewController) {
-        coordinator.goToShopScreen(from: vc)
+        coordinator.goToMultiplayerScreen(from: vc)
     }
     
 }

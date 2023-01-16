@@ -159,7 +159,7 @@ class HomeScreen: UIViewController {
         }), for: .touchUpInside)
         
         multiplayerBtn.addAction(UIAction(handler: { _ in
-            // TODO: - implement multiplayer action
+            self.viewModel.didPressMultiplayer(vc: self)
         }), for: .touchUpInside)
     }
     
