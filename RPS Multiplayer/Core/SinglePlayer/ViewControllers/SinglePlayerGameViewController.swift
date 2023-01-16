@@ -23,6 +23,8 @@ class SinglePlayerGameViewController: UIViewController {
     
     private lazy var drawLabel = DrawLabel()
     
+    private lazy var winLoseAlert = CustomAlertController()
+    
     let viewModel : SinglePlayerGameViewModel
     
     init(viewModel : SinglePlayerGameViewModel) {
@@ -71,10 +73,7 @@ class SinglePlayerGameViewController: UIViewController {
         scissorsButton.delegate = self
         
         view.addSubview(leaveButton)
-    }
-    
-    private func didTapLeave() {
-        Coordinator.shared.goToHomeScreen(from: self)
+        winLoseAlert.delegate = self
     }
     
     private func setupConstraints() {
@@ -116,6 +115,9 @@ class SinglePlayerGameViewController: UIViewController {
         }), for: .touchUpInside)
     }
 
+    @objc func didTapLeave() {
+        Coordinator.shared.goToHomeScreen(from: self)
+    }
 }
 
 extension SinglePlayerGameViewController: RockButtonDelegate, PaperButtonDelegate, ScissorsButtonDelegate {
@@ -160,6 +162,12 @@ extension SinglePlayerGameViewController: SinglePlayerGameViewModelOutPut {
     
     func won(botScore: Int, playerScore: Int) {
         
+        if botScore == 3 || playerScore == 3 {
+            winLoseAlert.show(on: view, win: true)
+            botHandView.stopAnimation()
+            playerHandView.stopAnimation()
+        }
+        
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
             self.botHandView.losingAnimation()
             self.scoreBar.setScore(player1: botScore, player2: playerScore)
@@ -169,6 +177,12 @@ extension SinglePlayerGameViewController: SinglePlayerGameViewModelOutPut {
     }
     
     func lost(botScore: Int, playerScore: Int) {
+        
+        if botScore == 3 || playerScore == 3 {
+            winLoseAlert.show(on: view, win: false)
+            botHandView.stopAnimation()
+            playerHandView.stopAnimation()
+        }
         
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: DispatchWorkItem(block: {
             self.playerHandView.losingAnimation()
@@ -185,7 +199,25 @@ extension SinglePlayerGameViewController: SinglePlayerGameViewModelOutPut {
         }
     }
     
+    func replay() {
+        DispatchQueue.main.async {
+            self.botHandView.goBackToRest()
+            self.playerHandView.goBackToRest()
+            self.showButton()
+            self.drawLabel.hide()
+            self.scoreBar.setScore(player1: 0, player2: 0)
+        }
+    }
+}
+
+extension SinglePlayerGameViewController: CustomAlertControllerDelegate {
     
-    
-    
+    func didTapRetry() {
+        viewModel.replay()
+        winLoseAlert.hide()
+    }
+
+    func didTapLeaveGame() {
+        Coordinator.shared.goToHomeScreen(from: self)
+    }
 }

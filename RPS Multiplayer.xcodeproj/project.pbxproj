@@ -53,6 +53,7 @@
 		A390B3CB29713DE000DA267B /* MultiplayerGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3CA29713DE000DA267B /* MultiplayerGameViewController.swift */; };
 		A390B3CE2972974200DA267B /* LeaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3CD2972974200DA267B /* LeaveButton.swift */; };
 		A390B3D22972A12700DA267B /* DrawLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D12972A12700DA267B /* DrawLabel.swift */; };
+		A390B3D429751BA700DA267B /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D329751BA600DA267B /* CustomAlertController.swift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -137,6 +138,7 @@
 		A390B3CA29713DE000DA267B /* MultiplayerGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerGameViewController.swift; sourceTree = "<group>"; };
 		A390B3CD2972974200DA267B /* LeaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveButton.swift; sourceTree = "<group>"; };
 		A390B3D12972A12700DA267B /* DrawLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLabel.swift; sourceTree = "<group>"; };
+		A390B3D329751BA600DA267B /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -319,6 +321,7 @@
 				A37845792966039E00AF68C0 /* CustomSlider.swift */,
 				A3FA628E296AB83400D6192C /* AvatarImageView.swift */,
 				A3FA629E296ADF8100D6192C /* CustomTextfield.swift */,
+				A390B3D329751BA600DA267B /* CustomAlertController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -780,6 +783,7 @@
 				A37845762965F20E00AF68C0 /* SoundTableViewCell.swift in Sources */,
 				A38F1E072965965E00F98621 /* ShopViewController.swift in Sources */,
 				A3FA6296296AC60500D6192C /* Data.swift in Sources */,
+				A390B3D429751BA700DA267B /* CustomAlertController.swift in Sources */,
 				A36B791E296BFED1004F5E9F /* HandView.swift in Sources */,
 				A390B3D22972A12700DA267B /* DrawLabel.swift in Sources */,
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,

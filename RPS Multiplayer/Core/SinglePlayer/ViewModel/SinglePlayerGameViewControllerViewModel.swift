@@ -11,6 +11,7 @@ protocol SinglePlayerGameViewModelOutPut: AnyObject {
     func won(botScore: Int, playerScore: Int)
     func lost(botScore: Int, playerScore: Int)
     func resetGame()
+    func replay()
 }
 
 class SinglePlayerGameViewModel {
@@ -74,5 +75,11 @@ class SinglePlayerGameViewModel {
             }))
         }
         
+    }
+    
+    public func replay() {
+        self.botScore = 0
+        self.playerScore = 0
+        output?.replay()
     }
 }
