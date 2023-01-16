@@ -54,6 +54,7 @@
 		A390B3CE2972974200DA267B /* LeaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3CD2972974200DA267B /* LeaveButton.swift */; };
 		A390B3D22972A12700DA267B /* DrawLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D12972A12700DA267B /* DrawLabel.swift */; };
 		A390B3D429751BA700DA267B /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D329751BA600DA267B /* CustomAlertController.swift */; };
+		A390B3D6297544A800DA267B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D5297544A800DA267B /* Player.swift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -139,6 +140,7 @@
 		A390B3CD2972974200DA267B /* LeaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveButton.swift; sourceTree = "<group>"; };
 		A390B3D12972A12700DA267B /* DrawLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLabel.swift; sourceTree = "<group>"; };
 		A390B3D329751BA600DA267B /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
+		A390B3D5297544A800DA267B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 				A3FA628E296AB83400D6192C /* AvatarImageView.swift */,
 				A3FA629E296ADF8100D6192C /* CustomTextfield.swift */,
 				A390B3D329751BA600DA267B /* CustomAlertController.swift */,
+				A3FA62A0296AE6B100D6192C /* PlayButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 				A3FA6291296AB9AC00D6192C /* Avatar.swift */,
 				A30D0EEF296FF6ED00977974 /* Hand.swift */,
 				A30D0EF2297006FE00977974 /* RPS.swift */,
+				A390B3D5297544A800DA267B /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -500,7 +504,6 @@
 		A3FA6299296AC86D00D6192C /* Avatars */ = {
 			isa = PBXGroup;
 			children = (
-				A3FA62A0296AE6B100D6192C /* PlayButton.swift */,
 				A3FA6297296AC7A300D6192C /* AvatarSelectionView.swift */,
 				A3FA629A296AC8C000D6192C /* AvatarCollectionViewCell.swift */,
 			);
@@ -754,6 +757,7 @@
 				A33081E229534CFD009936D6 /* HomeScreen.swift in Sources */,
 				A33081DE29534CFD009936D6 /* AppDelegate.swift in Sources */,
 				A390B3CB29713DE000DA267B /* MultiplayerGameViewController.swift in Sources */,
+				A390B3D6297544A800DA267B /* Player.swift in Sources */,
 				A3FA62A1296AE6B100D6192C /* PlayButton.swift in Sources */,
 				A330821229535112009936D6 /* UITextfield+.swift in Sources */,
 				A38F1E092965966800F98621 /* ShopViewModel.swift in Sources */,
