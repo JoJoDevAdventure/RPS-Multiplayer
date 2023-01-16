@@ -55,6 +55,18 @@
 		A390B3D22972A12700DA267B /* DrawLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D12972A12700DA267B /* DrawLabel.swift */; };
 		A390B3D429751BA700DA267B /* CustomAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D329751BA600DA267B /* CustomAlertController.swift */; };
 		A390B3D6297544A800DA267B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3D5297544A800DA267B /* Player.swift */; };
+		A390B3D8297594D500DA267B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A390B3D7297594D400DA267B /* GoogleService-Info.plist */; };
+		A390B3D9297594D500DA267B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A390B3D7297594D400DA267B /* GoogleService-Info.plist */; };
+		A390B3DA297594D500DA267B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A390B3D7297594D400DA267B /* GoogleService-Info.plist */; };
+		A390B3DD29759E5D00DA267B /* OnlineModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */; };
+		A390B3DE29759E5D00DA267B /* OnlineModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */; };
+		A390B3DF29759E5D00DA267B /* OnlineModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */; };
+		A3C4BC2A2975A00D0006E25D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC292975A00D0006E25D /* FirebaseAnalytics */; };
+		A3C4BC2C2975A00D0006E25D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC2B2975A00D0006E25D /* FirebaseAnalyticsSwift */; };
+		A3C4BC2E2975A00D0006E25D /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC2D2975A00D0006E25D /* FirebaseAppCheck */; };
+		A3C4BC302975A00D0006E25D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC2F2975A00D0006E25D /* FirebaseCrashlytics */; };
+		A3C4BC322975A00E0006E25D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC312975A00E0006E25D /* FirebaseFirestore */; };
+		A3C4BC342975A00E0006E25D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC332975A00E0006E25D /* FirebaseFirestoreSwift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -141,6 +153,8 @@
 		A390B3D12972A12700DA267B /* DrawLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawLabel.swift; sourceTree = "<group>"; };
 		A390B3D329751BA600DA267B /* CustomAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertController.swift; sourceTree = "<group>"; };
 		A390B3D5297544A800DA267B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		A390B3D7297594D400DA267B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineModeManager.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -161,8 +175,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C4BC2C2975A00D0006E25D /* FirebaseAnalyticsSwift in Frameworks */,
 				A330821B29535207009936D6 /* Lottie in Frameworks */,
 				8F8419987EEC32EA86832B4A /* Pods_RPS_Multiplayer.framework in Frameworks */,
+				A3C4BC302975A00D0006E25D /* FirebaseCrashlytics in Frameworks */,
+				A3C4BC2E2975A00D0006E25D /* FirebaseAppCheck in Frameworks */,
+				A3C4BC2A2975A00D0006E25D /* FirebaseAnalytics in Frameworks */,
+				A3C4BC322975A00E0006E25D /* FirebaseFirestore in Frameworks */,
+				A3C4BC342975A00E0006E25D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +241,7 @@
 		A33081DC29534CFD009936D6 /* RPS Multiplayer */ = {
 			isa = PBXGroup;
 			children = (
+				A390B3DB29759E4900DA267B /* Managers */,
 				A3448D922962C4EF00F988E8 /* SwiftGen */,
 				A330821F2953565A009936D6 /* Ressources */,
 				A3FA6294296AC5E200D6192C /* Data */,
@@ -232,6 +253,7 @@
 				A33081E929534CFF009936D6 /* Assets.xcassets */,
 				A33081EB29534CFF009936D6 /* LaunchScreen.storyboard */,
 				A3448DA12962CC0E00F988E8 /* Localizable.strings */,
+				A390B3D7297594D400DA267B /* GoogleService-Info.plist */,
 				A33081EE29534CFF009936D6 /* Info.plist */,
 				A33081E629534CFD009936D6 /* RPS_Multiplayer.xcdatamodeld */,
 			);
@@ -482,6 +504,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		A390B3DB29759E4900DA267B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		A3FA6290296AB99C00D6192C /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,6 +573,12 @@
 			name = "RPS Multiplayer";
 			packageProductDependencies = (
 				A330821A29535207009936D6 /* Lottie */,
+				A3C4BC292975A00D0006E25D /* FirebaseAnalytics */,
+				A3C4BC2B2975A00D0006E25D /* FirebaseAnalyticsSwift */,
+				A3C4BC2D2975A00D0006E25D /* FirebaseAppCheck */,
+				A3C4BC2F2975A00D0006E25D /* FirebaseCrashlytics */,
+				A3C4BC312975A00E0006E25D /* FirebaseFirestore */,
+				A3C4BC332975A00E0006E25D /* FirebaseFirestoreSwift */,
 			);
 			productName = "RPS Multiplayer";
 			productReference = A33081DA29534CFD009936D6 /* RPS Multiplayer.app */;
@@ -620,6 +656,7 @@
 			mainGroup = A33081D129534CFD009936D6;
 			packageReferences = (
 				A330821929535206009936D6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = A33081DB29534CFD009936D6 /* Products */;
 			projectDirPath = "";
@@ -639,6 +676,7 @@
 			files = (
 				A3448DA32962CC0E00F988E8 /* Localizable.strings in Resources */,
 				A33081ED29534CFF009936D6 /* LaunchScreen.storyboard in Resources */,
+				A390B3D8297594D500DA267B /* GoogleService-Info.plist in Resources */,
 				A33081EA29534CFF009936D6 /* Assets.xcassets in Resources */,
 				A3448D942962C97C00F988E8 /* swiftgen.yml in Resources */,
 			);
@@ -648,6 +686,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A390B3D9297594D500DA267B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,6 +694,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A390B3DA297594D500DA267B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,6 +804,7 @@
 				A3448DAD2962E54B00F988E8 /* CustomRoundedButton.swift in Sources */,
 				A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */,
 				A37845782965F2FE00AF68C0 /* LanguageTableViewCell.swift in Sources */,
+				A390B3DD29759E5D00DA267B /* OnlineModeManager.swift in Sources */,
 				A30D0EF3297006FE00977974 /* RPS.swift in Sources */,
 				A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */,
 				A36B7923296DA7E1004F5E9F /* PaperButton.swift in Sources */,
@@ -809,6 +850,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A33081F829534D00009936D6 /* RPS_MultiplayerTests.swift in Sources */,
+				A390B3DE29759E5D00DA267B /* OnlineModeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -817,6 +859,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A330820229534D00009936D6 /* RPS_MultiplayerUITests.swift in Sources */,
+				A390B3DF29759E5D00DA267B /* OnlineModeManager.swift in Sources */,
 				A330820429534D00009936D6 /* RPS_MultiplayerUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -981,6 +1024,7 @@
 				DEVELOPMENT_TEAM = X7FBND7W68;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RPS Multiplayer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RPS Multiplayer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1009,6 +1053,7 @@
 				DEVELOPMENT_TEAM = X7FBND7W68;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RPS Multiplayer/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "RPS Multiplayer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1156,6 +1201,14 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1163,6 +1216,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A330821929535206009936D6 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		A3C4BC292975A00D0006E25D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A3C4BC2B2975A00D0006E25D /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		A3C4BC2D2975A00D0006E25D /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		A3C4BC2F2975A00D0006E25D /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		A3C4BC312975A00E0006E25D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		A3C4BC332975A00E0006E25D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3C4BC282975A00D0006E25D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 

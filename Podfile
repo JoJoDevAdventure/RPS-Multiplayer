@@ -6,7 +6,7 @@ target 'RPS Multiplayer' do
   use_frameworks!
 
   # Pods for RPS Multiplayer
-  pod 'SwiftGen', '~> 6.1' 
+  pod 'SwiftGen', '~> 6.1'
 
   target 'RPS MultiplayerTests' do
     inherit! :search_paths
