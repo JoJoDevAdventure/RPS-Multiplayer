@@ -9,7 +9,7 @@ import UIKit
 
 class SinglePlayerGameViewController: UIViewController {
     
-    private lazy var scoreBar = GameScoreView()
+    private lazy var scoreBar = GameScoreView(player1: bot, player2: player)
     
     private lazy var botHandView = HandView(avatar: Data.shared.avatars[0], position: .top)
     
@@ -27,8 +27,12 @@ class SinglePlayerGameViewController: UIViewController {
     
     let viewModel : SinglePlayerGameViewModel
     
-    init(viewModel : SinglePlayerGameViewModel) {
+    private let player : Player
+    private let bot = Player(name: "Bot", avatar: Data.shared.avatars[0])
+    
+    init(viewModel : SinglePlayerGameViewModel, player: Player) {
         self.viewModel = viewModel
+        self.player = player
         super.init(nibName: nil, bundle: nil)
         viewModel.output = self
     }

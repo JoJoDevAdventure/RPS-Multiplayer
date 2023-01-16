@@ -49,6 +49,8 @@ class SinglePlayerInfoViewController: UIViewController {
         }
     }
     
+    private let avatar: Avatar = Data.shared.avatars[0]
+    
     private let margins = Margins()
     
     private lazy var avatarLabel: UILabel = {
@@ -66,6 +68,7 @@ class SinglePlayerInfoViewController: UIViewController {
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         return label
     }()
+    
     
     private lazy var avatarImage = AvatarImageView(frame: .zero)
     
@@ -136,11 +139,12 @@ class SinglePlayerInfoViewController: UIViewController {
     
     private func setupButtonActions() {
         playButton.addAction(UIAction(handler: { _  in
-            guard let _ = self.nameTextfield.getInputString() else {
+            guard let name = self.nameTextfield.getInputString() else {
                 self.nameTextfield.errorAnimation()
                 return
             }
-            Coordinator.shared.goToPregameScreen(from: self)
+            let player = Player(name: name, avatar: self.avatar)
+            Coordinator.shared.goToPregameScreen(from: self, player: player)
         }), for: .touchUpInside)
     }
 

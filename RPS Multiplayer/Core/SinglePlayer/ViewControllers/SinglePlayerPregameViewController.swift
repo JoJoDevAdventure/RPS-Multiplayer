@@ -51,9 +51,11 @@ class SinglePlayerPregameViewController: UIViewController {
     
     private let margins = Margins()
     
+    private var player: Player
+    
     private lazy var botUsernameLabel: UILabel = {
        let label = UILabel()
-        label.text = L10n.PlayerInfo.SinglePlayer.avatar
+        label.text = "Bot"
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         return label
@@ -81,9 +83,22 @@ class SinglePlayerPregameViewController: UIViewController {
     
     private lazy var playerAvatarImage = AvatarImageView(frame: .zero)
 
+    init(player: Player) {
+        self.player = player
+        super.init(nibName: nil, bundle: nil)
+        self.player = player
+        playerUsernameLabel.text = player.name
+        playerAvatarImage.image = player.avatar.image
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -149,7 +164,7 @@ class SinglePlayerPregameViewController: UIViewController {
             
             self.VSLabel.alpha = 0
         } completion: { _ in
-            Coordinator.shared.goToSingleGameScreen(from: self)
+            Coordinator.shared.goToSingleGameScreen(from: self, player: self.player)
         }
     }
     
