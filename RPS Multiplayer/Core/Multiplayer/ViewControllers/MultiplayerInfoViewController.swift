@@ -51,6 +51,7 @@ class MultiplayerInfoViewController: UIViewController {
     }
     
     private var avatar: Avatar = Data.shared.avatars[0]
+    private var interstitial: GADInterstitialAd?
     
     private let margins = Margins()
     
@@ -146,7 +147,7 @@ class MultiplayerInfoViewController: UIViewController {
                 return
             }
             let player = Player(name: name, avatar: self.avatar)
-            Coordinator.shared.goToPregameScreen(from: self, player: player)
+            self.interstitial?.present(fromRootViewController: self)
         }), for: .touchUpInside)
     }
     
@@ -158,6 +159,21 @@ class MultiplayerInfoViewController: UIViewController {
             self.avatar = avatar
             self.avatarImage.image = avatar.image
         }
+    }
+    
+    private func getAdRequest() {
+        let request = GADRequest()
+        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-5967220334425968/4976191597",
+                                request: request,
+                              completionHandler: { [self] ad, error in
+                                if let error = error {
+                                  print("Failed to load interstitial ad with error: \(error.localizedDescription)")
+                                  return
+                                }
+                                interstitial = ad
+                                interstitial?.fullScreenContentDelegate = self
+                              }
+            )
     }
     
 }
@@ -190,4 +206,21 @@ extension MultiplayerInfoViewController: UITextFieldDelegate {
 
 }
 
+extension MultiplayerInfoViewController: GADFullScreenContentDelegate {
+    
+    /// Tells the delegate that the ad failed to present full screen content.
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+      print("Ad did fail to present full screen content.")
+    }
 
+    /// Tells the delegate that the ad will present full screen content.
+    func adWillPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+      print("Ad will present full screen content.")
+    }
+
+    /// Tells the delegate that the ad dismissed full screen content.
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+
+    }
+    
+}
