@@ -166,7 +166,7 @@ class SinglePlayerInfoViewController: UIViewController {
 
     private func getAdRequest() {
         let request = GADRequest()
-        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-3940256099942544/4411468910",
+        GADInterstitialAd.load(withAdUnitID:"ca-app-pub-5967220334425968/4976191597",
                                 request: request,
                               completionHandler: { [self] ad, error in
                                 if let error = error {
