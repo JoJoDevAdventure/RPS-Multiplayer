@@ -9,8 +9,9 @@ import Foundation
 import UIKit
 
 struct Avatar {
-    var image: UIImage?
-    var mainColor: UIColor
-    var name: String
-    var hand: Hand
+    var id : Int
+    var image : UIImage?
+    var mainColor : UIColor
+    var name : String
+    var hand : Hand
 }
