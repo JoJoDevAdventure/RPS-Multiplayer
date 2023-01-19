@@ -68,6 +68,7 @@
 		A3C4BC322975A00E0006E25D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC312975A00E0006E25D /* FirebaseFirestore */; };
 		A3C4BC342975A00E0006E25D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC332975A00E0006E25D /* FirebaseFirestoreSwift */; };
 		A3C4BC372975BDC00006E25D /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC362975BDC00006E25D /* GoogleMobileAds */; };
+		A3C4BC392977E5400006E25D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C4BC382977E5400006E25D /* Game.swift */; };
 		A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */; };
 		A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA628E296AB83400D6192C /* AvatarImageView.swift */; };
 		A3FA6292296AB9AC00D6192C /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FA6291296AB9AC00D6192C /* Avatar.swift */; };
@@ -156,6 +157,7 @@
 		A390B3D5297544A800DA267B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A390B3D7297594D400DA267B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineModeManager.swift; sourceTree = "<group>"; };
+		A3C4BC382977E5400006E25D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
 		A3FA6291296AB9AC00D6192C /* Avatar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
@@ -521,6 +523,7 @@
 				A30D0EEF296FF6ED00977974 /* Hand.swift */,
 				A30D0EF2297006FE00977974 /* RPS.swift */,
 				A390B3D5297544A800DA267B /* Player.swift */,
+				A3C4BC382977E5400006E25D /* Game.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -838,6 +841,7 @@
 				A33082142953513D009936D6 /* NSLayout+.swift in Sources */,
 				A390B3C529713D6C00DA267B /* MultiplayerInfoViewController.swift in Sources */,
 				A3FA6298296AC7A300D6192C /* AvatarSelectionView.swift in Sources */,
+				A3C4BC392977E5400006E25D /* Game.swift in Sources */,
 				A36B7925296DA80C004F5E9F /* ScissorsButton.swift in Sources */,
 				A3FA628F296AB83400D6192C /* AvatarImageView.swift in Sources */,
 				A30D0EF529703F9100977974 /* SinglePlayerGameViewControllerViewModel.swift in Sources */,
