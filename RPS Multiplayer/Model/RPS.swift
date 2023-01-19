@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum RPS {
+public enum RPS : Encodable, Decodable {
     case rock, paper, scissors
 }

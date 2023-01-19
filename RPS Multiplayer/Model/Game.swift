@@ -6,14 +6,16 @@
 //
 
 import Foundation
+import FirebaseFirestoreSwift
 
-struct Game {
+struct Game : Encodable, Decodable{
+    @DocumentID var id: String?
     var player1 : MPlayer?
     var player2 : MPlayer?
     var isGameReady : Bool
 }
 
-struct MPlayer {
+struct MPlayer : Encodable, Decodable {
     var name : String
     var avatarID : Int
     var score : Int
