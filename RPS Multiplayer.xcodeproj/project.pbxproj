@@ -61,6 +61,8 @@
 		A390B3DD29759E5D00DA267B /* OnlineModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */; };
 		A390B3DE29759E5D00DA267B /* OnlineModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */; };
 		A390B3DF29759E5D00DA267B /* OnlineModeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */; };
+		A39F022F2979431F0018764F /* MultiplayerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F022E2979431F0018764F /* MultiplayerError.swift */; };
+		A39F0231297982230018764F /* MultiplayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39F0230297982230018764F /* MultiplayerViewModel.swift */; };
 		A3C4BC2A2975A00D0006E25D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC292975A00D0006E25D /* FirebaseAnalytics */; };
 		A3C4BC2C2975A00D0006E25D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC2B2975A00D0006E25D /* FirebaseAnalyticsSwift */; };
 		A3C4BC2E2975A00D0006E25D /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A3C4BC2D2975A00D0006E25D /* FirebaseAppCheck */; };
@@ -157,6 +159,8 @@
 		A390B3D5297544A800DA267B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A390B3D7297594D400DA267B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineModeManager.swift; sourceTree = "<group>"; };
+		A39F022E2979431F0018764F /* MultiplayerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerError.swift; sourceTree = "<group>"; };
+		A39F0230297982230018764F /* MultiplayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplayerViewModel.swift; sourceTree = "<group>"; };
 		A3C4BC382977E5400006E25D /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		A3FA628C296AB3C900D6192C /* SinglePlayerInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglePlayerInfoViewController.swift; sourceTree = "<group>"; };
 		A3FA628E296AB83400D6192C /* AvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarImageView.swift; sourceTree = "<group>"; };
@@ -504,6 +508,7 @@
 		A38F1DFF2965960400F98621 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A39F0230297982230018764F /* MultiplayerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -511,9 +516,18 @@
 		A390B3DB29759E4900DA267B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				A39F022D2979430A0018764F /* Erros */,
 				A390B3DC29759E5D00DA267B /* OnlineModeManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		A39F022D2979430A0018764F /* Erros */ = {
+			isa = PBXGroup;
+			children = (
+				A39F022E2979431F0018764F /* MultiplayerError.swift */,
+			);
+			path = Erros;
 			sourceTree = "<group>";
 		};
 		A3FA6290296AB99C00D6192C /* Model */ = {
@@ -811,7 +825,9 @@
 				A3448DAD2962E54B00F988E8 /* CustomRoundedButton.swift in Sources */,
 				A3FA628D296AB3C900D6192C /* SinglePlayerInfoViewController.swift in Sources */,
 				A37845782965F2FE00AF68C0 /* LanguageTableViewCell.swift in Sources */,
+				A39F022F2979431F0018764F /* MultiplayerError.swift in Sources */,
 				A390B3DD29759E5D00DA267B /* OnlineModeManager.swift in Sources */,
+				A39F0231297982230018764F /* MultiplayerViewModel.swift in Sources */,
 				A30D0EF3297006FE00977974 /* RPS.swift in Sources */,
 				A38F1E042965964600F98621 /* SettingsViewModel.swift in Sources */,
 				A36B7923296DA7E1004F5E9F /* PaperButton.swift in Sources */,
