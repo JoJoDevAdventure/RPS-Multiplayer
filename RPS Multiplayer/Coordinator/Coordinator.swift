@@ -55,7 +55,18 @@ final class Coordinator {
     }
     
     public func goToMultiplayerScreen(from viewController: UIViewController) {
-        let singlePlayer = MultiplayerInfoViewController()
-        viewController.navigationController?.pushViewController(singlePlayer, animated: true)
+        let multi = MultiplayerInfoViewController()
+        viewController.navigationController?.pushViewController(multi, animated: true)
     }
+    
+    public func goToMultiPregameScreen(from viewController: UIViewController, player: Player) {
+        let service : OnlineGameService = OnlineModeManager()
+        let vm = MultiplayerViewModel(service: service)
+        let multi = MultiplayerPregameViewController(player: player, viewModel: vm)
+        multi.modalPresentationStyle = .fullScreen
+        viewController.present(multi, animated: true)
+    }
+    
+    
+    
 }
