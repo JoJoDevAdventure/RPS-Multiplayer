@@ -52,8 +52,10 @@ class MultiplayerInfoViewController: UIViewController {
     
     private var avatar: Avatar = Data.shared.avatars[0]
     private var interstitial: GADInterstitialAd?
+    private var player: Player? = nil
     
     private let margins = Margins()
+    
     
     private lazy var avatarLabel: UILabel = {
        let label = UILabel()
@@ -130,6 +132,7 @@ class MultiplayerInfoViewController: UIViewController {
         setupGesture()
         setupButtonActions()
         setupObservers()
+        getAdRequest()
     }
     
     private func setupGesture() {
@@ -147,6 +150,7 @@ class MultiplayerInfoViewController: UIViewController {
                 return
             }
             let player = Player(name: name, avatar: self.avatar)
+            self.player = player
             self.interstitial?.present(fromRootViewController: self)
         }), for: .touchUpInside)
     }
@@ -220,7 +224,10 @@ extension MultiplayerInfoViewController: GADFullScreenContentDelegate {
 
     /// Tells the delegate that the ad dismissed full screen content.
     func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
-
+        guard let player = player else {
+            return
+        }
+        Coordinator.shared.goToMultiPregameScreen(from: self, player: player)
     }
     
 }
