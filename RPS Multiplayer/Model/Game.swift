@@ -17,4 +17,5 @@ struct MPlayer {
     var name : String
     var avatarID : Int
     var score : Int
+    var choice : RPS?
 }
