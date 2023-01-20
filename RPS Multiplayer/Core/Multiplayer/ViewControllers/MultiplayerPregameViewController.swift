@@ -52,6 +52,7 @@ class MultiplayerPregameViewController: UIViewController {
     private let margins = Margins()
     private var player: Player
     private let viewModel: MultiplayerViewModel
+    private var rivalPlayer: Player?
     
     private lazy var rivalUsernameLabel: UILabel = {
        let label = UILabel()
@@ -165,7 +166,8 @@ class MultiplayerPregameViewController: UIViewController {
             
             self.VSLabel.alpha = 0
         } completion: { _ in
-            Coordinator.shared.goToSingleGameScreen(from: self, player: self.player)
+            guard let rivalPlayer = self.rivalPlayer else { return }
+            Coordinator.shared.goToMultiplayerGame(from: self, player: self.player, rivalPlayer: rivalPlayer)
         }
     }
 
@@ -175,12 +177,16 @@ extension MultiplayerPregameViewController: MultiplayerPreGameOutput {
     
     func updateUI(player1: MPlayer?, player2: MPlayer?) {
         if player.name == player1?.name {
-            rivalUsernameLabel.text = player2?.name
-            rivalAvatarImage.image = Data.shared.avatars.first(where: {$0.id == player2?.avatarID})?.image
+            self.rivalPlayer = Player(name: player2?.name ?? "", avatar: Data.shared.avatars.first(where: {$0.id == player2?.avatarID})!)
         } else {
-            rivalUsernameLabel.text = player1?.name
-            rivalAvatarImage.image = Data.shared.avatars.first(where: {$0.id == player1?.avatarID})?.image
+            self.rivalPlayer = Player(name: player1?.name ?? "", avatar: Data.shared.avatars.first(where: {$0.id == player1?.avatarID})!)
         }
+        
+        rivalUsernameLabel.text = rivalPlayer?.name
+        rivalAvatarImage.image = rivalPlayer?.avatar.image
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2, execute: {
+            self.animationOut()
+        })
     }
     
 }
