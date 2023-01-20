@@ -67,6 +67,12 @@ final class Coordinator {
         viewController.present(multi, animated: true)
     }
     
-    
+    public func goToMultiplayerGame(from viewController: UIViewController, player: Player, rivalPlayer: Player) {
+        let service : OnlineGameService = OnlineModeManager()
+        let vm = MultiplayerViewModel(service: service)
+        let multi = MultiplayerGameViewController(viewModel: vm, player: player, rivalPlayer: rivalPlayer)
+        multi.modalPresentationStyle = .fullScreen
+        viewController.present(multi, animated: true)
+    }
     
 }
