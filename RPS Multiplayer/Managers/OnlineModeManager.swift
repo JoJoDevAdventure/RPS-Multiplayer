@@ -55,6 +55,7 @@ final class OnlineModeManager: OnlineGameService {
                 
                 // set gameID
                 self.currentGameID = gameID
+                self.playerID = "player1"
                 
                 completion(.success(()))
                 return
@@ -83,6 +84,7 @@ final class OnlineModeManager: OnlineGameService {
                     let game = Game(player2: player, isGameReady: true)
                     try? self.db.collection("games").document(gameid).setData(from: game, merge: true)
                     self.currentGameID = gameid
+                    self.playerID = "player2"
                     
                     completion(.success(()))
                 }
@@ -91,6 +93,7 @@ final class OnlineModeManager: OnlineGameService {
             if self.currentGameID == nil {
                 let game = Game(player1: player, isGameReady: false)
                 let gameID = try? self.db.collection("games").addDocument(from: game).documentID
+                self.playerID = "player1"
                 guard let gameID = gameID else { return }
                 // set gameID
                 self.currentGameID = gameID
@@ -100,7 +103,15 @@ final class OnlineModeManager: OnlineGameService {
         }
     }
     
-    internal func updateGameScore() {
+    internal func playerDidChose(Player: MPlayer) {
+        if playerID == "player1" {
+            
+        } else if playerID == "player2" {
+            
+        }
+    }
+    
+    internal func updatePlayerScore() {
         
     }
     
