@@ -55,7 +55,7 @@ class MultiplayerPregameViewController: UIViewController {
     
     private lazy var rivalUsernameLabel: UILabel = {
        let label = UILabel()
-        label.text = "Bot"
+        label.text = "Waiting for rival..."
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 18, weight: .semibold)
         return label
@@ -89,6 +89,7 @@ class MultiplayerPregameViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         playerUsernameLabel.text = player.name
         playerAvatarImage.image = player.avatar.image
+        viewModel.preGameoutput = self
     }
     
     required init?(coder: NSCoder) {
@@ -168,4 +169,18 @@ class MultiplayerPregameViewController: UIViewController {
         }
     }
 
+}
+
+extension MultiplayerPregameViewController: MultiplayerPreGameOutput {
+    
+    func updateUI(player1: MPlayer?, player2: MPlayer?) {
+        if player.name == player1?.name {
+            rivalUsernameLabel.text = player2?.name
+            rivalAvatarImage.image = Data.shared.avatars.first(where: {$0.id == player2?.avatarID})?.image
+        } else {
+            rivalUsernameLabel.text = player1?.name
+            rivalAvatarImage.image = Data.shared.avatars.first(where: {$0.id == player1?.avatarID})?.image
+        }
+    }
+    
 }

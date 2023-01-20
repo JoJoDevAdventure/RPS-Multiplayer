@@ -10,7 +10,8 @@ import FirebaseFirestoreSwift
 import Firebase
 
 protocol OnlineGameService {
-    func playerConnectToGame(player: MPlayer)
+    func playerConnectToGame(player: MPlayer, completion: @escaping (Result<Void, Error>) -> Void)
+    func connectToGame(completion: @escaping (Result<Game, Error>) -> Void)
 }
 
 final class OnlineModeManager: OnlineGameService {
@@ -22,11 +23,17 @@ final class OnlineModeManager: OnlineGameService {
     
     init() {}
     
-    internal func connectToGame(completion: Result<Game, MultiplayerErrors>) {
-        
+    internal func connectToGame(completion: @escaping (Result<Game, Error>) -> Void) {
+        guard let currentGameID = currentGameID else { return }
+        self.db.collection("games").document(currentGameID).addSnapshotListener { snapshot, error in
+            guard error == nil else { return }
+            guard let snapshot = snapshot else { return }
+            guard var game = try? snapshot.data(as: Game.self) else { return }
+            completion(.success(game))
+        }
     }
     
-    internal func playerConnectToGame(player: MPlayer) {
+    internal func playerConnectToGame(player: MPlayer, completion: @escaping (Result<Void, Error>) -> Void) {
         self.localPlayer = player
         db.collection("games").getDocuments { snapshot, error in
             guard error == nil else {
@@ -41,14 +48,15 @@ final class OnlineModeManager: OnlineGameService {
             /// 3-  Existing game so join
             // no existing game
             guard !snapshot.isEmpty else {
-                let game = Game(player1: player, player2: nil, isGameReady: false)
-                let gameID = try? self.db.collection("games").addDocument(from: game)
+                let game = Game(player1: player, isGameReady: false)
+                let gameID = try? self.db.collection("games").addDocument(from: game).documentID
+                
+                guard let gameID = gameID else { return }
                 
                 // set gameID
-                self.currentGameID = gameID?.documentID
+                self.currentGameID = gameID
                 
-                // set playerID
-                self.playerID = "player1"
+                completion(.success(()))
                 return
             }
             
@@ -72,12 +80,21 @@ final class OnlineModeManager: OnlineGameService {
                 else {
                     guard let gameid = game.id else { return }
                     
-                    let playerID = try? self.db.collection("games").document(gameid).collection("player2").addDocument(from: player)
+                    let game = Game(player2: player, isGameReady: true)
+                    try? self.db.collection("games").document(gameid).setData(from: game, merge: true)
+                    self.currentGameID = gameid
                     
-                    // mark game as full
-                    self.db.collection("games").document(gameid).setData(["isGameReady" : true])
-                    self.playerID = "player2"
+                    completion(.success(()))
                 }
+            }
+            
+            if self.currentGameID == nil {
+                let game = Game(player1: player, isGameReady: false)
+                let gameID = try? self.db.collection("games").addDocument(from: game).documentID
+                guard let gameID = gameID else { return }
+                // set gameID
+                self.currentGameID = gameID
+                completion(.success(()))
             }
         
         }
