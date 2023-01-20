@@ -20,6 +20,7 @@ class MultiplayerViewModel {
     let service: OnlineGameService
     weak var preGameoutput: MultiplayerPreGameOutput?
     weak var gameOutput: MultiplayerGameOutput?
+    
     var didSkipPregameScreen = false
     
     init(service: OnlineGameService) {
