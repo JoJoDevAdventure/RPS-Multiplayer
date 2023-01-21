@@ -105,9 +105,9 @@ final class OnlineModeManager: OnlineGameService {
     
     internal func playerDidChose(Player: MPlayer) {
         if playerID == "player1" {
-            
+            self.db.collection("games").document(currentGameID!).setData(["player1" : Player])
         } else if playerID == "player2" {
-            
+            self.db.collection("games").document(currentGameID!).setData(["player2" : Player])
         }
     }
     
