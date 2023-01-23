@@ -212,7 +212,9 @@ extension SinglePlayerInfoViewController: GADFullScreenContentDelegate {
     
     /// Tells the delegate that the ad failed to present full screen content.
     func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
-      print("Ad did fail to present full screen content.")
+        print("Ad did fail to present full screen content.")
+        guard let player = player else { return }
+        Coordinator.shared.goToPregameScreen(from: self, player: player)
     }
 
     /// Tells the delegate that the ad will present full screen content.

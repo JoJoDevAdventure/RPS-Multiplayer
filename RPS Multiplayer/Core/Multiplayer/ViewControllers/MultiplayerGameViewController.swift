@@ -129,37 +129,45 @@ extension MultiplayerGameViewController: RockButtonDelegate, PaperButtonDelegate
     
     func didSelectRock() {
         hideButtons()
-//        let bot = viewModel.generateBotChoice()
-        
-        playerHandView.userDidChose(choice: .rock)
-//        botHandView.userDidChose(choice: bot)
-        
-//        viewModel.playerDidChose(playerChoice: .rock)
+        // TODO: Handle player selection
+        viewModel.updatePlayerChoice(choice: .rock)
     }
     
     func didSelectPaper() {
         hideButtons()
-//        let bot = viewModel.generateBotChoice()
-        
-        playerHandView.userDidChose(choice: .paper)
-//        botHandView.userDidChose(choice: bot)
-        
-//        viewModel.playerDidChose(playerChoice: .paper)
+        // TODO: Handle player selection
+        viewModel.updatePlayerChoice(choice: .paper)
     }
     
     func didSelectScissors() {
         hideButtons()
-//        let bot = viewModel.generateBotChoice()
-        
-        playerHandView.userDidChose(choice: .scissors)
-//        botHandView.userDidChose(choice: bot)
-        
-//        viewModel.playerDidChose(playerChoice: .scissors)
+        // TODO: Handle player selection
+        viewModel.updatePlayerChoice(choice: .scissors)
     }
     
 }
 
 extension MultiplayerGameViewController: MultiplayerGameOutput {
+    func draw() {
+        
+    }
+    
+    func won() {
+        
+    }
+    
+    func lost() {
+        
+    }
+    
+    func resetGame() {
+        
+    }
+    
+    func replay() {
+        
+    }
+    
     
 }
 

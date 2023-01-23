@@ -10,8 +10,9 @@ import FirebaseFirestoreSwift
 import Firebase
 
 protocol OnlineGameService {
-    func playerConnectToGame(player: MPlayer, completion: @escaping (Result<Void, Error>) -> Void)
-    func connectToGame(completion: @escaping (Result<Game, Error>) -> Void)
+    func playerConnectToGame(player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void)
+    func connectToGame(completion: @escaping (Result<Game, MultiplayerErrors>) -> Void)
+    func playerDidChose(Player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void)
 }
 
 final class OnlineModeManager: OnlineGameService {
@@ -23,7 +24,7 @@ final class OnlineModeManager: OnlineGameService {
     
     init() {}
     
-    internal func connectToGame(completion: @escaping (Result<Game, Error>) -> Void) {
+    internal func connectToGame(completion: @escaping (Result<Game, MultiplayerErrors>) -> Void) {
         guard let currentGameID = currentGameID else { return }
         self.db.collection("games").document(currentGameID).addSnapshotListener { snapshot, error in
             guard error == nil else { return }
@@ -33,7 +34,7 @@ final class OnlineModeManager: OnlineGameService {
         }
     }
     
-    internal func playerConnectToGame(player: MPlayer, completion: @escaping (Result<Void, Error>) -> Void) {
+    internal func playerConnectToGame(player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void) {
         self.localPlayer = player
         db.collection("games").getDocuments { snapshot, error in
             guard error == nil else {
@@ -103,11 +104,15 @@ final class OnlineModeManager: OnlineGameService {
         }
     }
     
-    internal func playerDidChose(Player: MPlayer) {
+    internal func playerDidChose(Player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void) {
         if playerID == "player1" {
             self.db.collection("games").document(currentGameID!).setData(["player1" : Player])
+            completion(.success(()))
         } else if playerID == "player2" {
             self.db.collection("games").document(currentGameID!).setData(["player2" : Player])
+            completion(.success(()))
+        } else {
+            completion(.failure(MultiplayerErrors.RPSFetchingDataError))
         }
     }
     

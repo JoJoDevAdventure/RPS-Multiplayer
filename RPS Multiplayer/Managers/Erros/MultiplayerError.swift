@@ -7,6 +7,60 @@
 
 import Foundation
 
-class MultiplayerErrors: Error {
+enum MultiplayerErrors: CaseIterable, Error {
+    
+    case RPSConnectionError
+    case RPSLostConnection
+    case RPSFetchingDataError
+    case RPSConnectingToServerError
+    case RPSUnkownError
+    
+    // Error displayer title
+    var title: String {
+        switch self {
+        case .RPSConnectionError:
+            return "Check you internet connection."
+        case .RPSLostConnection:
+            return "Connection to the server lost."
+        case .RPSFetchingDataError:
+            return "Error while fetching the data."
+        case .RPSConnectingToServerError:
+            return "Error while connecting to the server."
+        case .RPSUnkownError:
+            return "Unknown error."
+        }
+    }
+    
+    // Error Description
+    var errorDescription: String {
+        switch self {
+        case .RPSConnectionError:
+            return "Connection error, please check you WI-FI or cellular."
+        case .RPSLostConnection:
+            return "Connection with the server lost, try again later."
+        case .RPSFetchingDataError:
+            return "We couldn't obtain your informations, please try again later."
+        case .RPSConnectingToServerError:
+            return "We couldn't connect you to the server, consider trying in few minutes."
+        case .RPSUnkownError:
+            return "Unknown error, please try again."
+        }
+    }
+    
+    // Error status code from response
+    var statusCode: Int {
+        switch self {
+        case .RPSConnectionError:
+            return 400
+        case .RPSLostConnection:
+            return 404
+        case .RPSFetchingDataError:
+            return 422
+        case .RPSConnectingToServerError:
+            return 401
+        case .RPSUnkownError:
+            return 000
+        }
+    }
     
 }
