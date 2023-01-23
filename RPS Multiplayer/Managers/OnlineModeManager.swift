@@ -20,7 +20,7 @@ final class OnlineModeManager: OnlineGameService {
     let db = Firestore.firestore()
     private var localPlayer: MPlayer? = nil
     private var currentGameID: String?
-    private var playerID: String = ""
+    private var playerID: String?
     
     init() {}
     
@@ -105,10 +105,10 @@ final class OnlineModeManager: OnlineGameService {
     }
     
     internal func playerDidChose(player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void) {
-        if playerID == "player1" {
+        if self.playerID == "player1" {
             self.db.collection("games").document(currentGameID!).setData(["player1" : player])
             completion(.success(()))
-        } else if playerID == "player2" {
+        } else if self.playerID == "player2" {
             self.db.collection("games").document(currentGameID!).setData(["player2" : player])
             completion(.success(()))
         } else {

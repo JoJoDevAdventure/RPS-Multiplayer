@@ -86,8 +86,7 @@ class MultiplayerViewModel {
         }
     }
     
-    public func updatePlayerChoice(choice: RPS) {
-        guard let player = player else { return }
+    public func updatePlayerChoice(choice: RPS, player: Player) {
         let Mplayer = MPlayer(name: player.name, avatarID: player.avatar.id, score: currentScore, choice: choice)
         service.playerDidChose(player: Mplayer) { results in
             switch results {

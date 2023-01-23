@@ -129,17 +129,17 @@ extension MultiplayerGameViewController: RockButtonDelegate, PaperButtonDelegate
     
     func didSelectRock() {
         // TODO: Handle player selection
-        viewModel.updatePlayerChoice(choice: .rock)
+        viewModel.updatePlayerChoice(choice: .rock, player: self.player)
     }
     
     func didSelectPaper() {
         // TODO: Handle player selection
-        viewModel.updatePlayerChoice(choice: .paper)
+        viewModel.updatePlayerChoice(choice: .paper, player: self.player)
     }
     
     func didSelectScissors() {
         // TODO: Handle player selection
-        viewModel.updatePlayerChoice(choice: .scissors)
+        viewModel.updatePlayerChoice(choice: .scissors, player: self.player)
     }
     
 }

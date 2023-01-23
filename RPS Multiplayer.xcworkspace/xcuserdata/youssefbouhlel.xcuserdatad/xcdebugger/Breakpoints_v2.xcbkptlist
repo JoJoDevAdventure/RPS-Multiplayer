@@ -183,54 +183,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0D7AA731-EB33-4C5C-B63E-0B028A8B7100"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "RPS Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "updatePlayerChoice(choice:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "0D7AA731-EB33-4C5C-B63E-0B028A8B7100 - c1f7bb5bfca6dd1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RPS_Multiplayer.MultiplayerViewModel.updatePlayerChoice(choice: RPS_Multiplayer.RPS) -&gt; ()"
-                  moduleName = "RPS Multiplayer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/youssefbouhlel/projets/Swift/RPS%20Multiplayer/RPS%20Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "44">
-               </Location>
-               <Location
-                  uuid = "0D7AA731-EB33-4C5C-B63E-0B028A8B7100 - c1f7bb5bfca6dd1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "RPS_Multiplayer.MultiplayerViewModel.updatePlayerChoice(choice: RPS_Multiplayer.RPS) -&gt; ()"
-                  moduleName = "RPS Multiplayer"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/youssefbouhlel/projets/Swift/RPS%20Multiplayer/RPS%20Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "90"
-                  endingLineNumber = "90"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "B8B2E90F-A18F-43D5-917D-DA040C30EA06"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -240,7 +192,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "89"
             endingLineNumber = "89"
-            landmarkName = "updatePlayerChoice(choice:)"
+            landmarkName = "updatePlayerChoice(choice:player:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -254,9 +206,9 @@
             filePath = "RPS Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "91"
-            endingLineNumber = "91"
-            landmarkName = "updatePlayerChoice(choice:)"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "updatePlayerChoice(choice:player:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -270,39 +222,39 @@
             filePath = "RPS Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "updatePlayerChoice(choice:)"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "updatePlayerChoice(choice:player:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7EBE044B-4D52-461F-BE26-D42D343EBF6A - c1f7bb5bfca6d0f"
+                  uuid = "7EBE044B-4D52-461F-BE26-D42D343EBF6A - 42d442bb860fad46"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "RPS_Multiplayer.MultiplayerViewModel.updatePlayerChoice(choice: RPS_Multiplayer.RPS) -&gt; ()"
+                  symbolName = "RPS_Multiplayer.MultiplayerViewModel.updatePlayerChoice(choice: RPS_Multiplayer.RPS, player: RPS_Multiplayer.Player) -&gt; ()"
                   moduleName = "RPS Multiplayer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/youssefbouhlel/projets/Swift/RPS%20Multiplayer/RPS%20Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "92"
-                  endingLineNumber = "92"
-                  offsetFromSymbolStart = "236">
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "180">
                </Location>
                <Location
-                  uuid = "7EBE044B-4D52-461F-BE26-D42D343EBF6A - 38b46821fd851b84"
+                  uuid = "7EBE044B-4D52-461F-BE26-D42D343EBF6A - b6f8fa150ca74cf2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;(), RPS_Multiplayer.MultiplayerErrors&gt;) -&gt; () in RPS_Multiplayer.MultiplayerViewModel.updatePlayerChoice(choice: RPS_Multiplayer.RPS) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Result&lt;(), RPS_Multiplayer.MultiplayerErrors&gt;) -&gt; () in RPS_Multiplayer.MultiplayerViewModel.updatePlayerChoice(choice: RPS_Multiplayer.RPS, player: RPS_Multiplayer.Player) -&gt; ()"
                   moduleName = "RPS Multiplayer"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/youssefbouhlel/projets/Swift/RPS%20Multiplayer/RPS%20Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
                   offsetFromSymbolStart = "68">
                </Location>
             </Locations>
@@ -318,9 +270,9 @@
             filePath = "RPS Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "updatePlayerChoice(choice:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "updatePlayerChoice(choice:player:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -334,9 +286,9 @@
             filePath = "RPS Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "updatePlayerChoice(choice:)"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "updatePlayerChoice(choice:player:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -350,9 +302,9 @@
             filePath = "RPS Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
-            landmarkName = "updatePlayerChoice(choice:)"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "updatePlayerChoice(choice:player:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -366,9 +318,9 @@
             filePath = "RPS Multiplayer/Core/Multiplayer/ViewModel/MultiplayerViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "updatePlayerChoice(choice:)"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "updatePlayerChoice(choice:player:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -514,6 +466,70 @@
             endingLineNumber = "28"
             landmarkName = "MultiplayerViewModel"
             landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8981AE33-95AB-4402-9EE7-909D33432ADA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RPS Multiplayer/Managers/OnlineModeManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "playerDidChose(player:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8BEE08D0-0365-4DC5-84E7-14CA03E8FF38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RPS Multiplayer/Managers/OnlineModeManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "playerConnectToGame(player:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83F222DD-0AB7-432F-B3CD-C93AC7B83FA0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RPS Multiplayer/Managers/OnlineModeManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "playerConnectToGame(player:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3E20C5D-82FF-49F8-8B12-551EC658545E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RPS Multiplayer/Managers/OnlineModeManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "playerConnectToGame(player:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
