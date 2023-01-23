@@ -17,6 +17,7 @@ protocol MultiplayerGameOutput: AnyObject {
     func lost()
     func resetGame()
     func replay()
+    func shouldHideButtons()
 }
 
 class MultiplayerViewModel {
@@ -39,7 +40,7 @@ class MultiplayerViewModel {
     }
     
     public func joinGame(player: Player) {
-        
+        self.player = player
         service.playerConnectToGame(player: playerToMPlayer(player: player), completion: { result in
             switch result {
             case .success(_):
@@ -86,15 +87,15 @@ class MultiplayerViewModel {
     }
     
     public func updatePlayerChoice(choice: RPS) {
-        guard var player = player else { return }
+        guard let player = player else { return }
         let Mplayer = MPlayer(name: player.name, avatarID: player.avatar.id, score: currentScore, choice: choice)
-        service.playerDidChose(Player: Mplayer) { results in
+        service.playerDidChose(player: Mplayer) { results in
             switch results {
             case .success(_):
-                // TODO: Handle sucess in case of player choice
+                self.gameOutput?.shouldHideButtons()
                 return
             case .failure(_):
-                // TODO: Handle errors
+                
                 return
             }
         }

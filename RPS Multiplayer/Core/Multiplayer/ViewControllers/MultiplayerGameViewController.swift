@@ -98,7 +98,7 @@ class MultiplayerGameViewController: UIViewController {
         NSLayoutConstraint.activate(constraints)
     }
     
-    private func hideButtons() {
+    internal func hideButtons() {
         rockButton.isHidden = true
         paperButton.isHidden = true
         scissorsButton.isHidden = true
@@ -128,19 +128,16 @@ class MultiplayerGameViewController: UIViewController {
 extension MultiplayerGameViewController: RockButtonDelegate, PaperButtonDelegate, ScissorsButtonDelegate {
     
     func didSelectRock() {
-        hideButtons()
         // TODO: Handle player selection
         viewModel.updatePlayerChoice(choice: .rock)
     }
     
     func didSelectPaper() {
-        hideButtons()
         // TODO: Handle player selection
         viewModel.updatePlayerChoice(choice: .paper)
     }
     
     func didSelectScissors() {
-        hideButtons()
         // TODO: Handle player selection
         viewModel.updatePlayerChoice(choice: .scissors)
     }
@@ -148,6 +145,11 @@ extension MultiplayerGameViewController: RockButtonDelegate, PaperButtonDelegate
 }
 
 extension MultiplayerGameViewController: MultiplayerGameOutput {
+    
+    func shouldHideButtons() {
+        hideButtons()
+    }
+    
     func draw() {
         
     }

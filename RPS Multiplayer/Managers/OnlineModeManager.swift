@@ -12,7 +12,7 @@ import Firebase
 protocol OnlineGameService {
     func playerConnectToGame(player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void)
     func connectToGame(completion: @escaping (Result<Game, MultiplayerErrors>) -> Void)
-    func playerDidChose(Player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void)
+    func playerDidChose(player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void)
 }
 
 final class OnlineModeManager: OnlineGameService {
@@ -29,7 +29,7 @@ final class OnlineModeManager: OnlineGameService {
         self.db.collection("games").document(currentGameID).addSnapshotListener { snapshot, error in
             guard error == nil else { return }
             guard let snapshot = snapshot else { return }
-            guard var game = try? snapshot.data(as: Game.self) else { return }
+            guard let game = try? snapshot.data(as: Game.self) else { return }
             completion(.success(game))
         }
     }
@@ -104,12 +104,12 @@ final class OnlineModeManager: OnlineGameService {
         }
     }
     
-    internal func playerDidChose(Player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void) {
+    internal func playerDidChose(player: MPlayer, completion: @escaping (Result<Void, MultiplayerErrors>) -> Void) {
         if playerID == "player1" {
-            self.db.collection("games").document(currentGameID!).setData(["player1" : Player])
+            self.db.collection("games").document(currentGameID!).setData(["player1" : player])
             completion(.success(()))
         } else if playerID == "player2" {
-            self.db.collection("games").document(currentGameID!).setData(["player2" : Player])
+            self.db.collection("games").document(currentGameID!).setData(["player2" : player])
             completion(.success(()))
         } else {
             completion(.failure(MultiplayerErrors.RPSFetchingDataError))
@@ -117,7 +117,7 @@ final class OnlineModeManager: OnlineGameService {
     }
     
     internal func updatePlayerScore() {
-        
+
     }
     
     internal func endGame() {
