@@ -35,13 +35,9 @@ class MultiplayerViewModel {
         self.service = service
     }
     
-    private func playerToMPlayer(player: Player) -> MPlayer {
-        return MPlayer(name: player.name, avatarID: player.avatar.id, score: 0)
-    }
-    
     public func joinGame(player: Player) {
         self.player = player
-        service.playerConnectToGame(player: playerToMPlayer(player: player), completion: { result in
+        service.playerConnectToGame(player: player, completion: { result in
             switch result {
             case .success(_):
                 self.trackGame()
@@ -63,6 +59,7 @@ class MultiplayerViewModel {
                         self?.preGameoutput?.updateUI(player1: game.player1, player2: game.player2)
                         self?.didSkipPregameScreen = true
                     } else {
+                        
                         // check if both player didChose
                         guard let p1Choice = game.player1?.choice else { return }
                         guard let p2Choice = game.player2?.choice else { return }
@@ -87,14 +84,12 @@ class MultiplayerViewModel {
     }
     
     public func updatePlayerChoice(choice: RPS, player: Player) {
-        let Mplayer = MPlayer(name: player.name, avatarID: player.avatar.id, score: currentScore, choice: choice)
-        service.playerDidChose(player: Mplayer) { results in
+        service.playerDidChose(choice: choice) { [weak self] results in
             switch results {
-            case .success(_):
-                self.gameOutput?.shouldHideButtons()
+            case .success(let success):
+                self?.gameOutput?.shouldHideButtons()
                 return
-            case .failure(_):
-                
+            case .failure(let failure):
                 return
             }
         }
