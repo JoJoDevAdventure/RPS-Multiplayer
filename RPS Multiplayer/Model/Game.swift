@@ -20,4 +20,5 @@ struct MPlayer : Encodable, Decodable {
     var avatarID : Int
     var score : Int
     var choice : RPS?
+    var playerID : String
 }
