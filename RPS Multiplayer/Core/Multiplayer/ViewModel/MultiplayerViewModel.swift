@@ -83,13 +83,13 @@ class MultiplayerViewModel {
         }
     }
     
-    public func updatePlayerChoice(choice: RPS, player: Player) {
+    public func updatePlayerChoice(choice: RPS) {
         service.playerDidChose(choice: choice) { [weak self] results in
             switch results {
-            case .success(let success):
+            case .success( _ ):
                 self?.gameOutput?.shouldHideButtons()
                 return
-            case .failure(let failure):
+            case .failure( _ ):
                 return
             }
         }
