@@ -47,20 +47,4 @@ enum MultiplayerErrors: CaseIterable, Error {
         }
     }
     
-    // Error status code from response
-    var statusCode: Int {
-        switch self {
-        case .RPSConnectionError:
-            return 400
-        case .RPSLostConnection:
-            return 404
-        case .RPSFetchingDataError:
-            return 422
-        case .RPSConnectingToServerError:
-            return 401
-        case .RPSUnkownError:
-            return 000
-        }
-    }
-    
 }
