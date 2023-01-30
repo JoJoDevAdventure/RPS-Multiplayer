@@ -31,6 +31,11 @@ class SinglePlayerGameViewModel {
     }
     
     public func playerDidChose(playerChoice: RPS) {
+        // Game logic
+        /// Depending on bot choice
+        /// Bot did chose   rock : User win if he choses paper and lose if he choses scissors
+        /// Bot did chose   paper : User win if he choses scissors and lose if he choses rock
+        /// Bot did chose   scissors : User win if he choses rock and lose if he choses paper
         if botChoice != nil {
             switch botChoice {
             case .rock:
@@ -69,7 +74,7 @@ class SinglePlayerGameViewModel {
             case .none:
                 break
             }
-            
+            // reset game for next round
             DispatchQueue.global().asyncAfter(deadline: DispatchTime.now() + 3, execute: DispatchWorkItem(block: {
                 self.output?.resetGame()
             }))
@@ -77,6 +82,7 @@ class SinglePlayerGameViewModel {
         
     }
     
+    // User did press relay button : Reinit game
     public func replay() {
         self.botScore = 0
         self.playerScore = 0
