@@ -11,6 +11,7 @@ class HomeScreen: UIViewController {
     
     // MARK: - UIProperties
     
+    // Local UI Margins
     private struct Margins {
         
         var top: CGFloat
@@ -53,6 +54,7 @@ class HomeScreen: UIViewController {
     
     private let margins = Margins()
     
+    // VIEW : Logo ImageView
     private lazy var logo: UIImageView = {
         let img = UIImageView()
         img.translatesAutoresizingMaskIntoConstraints = false
@@ -61,6 +63,7 @@ class HomeScreen: UIViewController {
         return img
     }()
     
+    // VIEW : Settings BarButton
     private lazy var settingsButton: UIBarButtonItem = {
         let btn = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(didTapSettings))
         btn.tintColor = UIColor(asset: Asset.Colors.label)
@@ -70,6 +73,7 @@ class HomeScreen: UIViewController {
         return btn
     }()
     
+    // VIEW : Shop BarButton
     private lazy var purchaseButton: UIBarButtonItem = {
         let btn = UIBarButtonItem(image: nil, style: .plain, target: self, action: #selector(didTapPurchase))
         btn.tintColor = UIColor(asset: Asset.Colors.label)
@@ -79,8 +83,10 @@ class HomeScreen: UIViewController {
         return btn
     }()
     
+    // VIEW : Single player custom button
     private lazy var singlePlayerBtn = CustomRoundedButton(title: L10n.Home.singlePlayer)
     
+    // VIEW : Multiplayer custom button
     private lazy var multiplayerBtn = CustomRoundedButton(title: L10n.Home.multiplayer)
     
     
@@ -154,19 +160,23 @@ class HomeScreen: UIViewController {
     }
     
     private func setupButtonsActions() {
+        // User did press single player button
         singlePlayerBtn.addAction(UIAction(handler: { _ in
             self.viewModel.didPressSinglePlayer(vc: self)
         }), for: .touchUpInside)
         
+        // user did press multiplayer button
         multiplayerBtn.addAction(UIAction(handler: { _ in
             self.viewModel.didPressMultiplayer(vc: self)
         }), for: .touchUpInside)
     }
     
+    // User did press settings button
     @objc private func didTapSettings() {
         viewModel.didPressSettings(vc: self)
     }
     
+    // User did press shop button
     @objc private func didTapPurchase() {
         viewModel.didPressShop(vc: self)
     }
