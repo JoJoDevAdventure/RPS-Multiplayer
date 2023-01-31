@@ -9,6 +9,7 @@ import UIKit
 
 class SinglePlayerPregameViewController: UIViewController {
     
+    // margins
     private struct Margins {
         
         var top: CGFloat
@@ -51,8 +52,10 @@ class SinglePlayerPregameViewController: UIViewController {
     
     private let margins = Margins()
     
+    // local player
     private var player: Player
     
+    // bot username
     private lazy var botUsernameLabel: UILabel = {
        let label = UILabel()
         label.text = "Bot"
@@ -61,8 +64,10 @@ class SinglePlayerPregameViewController: UIViewController {
         return label
     }()
     
+    // bot avatar image
     private lazy var botAvatarImage = AvatarImageView(avatar: Data.shared.avatars[0])
     
+    // "VS" Label
     private lazy var VSLabel: UILabel = {
        let label = UILabel()
         label.text = L10n.Pregame.vs
@@ -73,6 +78,7 @@ class SinglePlayerPregameViewController: UIViewController {
         return label
     }()
     
+    // Player username
     private lazy var playerUsernameLabel: UILabel = {
        let label = UILabel()
         label.text = L10n.PlayerInfo.SinglePlayer.avatar
@@ -81,6 +87,7 @@ class SinglePlayerPregameViewController: UIViewController {
         return label
     }()
     
+    // Player Avatar image
     private lazy var playerAvatarImage = AvatarImageView(avatar: player.avatar)
 
     init(player: Player) {
@@ -122,24 +129,30 @@ class SinglePlayerPregameViewController: UIViewController {
     
     private func setupConstraints() {
         let constraints = [
+            // bot username
             botUsernameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             botUsernameLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant:( margins.top * 7) - (UIScreen.main.bounds.height / 1.8)),
             
+            // bot avatar image
             botAvatarImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             botAvatarImage.topAnchor.constraint(equalTo: botUsernameLabel.bottomAnchor, constant: 15 ),
             
+            // "VS" Label
             VSLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             VSLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             
+            // Avatar image
             playerAvatarImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             playerAvatarImage.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: (margins.bottom * -8) +  (UIScreen.main.bounds.height / 1.8)),
             
+            // player username label
             playerUsernameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             playerUsernameLabel.bottomAnchor.constraint(equalTo: playerAvatarImage.topAnchor, constant: -15),
         ]
         NSLayoutConstraint.activate(constraints)
     }
     
+    // animation : IN
     private func animationIn() {
         UIView.animate(withDuration: 3, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn) {
             self.botUsernameLabel.transform = CGAffineTransform(translationX: 0, y: UIScreen.main.bounds.height / 1.8)
@@ -154,6 +167,7 @@ class SinglePlayerPregameViewController: UIViewController {
         }
     }
     
+    // animation : OUT
     private func animationOut() {
         UIView.animate(withDuration: 1.5, delay: 2, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.8, options: .curveEaseOut) {
             self.botUsernameLabel.transform = CGAffineTransform(translationX: 0, y: -UIScreen.main.bounds.height / 1.8)
