@@ -10,6 +10,7 @@ import GoogleMobileAds
 
 class SinglePlayerInfoViewController: UIViewController {
     
+    // UI Margins
     private struct Margins {
         
         var top: CGFloat
@@ -50,12 +51,16 @@ class SinglePlayerInfoViewController: UIViewController {
         }
     }
     
+    // Avatar
     private var avatar: Avatar = Data.shared.avatars[0]
+    // Ads interstitial
     private var interstitial: GADInterstitialAd?
+    // local player
     private var player: Player? = nil
     
     private let margins = Margins()
     
+    // Avatar label
     private lazy var avatarLabel: UILabel = {
        let label = UILabel()
         label.text = L10n.PlayerInfo.SinglePlayer.avatar
@@ -64,6 +69,7 @@ class SinglePlayerInfoViewController: UIViewController {
         return label
     }()
     
+    // Nickname label
     private lazy var nicknameLabel: UILabel = {
        let label = UILabel()
         label.text = L10n.PlayerInfo.SinglePlayer.nickname
@@ -72,11 +78,13 @@ class SinglePlayerInfoViewController: UIViewController {
         return label
     }()
     
-    
+    // avatar Image
     private lazy var avatarImage = AvatarImageView(avatar: avatar)
     
+    // name Textfield
     private lazy var nameTextfield = CustomTextfield(title: L10n.PlayerInfo.SinglePlayer.nicknameExample)
     
+    // play button
     private lazy var playButton = PlayButton(frame: .zero)
 
     override func viewDidLoad() {
@@ -89,10 +97,15 @@ class SinglePlayerInfoViewController: UIViewController {
     private func setupUI() {
         setupSubviews()
         setupConstraints()
+        setupNavBar()
+    }
+    
+    private func setupNavBar() {
         title = L10n.PlayerInfo.SinglePlayer.title
         navigationController?.navigationBar.prefersLargeTitles = false
     }
     
+    // add subviews
     private func setupSubviews() {
         view.addSubview(avatarLabel)
         view.addSubview(nicknameLabel)
@@ -103,22 +116,28 @@ class SinglePlayerInfoViewController: UIViewController {
         view.addSubview(playButton)
     }
     
+    // setup constraints
     private func setupConstraints() {
         let constraints = [
+            // avatar label
             avatarLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             avatarLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: margins.top * 1.5),
         
+            // avatar image
             avatarImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             avatarImage.topAnchor.constraint(equalTo: avatarLabel.bottomAnchor, constant: 10),
             
+            // nickname label
             nicknameLabel.leftAnchor.constraint(equalTo: view.leftAnchor, constant: margins.left),
             nicknameLabel.topAnchor.constraint(equalTo: avatarImage.bottomAnchor, constant: margins.top * 2),
             
+            // name textfield
             nameTextfield.leftAnchor.constraint(equalTo: view.leftAnchor, constant: margins.left),
             nameTextfield.topAnchor.constraint(equalTo: nicknameLabel.bottomAnchor, constant: margins.top),
             nameTextfield.rightAnchor.constraint(equalTo: view.rightAnchor, constant: margins.right),
             nameTextfield.heightAnchor.constraint(equalToConstant: 75),
             
+            // play button
             playButton.topAnchor.constraint(equalTo: nameTextfield.bottomAnchor, constant: margins.top * 1.5),
             playButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             playButton.widthAnchor.constraint(equalTo: nameTextfield.widthAnchor),
@@ -134,14 +153,17 @@ class SinglePlayerInfoViewController: UIViewController {
         getAdRequest()
     }
     
+    // add gesture to resign keyboard
     private func setupGesture() {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(resignKeyboard)))
     }
     
+    // resign keyboard
     @objc private func resignKeyboard() {
         nameTextfield.resignFirstResponder()
     }
     
+    // add button actions
     private func setupButtonActions() {
         playButton.addAction(UIAction(handler: { _  in
             guard let name = self.nameTextfield.getInputString() else {
@@ -154,6 +176,7 @@ class SinglePlayerInfoViewController: UIViewController {
         }), for: .touchUpInside)
     }
     
+    // add observers
     private func setupObservers() {
         NotificationCenter.default.addObserver(forName: NSNotification.Name("didChangeAvatar"), object: nil, queue: nil ) { object in
             guard let avatar = object.object as? Avatar else {
@@ -163,7 +186,8 @@ class SinglePlayerInfoViewController: UIViewController {
             self.avatarImage.image = avatar.image
         }
     }
-
+    
+    // init add request
     private func getAdRequest() {
         let request = GADRequest()
         GADInterstitialAd.load(withAdUnitID:"ca-app-pub-5967220334425968/4976191597",
@@ -181,22 +205,20 @@ class SinglePlayerInfoViewController: UIViewController {
     
 }
 
+// MARK: avatar image delegate
 extension SinglePlayerInfoViewController: AvatarImageViewDelegate {
-    
+    // did tap select avatar
     func didTapSelectAvatar() {
         Coordinator.shared.showAvatarsSelection(from: self)
     }
     
 }
 
+// MARK: Textfield delegate
 extension SinglePlayerInfoViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         nameTextfield.resignFirstResponder()
         return true
-    }
-    
-    func textFieldDidChangeSelection(_ textField: UITextField) {
-        
     }
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
