@@ -7,10 +7,12 @@
 
 import Foundation
 
+// Output : Pregame
 protocol MultiplayerPreGameOutput: AnyObject {
     func updateUI(player1: MPlayer?, player2: MPlayer?)
 }
 
+// Output : Game
 protocol MultiplayerGameOutput: AnyObject {
     func draw()
     func won()
@@ -20,21 +22,32 @@ protocol MultiplayerGameOutput: AnyObject {
     func shouldHideButtons()
 }
 
+// Output : Pregame
 class MultiplayerViewModel {
     
+    // service
     let service: OnlineGameService
+    // pregame output
     weak var preGameoutput: MultiplayerPreGameOutput?
+    // game output
     weak var gameOutput: MultiplayerGameOutput?
+    // player
     var player: Player?
+    // current score
     var currentScore: Int = 0
+    // local choice
     var localChoice: RPS?
     
+    // user did skip game screen
     var didSkipPregameScreen = false
     
     init(service: OnlineGameService) {
         self.service = service
     }
     
+    /// User join game
+    /// if success : Track game
+    /// show error
     public func joinGame(player: Player) {
         self.player = player
         service.playerConnectToGame(player: player, completion: { result in
